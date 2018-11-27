@@ -37,6 +37,7 @@ end
 
   print g.add
   print g.commit("my message")
+  print g.push
 
 
        g = Git.init

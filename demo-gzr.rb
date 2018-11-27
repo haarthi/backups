@@ -25,7 +25,7 @@ end
     # config.binary_path = '/opt/git/proj.git'
 
     # If you need to use a custom SSH script
-    config.git_ssh = '~/.ssh/id_rsa.pub'
+    config.git_ssh = '~/.ssh/id_rsa'
 
   end
 

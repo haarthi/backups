@@ -25,7 +25,7 @@ end
     # config.binary_path = '/opt/git/proj.git'
 
     # If you need to use a custom SSH script
-    config.git_ssh = 'Users/haarthisadasivam/.ssh/haarthi_github.pub'
+    config.git_ssh = 'Users/haarthisadasivam/.ssh/haarthi_github'
 
   end
 

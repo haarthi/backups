@@ -1,0 +1,3710 @@
+{
+  "id": 8,
+  "user_id": 5,
+  "title": "Brand Analytics, Web & Transactional",
+  "description": null,
+  "readonly": false,
+  "hidden": true,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "content_metadata_id": 251,
+  "query_timezone": null,
+  "space": {
+    "id": 27,
+    "creator_id": 5,
+    "name": "Web Analytics",
+    "parent_id": 1,
+    "content_metadata_id": 8,
+    "is_personal": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "is_personal_descendant": false,
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "external_id": null,
+    "child_count": 0,
+    "is_user_root": false,
+    "is_root": false,
+    "can": {
+      "index": true,
+      "show": true,
+      "create": true,
+      "see_admin_spaces": true,
+      "update": true,
+      "destroy": true,
+      "move_content": true,
+      "edit_content": true
+    }
+  },
+  "space_id": 27,
+  "view_count": 10861,
+  "favorite_count": 20,
+  "slug": "CRMxoGiGJUv4eGALMHiAb0",
+  "dashboard_elements": [
+    {
+      "id": 61,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Orders",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 165888,
+        "view": "order_items",
+        "fields": [
+          "order_items.order_count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "products.brand": "\"Dockers\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.order_count desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.2894458770751953,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "filter_config": {
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Dockers"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "tqzyWjm",
+        "dynamic_fields": "[]",
+        "client_id": "hnYHBGPFQPHsjPlNSB2ru8",
+        "share_url": "https://demo.looker.com/x/hnYHBGPFQPHsjPlNSB2ru8",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.order_count&f[products.brand]=%22Dockers%22&sorts=order_items.order_count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.order_count&f[products.brand]=%22Dockers%22&sorts=order_items.order_count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 165888,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10398,
+      "result_maker": {
+        "id": 10398,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.order_count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 165888,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 62,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "above",
+      "note_state": "expanded",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Customers",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344107,
+        "view": "order_items",
+        "fields": [
+          "users.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "products.brand": "\"Dockers\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "users.count desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 2.0620360374450684,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "filter_config": {
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Dockers"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "q5YcjZG",
+        "dynamic_fields": "[]",
+        "client_id": "6ms05YaSrUXCMjNfh6sp1m",
+        "share_url": "https://demo.looker.com/x/6ms05YaSrUXCMjNfh6sp1m",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.count&f[products.brand]=%22Dockers%22&sorts=users.count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.count&f[products.brand]=%22Dockers%22&sorts=users.count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344107,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10399,
+      "result_maker": {
+        "id": 10399,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "users.count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344107,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 63,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "below",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Average Order Value",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 200009,
+        "view": "order_items",
+        "fields": [
+          "order_items.average_sale_price"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "products.brand": "Dockers"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.average_sale_price desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.033116,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "filter_config": {
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Dockers"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": "data,vis,fields",
+        "slug": "w3D4ZJK",
+        "dynamic_fields": "[]",
+        "client_id": "GgLhFtebUO3ft3O0VxcdMm",
+        "share_url": "https://demo.looker.com/x/GgLhFtebUO3ft3O0VxcdMm",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.average_sale_price&f[products.brand]=Dockers&sorts=order_items.average_sale_price+desc&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&show=data%2Cvis%2Cfields&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.average_sale_price&f[products.brand]=Dockers&sorts=order_items.average_sale_price+desc&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Dockers%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&show=data%2Cvis%2Cfields",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 200009,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10400,
+      "result_maker": {
+        "id": 10400,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.average_sale_price desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 200009,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "text_color": "black"
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 64,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "above",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Brand Traffic by Source, OS",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 677221,
+        "view": "events",
+        "fields": [
+          "users.traffic_source",
+          "events.os",
+          "events.count"
+        ],
+        "pivots": [
+          "users.traffic_source"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "users.traffic_source": "-NULL",
+          "events.event_date": "90 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "events.count desc 1",
+          "users.traffic_source"
+        ],
+        "limit": "20",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.4443199634552002,
+        "vis_config": {
+          "type": "looker_donut_multiples",
+          "show_view_names": true,
+          "stacking": "",
+          "show_value_labels": true,
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "show_null_labels": false,
+          "font_size": 12,
+          "colors": [
+            "#64518A",
+            "#8D7FB9",
+            "#EA8A2F",
+            "#F2B431",
+            "#2DA5DE",
+            "#57BEBE",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ]
+        },
+        "filter_config": {
+          "users.traffic_source": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "events.event_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 2,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "CC8tpwx",
+        "dynamic_fields": "[]",
+        "client_id": "yEaOLdyuGUUlD4eKIzRiEE",
+        "share_url": "https://demo.looker.com/x/yEaOLdyuGUUlD4eKIzRiEE",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/events?fields=users.traffic_source,events.os,events.count&pivots=users.traffic_source&f[users.traffic_source]=-NULL&f[events.event_date]=90+days&sorts=events.count+desc+1,users.traffic_source&limit=20&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_donut_multiples%22%2C%22show_view_names%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Atrue%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A12%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%7D&filter_config=%7B%22users.traffic_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/events?fields=users.traffic_source,events.os,events.count&pivots=users.traffic_source&f[users.traffic_source]=-NULL&f[events.event_date]=90+days&sorts=events.count+desc+1,users.traffic_source&limit=20&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_donut_multiples%22%2C%22show_view_names%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Atrue%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A12%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%7D&filter_config=%7B%22users.traffic_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 677221,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 12414,
+      "result_maker": {
+        "id": 12414,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_viewed.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "events.event_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "events.count desc 1",
+          "users.traffic_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 677221,
+        "query": null,
+        "vis_config": {
+          "type": "looker_donut_multiples",
+          "show_view_names": true,
+          "stacking": "",
+          "show_value_labels": true,
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "show_null_labels": false,
+          "font_size": 12,
+          "colors": [
+            "#64518A",
+            "#8D7FB9",
+            "#EA8A2F",
+            "#F2B431",
+            "#2DA5DE",
+            "#57BEBE",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 66,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Top Product Categories - Cart vs Conversion",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 230607,
+        "view": "events",
+        "fields": [
+          "product_viewed.category",
+          "sessions.overall_conversion",
+          "sessions.cart_to_checkout_conversion",
+          "sessions.count_cart_or_later"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "events.event_date": "90 days",
+          "product_viewed.brand": "Calvin Klein",
+          "product_viewed.category": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.count_cart_or_later desc"
+        ],
+        "limit": "8",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.6644549369812012,
+        "vis_config": {
+          "type": "looker_column",
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_combined": false,
+          "y_axis_orientation": [
+            "right",
+            "left"
+          ],
+          "show_value_labels": true,
+          "show_view_names": false,
+          "colors": [
+            "#64518A",
+            "#8D7FB9"
+          ],
+          "stacking": "",
+          "x_axis_gridlines": false,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "x_axis_label_rotation": -45,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "series_types": {
+            "sessions.cart_to_checkout_conversion": "line",
+            "__FILE": "thelook_event/web_analytics.dashboard.lookml",
+            "__LINE_NUM": 632,
+            "sessions.overall_conversion": "line"
+          },
+          "label_density": 25,
+          "legend_position": "center",
+          "y_axis_labels": [
+            "Cart to Checkout Conversion Percent",
+            "Total Added to Cart"
+          ],
+          "show_null_labels": false,
+          "label_rotation": 0,
+          "ordering": "none",
+          "show_null_points": true,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "hide_legend": false,
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "y_axes": [
+            {
+              "label": "Total Added to Cart",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "sessions.count_cart_or_later",
+                  "name": "(4) Add to Cart or later"
+                }
+              ]
+            },
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "right",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "sessions.overall_conversion",
+                  "name": "Overall Conversion"
+                },
+                {
+                  "id": "sessions.cart_to_checkout_conversion",
+                  "name": "Cart to Checkout Conversion"
+                }
+              ]
+            }
+          ],
+          "series_labels": {
+            "sessions.cart_to_checkout_conversion": "Cart to Checkout Conversion",
+            "sessions.overall_conversion": "Overall Conversion"
+          }
+        },
+        "filter_config": {
+          "events.event_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 7,
+              "error": false
+            }
+          ],
+          "product_viewed.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Calvin Klein"
+                },
+                {
+                }
+              ],
+              "id": 6,
+              "error": false
+            }
+          ],
+          "product_viewed.category": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "hDdhGy5",
+        "dynamic_fields": "[]",
+        "client_id": "9jYN9pHhsPYpI3TlqQeyfX",
+        "share_url": "https://demo.looker.com/x/9jYN9pHhsPYpI3TlqQeyfX",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/events?fields=product_viewed.category,sessions.overall_conversion,sessions.cart_to_checkout_conversion,sessions.count_cart_or_later&f[events.event_date]=90+days&f[product_viewed.brand]=Calvin+Klein&f[product_viewed.category]=-NULL&sorts=sessions.count_cart_or_later+desc&limit=8&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_combined%22%3Afalse%2C%22y_axis_orientation%22%3A%5B%22right%22%2C%22left%22%5D%2C%22show_value_labels%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%5D%2C%22stacking%22%3A%22%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22x_axis_label_rotation%22%3A-45%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22series_types%22%3A%7B%22sessions.cart_to_checkout_conversion%22%3A%22line%22%2C%22__FILE%22%3A%22thelook_event%2Fweb_analytics.dashboard.lookml%22%2C%22__LINE_NUM%22%3A632%2C%22sessions.overall_conversion%22%3A%22line%22%7D%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22y_axis_labels%22%3A%5B%22Cart+to+Checkout+Conversion+Percent%22%2C%22Total+Added+to+Cart%22%5D%2C%22show_null_labels%22%3Afalse%2C%22label_rotation%22%3A0%2C%22ordering%22%3A%22none%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22hide_legend%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Total+Added+to+Cart%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22sessions.count_cart_or_later%22%2C%22name%22%3A%22%284%29+Add+to+Cart+or+later%22%7D%5D%7D%2C%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22sessions.overall_conversion%22%2C%22name%22%3A%22Overall+Conversion%22%7D%2C%7B%22id%22%3A%22sessions.cart_to_checkout_conversion%22%2C%22name%22%3A%22Cart+to+Checkout+Conversion%22%7D%5D%7D%5D%2C%22series_labels%22%3A%7B%22sessions.cart_to_checkout_conversion%22%3A%22Cart+to+Checkout+Conversion%22%2C%22sessions.overall_conversion%22%3A%22Overall+Conversion%22%7D%7D&filter_config=%7B%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A7%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A6%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.category%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/events?fields=product_viewed.category,sessions.overall_conversion,sessions.cart_to_checkout_conversion,sessions.count_cart_or_later&f[events.event_date]=90+days&f[product_viewed.brand]=Calvin+Klein&f[product_viewed.category]=-NULL&sorts=sessions.count_cart_or_later+desc&limit=8&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_combined%22%3Afalse%2C%22y_axis_orientation%22%3A%5B%22right%22%2C%22left%22%5D%2C%22show_value_labels%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%5D%2C%22stacking%22%3A%22%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22x_axis_label_rotation%22%3A-45%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22series_types%22%3A%7B%22sessions.cart_to_checkout_conversion%22%3A%22line%22%2C%22__FILE%22%3A%22thelook_event%2Fweb_analytics.dashboard.lookml%22%2C%22__LINE_NUM%22%3A632%2C%22sessions.overall_conversion%22%3A%22line%22%7D%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22y_axis_labels%22%3A%5B%22Cart+to+Checkout+Conversion+Percent%22%2C%22Total+Added+to+Cart%22%5D%2C%22show_null_labels%22%3Afalse%2C%22label_rotation%22%3A0%2C%22ordering%22%3A%22none%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22hide_legend%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Total+Added+to+Cart%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22sessions.count_cart_or_later%22%2C%22name%22%3A%22%284%29+Add+to+Cart+or+later%22%7D%5D%7D%2C%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22sessions.overall_conversion%22%2C%22name%22%3A%22Overall+Conversion%22%7D%2C%7B%22id%22%3A%22sessions.cart_to_checkout_conversion%22%2C%22name%22%3A%22Cart+to+Checkout+Conversion%22%7D%5D%7D%5D%2C%22series_labels%22%3A%7B%22sessions.cart_to_checkout_conversion%22%3A%22Cart+to+Checkout+Conversion%22%2C%22sessions.overall_conversion%22%3A%22Overall+Conversion%22%7D%7D&filter_config=%7B%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A7%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A6%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.category%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 230607,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 283,
+      "result_maker": {
+        "id": 283,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_viewed.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "events.event_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.count_cart_or_later desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 230607,
+        "query": null,
+        "vis_config": {
+          "type": "looker_column",
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_combined": false,
+          "y_axis_orientation": [
+            "right",
+            "left"
+          ],
+          "show_value_labels": true,
+          "show_view_names": false,
+          "colors": [
+            "#64518A",
+            "#8D7FB9"
+          ],
+          "stacking": "",
+          "x_axis_gridlines": false,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "x_axis_label_rotation": -45,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "series_types": {
+            "sessions.cart_to_checkout_conversion": "line",
+            "__FILE": "thelook_event/web_analytics.dashboard.lookml",
+            "__LINE_NUM": 632,
+            "sessions.overall_conversion": "line"
+          },
+          "label_density": 25,
+          "legend_position": "center",
+          "y_axis_labels": [
+            "Cart to Checkout Conversion Percent",
+            "Total Added to Cart"
+          ],
+          "show_null_labels": false,
+          "label_rotation": 0,
+          "ordering": "none",
+          "show_null_points": true,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "hide_legend": false,
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "y_axes": [
+            {
+              "label": "Total Added to Cart",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "sessions.count_cart_or_later",
+                  "name": "(4) Add to Cart or later"
+                }
+              ]
+            },
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "right",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "sessions.overall_conversion",
+                  "name": "Overall Conversion"
+                },
+                {
+                  "id": "sessions.cart_to_checkout_conversion",
+                  "name": "Cart to Checkout Conversion"
+                }
+              ]
+            }
+          ],
+          "series_labels": {
+            "sessions.cart_to_checkout_conversion": "Cart to Checkout Conversion",
+            "sessions.overall_conversion": "Overall Conversion"
+          }
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 67,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "data",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Top Visitors and Transaction History",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344316,
+        "view": "events",
+        "fields": [
+          "users.name",
+          "users.history",
+          "users.state",
+          "users.traffic_source",
+          "sessions.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "users.name": "-NULL",
+          "events.event_date": "90 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.count desc"
+        ],
+        "limit": "50",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 21.78557014465332,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "filter_config": {
+          "users.name": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ],
+          "events.event_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "rmvTG6w",
+        "dynamic_fields": "[]",
+        "client_id": "BuGxySArBgrozTDTRWPape",
+        "share_url": "https://demo.looker.com/x/BuGxySArBgrozTDTRWPape",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/events?fields=users.name,users.history,users.state,users.traffic_source,sessions.count&f[users.name]=-NULL&f[events.event_date]=90+days&sorts=sessions.count+desc&limit=50&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22users.name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/events?fields=users.name,users.history,users.state,users.traffic_source,sessions.count&f[users.name]=-NULL&f[events.event_date]=90+days&sorts=sessions.count+desc&limit=50&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22users.name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344316,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 284,
+      "result_maker": {
+        "id": 284,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_viewed.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "events.event_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344316,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 68,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "hover",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Sales and Sale Price Trend",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 165967,
+        "view": "order_items",
+        "fields": [
+          "order_items.created_date",
+          "order_items.total_sale_price",
+          "order_items.average_sale_price"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "90 days",
+          "products.brand": "Allegra K"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.total_sale_price desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.5955648422241211,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "x_axis_datetime": true,
+          "y_axis_orientation": [
+            "left",
+            "right"
+          ],
+          "y_axis_combined": false,
+          "y_axis_labels": [
+            "Total Sale Amount",
+            "Average Selling Price"
+          ],
+          "hide_points": true,
+          "hide_legend": true,
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "colors": [
+            "#F2B431",
+            "#57BEBE"
+          ],
+          "x_axis_label": "Order Date",
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "color_palette": "Custom"
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Allegra K"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "RgxrNHb",
+        "dynamic_fields": "[]",
+        "client_id": "NljpGaICd2alpCTW3RDsRh",
+        "share_url": "https://demo.looker.com/x/NljpGaICd2alpCTW3RDsRh",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.created_date,order_items.total_sale_price,order_items.average_sale_price&f[order_items.created_date]=90+days&f[products.brand]=Allegra+K&sorts=order_items.total_sale_price+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22x_axis_datetime%22%3Atrue%2C%22y_axis_orientation%22%3A%5B%22left%22%2C%22right%22%5D%2C%22y_axis_combined%22%3Afalse%2C%22y_axis_labels%22%3A%5B%22Total+Sale+Amount%22%2C%22Average+Selling+Price%22%5D%2C%22hide_points%22%3Atrue%2C%22hide_legend%22%3Atrue%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22colors%22%3A%5B%22%23F2B431%22%2C%22%2357BEBE%22%5D%2C%22x_axis_label%22%3A%22Order+Date%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22color_palette%22%3A%22Custom%22%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Allegra+K%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.created_date,order_items.total_sale_price,order_items.average_sale_price&f[order_items.created_date]=90+days&f[products.brand]=Allegra+K&sorts=order_items.total_sale_price+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22x_axis_datetime%22%3Atrue%2C%22y_axis_orientation%22%3A%5B%22left%22%2C%22right%22%5D%2C%22y_axis_combined%22%3Afalse%2C%22y_axis_labels%22%3A%5B%22Total+Sale+Amount%22%2C%22Average+Selling+Price%22%5D%2C%22hide_points%22%3Atrue%2C%22hide_legend%22%3Atrue%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22colors%22%3A%5B%22%23F2B431%22%2C%22%2357BEBE%22%5D%2C%22x_axis_label%22%3A%22Order+Date%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22color_palette%22%3A%22Custom%22%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Allegra+K%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 165967,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10402,
+      "result_maker": {
+        "id": 10402,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.total_sale_price desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 165967,
+        "query": null,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "x_axis_datetime": true,
+          "y_axis_orientation": [
+            "left",
+            "right"
+          ],
+          "y_axis_combined": false,
+          "y_axis_labels": [
+            "Total Sale Amount",
+            "Average Selling Price"
+          ],
+          "hide_points": true,
+          "hide_legend": true,
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "colors": [
+            "#F2B431",
+            "#57BEBE"
+          ],
+          "x_axis_label": "Order Date",
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "color_palette": "Custom"
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 69,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "data",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Sales by Department and Category",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344322,
+        "view": "order_items",
+        "fields": [
+          "products.category",
+          "products.department",
+          "order_items.count",
+          "order_items.total_sale_price"
+        ],
+        "pivots": [
+          "products.department"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "products.brand": "Tommy Hilfiger",
+          "order_items.created_date": "90 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.count desc 1",
+          "products.department"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.6645572185516357,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "filter_config": {
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Tommy Hilfiger"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ],
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "GPvy5b4",
+        "dynamic_fields": "[]",
+        "client_id": "B4RLl5dTnVLri4NyrrAanH",
+        "share_url": "https://demo.looker.com/x/B4RLl5dTnVLri4NyrrAanH",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=products.category,products.department,order_items.count,order_items.total_sale_price&pivots=products.department&f[products.brand]=Tommy+Hilfiger&f[order_items.created_date]=90+days&sorts=order_items.count+desc+1,products.department&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Tommy+Hilfiger%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=products.category,products.department,order_items.count,order_items.total_sale_price&pivots=products.department&f[products.brand]=Tommy+Hilfiger&f[order_items.created_date]=90+days&sorts=order_items.count+desc+1,products.department&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Tommy+Hilfiger%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344322,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 286,
+      "result_maker": {
+        "id": 286,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.count desc 1",
+          "products.department"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344322,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 70,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "data",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Top Purchasers of Brand",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344311,
+        "view": "order_items",
+        "fields": [
+          "users.name",
+          "users.email",
+          "users.history",
+          "order_items.count",
+          "order_items.total_sale_price"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "products.brand": "Tommy Hilfiger",
+          "order_items.created_date": "90 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "limit": "15",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.5696780681610107,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "filter_config": {
+          "products.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Tommy Hilfiger"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ],
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "xnRgC4R",
+        "dynamic_fields": "[]",
+        "client_id": "1hwxZ1EvDZn6xeOg2RFCnr",
+        "share_url": "https://demo.looker.com/x/1hwxZ1EvDZn6xeOg2RFCnr",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.name,users.email,users.history,order_items.count,order_items.total_sale_price&f[products.brand]=Tommy+Hilfiger&f[order_items.created_date]=90+days&sorts=order_items.count+desc&limit=15&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Tommy+Hilfiger%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.name,users.email,users.history,order_items.count,order_items.total_sale_price&f[products.brand]=Tommy+Hilfiger&f[order_items.created_date]=90+days&sorts=order_items.count+desc&limit=15&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22products.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Tommy+Hilfiger%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344311,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 287,
+      "result_maker": {
+        "id": 287,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "products.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "order_items.created_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344311,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 71,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "These are order totals by hour of day",
+      "note_text_as_html": "These are order totals by hour of day",
+      "note_display": "hover",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Website Sessions by Hour of Day and User Lifetime Order Tier",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 260858,
+        "view": "events",
+        "fields": [
+          "user_order_facts.lifetime_orders_tier",
+          "sessions.count",
+          "events.event_hour_of_day"
+        ],
+        "pivots": [
+          "user_order_facts.lifetime_orders_tier"
+        ],
+        "fill_fields": [
+          "events.event_hour_of_day"
+        ],
+        "filters": {
+          "events.event_date": "90 days",
+          "product_viewed.brand": "Allegra K"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "user_order_facts.lifetime_orders_tier 0",
+          "events.event_hour_of_day"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.8990192413330078,
+        "vis_config": {
+          "type": "looker_column",
+          "show_view_names": false,
+          "stacking": "normal",
+          "show_value_labels": false,
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "label_density": 25,
+          "legend_position": "center",
+          "y_axis_combined": true,
+          "colors": [
+            "#2DA5DE",
+            "#57BEBE",
+            "#EA8A2F",
+            "#F2B431",
+            "#64518A",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "show_null_labels": false,
+          "ordering": "none",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "series_labels": {
+            "1": "1 Lifetime Purchase"
+          },
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "hidden_series": [
+            "Undefined"
+          ]
+        },
+        "filter_config": {
+          "events.event_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "90",
+                  "unit": "day",
+                  "tmp": "90"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ],
+          "product_viewed.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Allegra K",
+                  "tmp": "Allegra K"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "CTtqYsx",
+        "dynamic_fields": "[]",
+        "client_id": "KjuCV0FBE14vifoFTa823J",
+        "share_url": "https://demo.looker.com/x/KjuCV0FBE14vifoFTa823J",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/events?fields=user_order_facts.lifetime_orders_tier,sessions.count,events.event_hour_of_day&pivots=user_order_facts.lifetime_orders_tier&fill_fields=events.event_hour_of_day&f[events.event_date]=90+days&f[product_viewed.brand]=Allegra+K&sorts=user_order_facts.lifetime_orders_tier+0,events.event_hour_of_day&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22show_view_names%22%3Afalse%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22y_axis_combined%22%3Atrue%2C%22colors%22%3A%5B%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%2364518A%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22show_null_labels%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22series_labels%22%3A%7B%221%22%3A%221+Lifetime+Purchase%22%7D%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22hidden_series%22%3A%5B%22Undefined%22%5D%7D&filter_config=%7B%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%2C%22tmp%22%3A%2290%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Allegra+K%22%2C%22tmp%22%3A%22Allegra+K%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/events?fields=user_order_facts.lifetime_orders_tier,sessions.count,events.event_hour_of_day&pivots=user_order_facts.lifetime_orders_tier&fill_fields=events.event_hour_of_day&f[events.event_date]=90+days&f[product_viewed.brand]=Allegra+K&sorts=user_order_facts.lifetime_orders_tier+0,events.event_hour_of_day&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22show_view_names%22%3Afalse%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22y_axis_combined%22%3Atrue%2C%22colors%22%3A%5B%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%2364518A%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22show_null_labels%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22series_labels%22%3A%7B%221%22%3A%221+Lifetime+Purchase%22%7D%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22hidden_series%22%3A%5B%22Undefined%22%5D%7D&filter_config=%7B%22events.event_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2290%22%2C%22unit%22%3A%22day%22%2C%22tmp%22%3A%2290%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22product_viewed.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Allegra+K%22%2C%22tmp%22%3A%22Allegra+K%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 260858,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 288,
+      "result_maker": {
+        "id": 288,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_viewed.brand"
+              },
+              {
+                "dashboard_filter_name": "Date",
+                "field": "events.event_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "user_order_facts.lifetime_orders_tier 0",
+          "events.event_hour_of_day"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 260858,
+        "query": null,
+        "vis_config": {
+          "type": "looker_column",
+          "show_view_names": false,
+          "stacking": "normal",
+          "show_value_labels": false,
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "label_density": 25,
+          "legend_position": "center",
+          "y_axis_combined": true,
+          "colors": [
+            "#2DA5DE",
+            "#57BEBE",
+            "#EA8A2F",
+            "#F2B431",
+            "#64518A",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "show_null_labels": false,
+          "ordering": "none",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "series_labels": {
+            "1": "1 Lifetime Purchase"
+          },
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "hidden_series": [
+            "Undefined"
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 245,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Brand Share of Wallet over Customer Lifetime",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 423112,
+        "view": "orders_with_share_of_wallet_application",
+        "fields": [
+          "order_items.months_since_signup",
+          "order_items_share_of_wallet.brand_share_of_wallet_within_company",
+          "order_items_share_of_wallet.total_sale_price_brand_v2"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items_share_of_wallet.brand": "Calvin Klein",
+          "order_items.months_since_signup": "<=18"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.months_since_signup"
+        ],
+        "limit": "12",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.2401130199432373,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "font_size": "12",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_line",
+          "colors": [
+            "#F2B431",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52#64518A"
+          ],
+          "y_axis_orientation": [
+            "left",
+            "right"
+          ],
+          "series_types": {
+          },
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "y_axes": [
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "order_items_share_of_wallet.brand_share_of_wallet_within_company",
+                  "name": "Brand Share of Wallet Within Company",
+                  "axisId": "order_items_share_of_wallet.brand_share_of_wallet_within_company"
+                }
+              ]
+            },
+            {
+              "label": null,
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "right",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "order_items_share_of_wallet.total_sale_price_brand_v2",
+                  "name": "Total Sales - This Brand",
+                  "axisId": "order_items_share_of_wallet.total_sale_price_brand_v2"
+                },
+                {
+                  "id": "order_items.total_sale_price",
+                  "name": "Total Sale Price",
+                  "axisId": "order_items.total_sale_price"
+                }
+              ]
+            }
+          ],
+          "hidden_series": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items_share_of_wallet.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Calvin Klein"
+                },
+                {
+                }
+              ],
+              "id": 2,
+              "error": false
+            }
+          ],
+          "order_items.months_since_signup": [
+            {
+              "type": "<=",
+              "values": [
+                {
+                  "constant": "18"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "k948FFn",
+        "dynamic_fields": "[]",
+        "client_id": "koslpWI9rncjKBuuNbqOpM",
+        "share_url": "https://demo.looker.com/x/koslpWI9rncjKBuuNbqOpM",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/orders_with_share_of_wallet_application?fields=order_items.months_since_signup,order_items_share_of_wallet.brand_share_of_wallet_within_company,order_items_share_of_wallet.total_sale_price_brand_v2&f[order_items_share_of_wallet.brand]=Calvin+Klein&f[order_items.months_since_signup]=%3C%3D18&sorts=order_items.months_since_signup&limit=12&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22font_size%22%3A%2212%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_line%22%2C%22colors%22%3A%5B%22%23F2B431%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%2364518A%22%5D%2C%22y_axis_orientation%22%3A%5B%22left%22%2C%22right%22%5D%2C%22series_types%22%3A%7B%7D%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22order_items_share_of_wallet.brand_share_of_wallet_within_company%22%2C%22name%22%3A%22Brand+Share+of+Wallet+Within+Company%22%2C%22axisId%22%3A%22order_items_share_of_wallet.brand_share_of_wallet_within_company%22%7D%5D%7D%2C%7B%22label%22%3Anull%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22order_items_share_of_wallet.total_sale_price_brand_v2%22%2C%22name%22%3A%22Total+Sales+-+This+Brand%22%2C%22axisId%22%3A%22order_items_share_of_wallet.total_sale_price_brand_v2%22%7D%2C%7B%22id%22%3A%22order_items.total_sale_price%22%2C%22name%22%3A%22Total+Sale+Price%22%2C%22axisId%22%3A%22order_items.total_sale_price%22%7D%5D%7D%5D%2C%22hidden_series%22%3A%5B%5D%7D&filter_config=%7B%22order_items_share_of_wallet.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%2C%22order_items.months_since_signup%22%3A%5B%7B%22type%22%3A%22%5Cu003c%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2218%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/orders_with_share_of_wallet_application?fields=order_items.months_since_signup,order_items_share_of_wallet.brand_share_of_wallet_within_company,order_items_share_of_wallet.total_sale_price_brand_v2&f[order_items_share_of_wallet.brand]=Calvin+Klein&f[order_items.months_since_signup]=%3C%3D18&sorts=order_items.months_since_signup&limit=12&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22font_size%22%3A%2212%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_line%22%2C%22colors%22%3A%5B%22%23F2B431%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%2364518A%22%5D%2C%22y_axis_orientation%22%3A%5B%22left%22%2C%22right%22%5D%2C%22series_types%22%3A%7B%7D%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22order_items_share_of_wallet.brand_share_of_wallet_within_company%22%2C%22name%22%3A%22Brand+Share+of+Wallet+Within+Company%22%2C%22axisId%22%3A%22order_items_share_of_wallet.brand_share_of_wallet_within_company%22%7D%5D%7D%2C%7B%22label%22%3Anull%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22order_items_share_of_wallet.total_sale_price_brand_v2%22%2C%22name%22%3A%22Total+Sales+-+This+Brand%22%2C%22axisId%22%3A%22order_items_share_of_wallet.total_sale_price_brand_v2%22%7D%2C%7B%22id%22%3A%22order_items.total_sale_price%22%2C%22name%22%3A%22Total+Sale+Price%22%2C%22axisId%22%3A%22order_items.total_sale_price%22%7D%5D%7D%5D%2C%22hidden_series%22%3A%5B%5D%7D&filter_config=%7B%22order_items_share_of_wallet.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%2C%22order_items.months_since_signup%22%3A%5B%7B%22type%22%3A%22%5Cu003c%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2218%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 423112,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 289,
+      "result_maker": {
+        "id": 289,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "orders_with_share_of_wallet_application",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "order_items_share_of_wallet.brand"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.months_since_signup"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 423112,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "font_size": "12",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_line",
+          "colors": [
+            "#F2B431",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52#64518A"
+          ],
+          "y_axis_orientation": [
+            "left",
+            "right"
+          ],
+          "series_types": {
+          },
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "y_axes": [
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "order_items_share_of_wallet.brand_share_of_wallet_within_company",
+                  "name": "Brand Share of Wallet Within Company",
+                  "axisId": "order_items_share_of_wallet.brand_share_of_wallet_within_company"
+                }
+              ]
+            },
+            {
+              "label": null,
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "right",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "order_items_share_of_wallet.total_sale_price_brand_v2",
+                  "name": "Total Sales - This Brand",
+                  "axisId": "order_items_share_of_wallet.total_sale_price_brand_v2"
+                },
+                {
+                  "id": "order_items.total_sale_price",
+                  "name": "Total Sale Price",
+                  "axisId": "order_items.total_sale_price"
+                }
+              ]
+            }
+          ],
+          "hidden_series": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 246,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Most Correlated Brands",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344110,
+        "view": "affinity",
+        "fields": [
+          "product_b.brand",
+          "affinity.avg_order_affinity",
+          "affinity.avg_user_affinity",
+          "affinity.combined_affinity"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "affinity.product_b_id": "-NULL",
+          "product_a.brand": "\"Lee\"",
+          "affinity.avg_order_affinity": "NOT NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "affinity.combined_affinity desc"
+        ],
+        "limit": "15",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.08995389938354492,
+        "vis_config": {
+          "type": "looker_line",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "#57BEBE",
+            "#EA8A2F",
+            "#F2B431",
+            "#64518A",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "color_palette": "Custom",
+          "show_null_points": true,
+          "point_style": "circle_outline",
+          "hidden_series": [
+            "product_a.count",
+            "product_b.count"
+          ],
+          "interpolation": "linear",
+          "hidden_fields": [
+            "affinity.combined_affinity"
+          ]
+        },
+        "filter_config": {
+          "affinity.product_b_id": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "product_a.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Lee"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ],
+          "affinity.avg_order_affinity": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ]
+        },
+        "visible_ui_sections": "vis",
+        "slug": "B7tFNgy",
+        "dynamic_fields": "[]",
+        "client_id": "eCY3ouXhJ4ugSjismEcS3a",
+        "share_url": "https://demo.looker.com/x/eCY3ouXhJ4ugSjismEcS3a",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/affinity?fields=product_b.brand,affinity.avg_order_affinity,affinity.avg_user_affinity,affinity.combined_affinity&f[affinity.product_b_id]=-NULL&f[product_a.brand]=%22Lee%22&f[affinity.avg_order_affinity]=NOT+NULL&sorts=affinity.combined_affinity+desc&limit=15&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_line%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22%2357BEBE%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%2364518A%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22color_palette%22%3A%22Custom%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle_outline%22%2C%22hidden_series%22%3A%5B%22product_a.count%22%2C%22product_b.count%22%5D%2C%22interpolation%22%3A%22linear%22%2C%22hidden_fields%22%3A%5B%22affinity.combined_affinity%22%5D%7D&filter_config=%7B%22affinity.product_b_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22product_a.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Lee%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%2C%22affinity.avg_order_affinity%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis&origin=share-expanded",
+        "url": "/explore/thelook/affinity?fields=product_b.brand,affinity.avg_order_affinity,affinity.avg_user_affinity,affinity.combined_affinity&f[affinity.product_b_id]=-NULL&f[product_a.brand]=%22Lee%22&f[affinity.avg_order_affinity]=NOT+NULL&sorts=affinity.combined_affinity+desc&limit=15&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_line%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22%2357BEBE%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%2364518A%22%2C%22%238D7FB9%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22color_palette%22%3A%22Custom%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle_outline%22%2C%22hidden_series%22%3A%5B%22product_a.count%22%2C%22product_b.count%22%5D%2C%22interpolation%22%3A%22linear%22%2C%22hidden_fields%22%3A%5B%22affinity.combined_affinity%22%5D%7D&filter_config=%7B%22affinity.product_b_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22product_a.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Lee%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%2C%22affinity.avg_order_affinity%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344110,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10403,
+      "result_maker": {
+        "id": 10403,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "affinity",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_a.brand"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "affinity.combined_affinity desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344110,
+        "query": null,
+        "vis_config": {
+          "type": "looker_line",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "#57BEBE",
+            "#EA8A2F",
+            "#F2B431",
+            "#64518A",
+            "#8D7FB9",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "color_palette": "Custom",
+          "show_null_points": true,
+          "point_style": "circle_outline",
+          "hidden_series": [
+            "product_a.count",
+            "product_b.count"
+          ],
+          "interpolation": "linear",
+          "hidden_fields": [
+            "affinity.combined_affinity"
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 269,
+      "dashboard_id": 8,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Purchasers of This Brand Also Bought (Brand Affinity)",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 344310,
+        "view": "affinity",
+        "fields": [
+          "product_a.brand",
+          "product_b.brand",
+          "affinity.avg_order_affinity",
+          "affinity.avg_user_affinity",
+          "affinity.combined_affinity"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "affinity.product_b_id": "-NULL",
+          "product_a.brand": "Calvin Klein",
+          "affinity.avg_order_affinity": "NOT NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "affinity.combined_affinity desc"
+        ],
+        "limit": "15",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.2919127941131592,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "hidden_fields": [
+            "affinity.combined_affinity"
+          ],
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "filter_config": {
+          "affinity.product_b_id": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "product_a.brand": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Calvin Klein"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ],
+          "affinity.avg_order_affinity": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 2,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "Z3Cp2db",
+        "dynamic_fields": "[]",
+        "client_id": "fwHVEe9jgdqAwCd9cbj4kI",
+        "share_url": "https://demo.looker.com/x/fwHVEe9jgdqAwCd9cbj4kI",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/affinity?fields=product_a.brand,product_b.brand,affinity.avg_order_affinity,affinity.avg_user_affinity,affinity.combined_affinity&f[affinity.product_b_id]=-NULL&f[product_a.brand]=Calvin+Klein&f[affinity.avg_order_affinity]=NOT+NULL&sorts=affinity.combined_affinity+desc&limit=15&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22hidden_fields%22%3A%5B%22affinity.combined_affinity%22%5D%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22affinity.product_b_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22product_a.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22affinity.avg_order_affinity%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/affinity?fields=product_a.brand,product_b.brand,affinity.avg_order_affinity,affinity.avg_user_affinity,affinity.combined_affinity&f[affinity.product_b_id]=-NULL&f[product_a.brand]=Calvin+Klein&f[affinity.avg_order_affinity]=NOT+NULL&sorts=affinity.combined_affinity+desc&limit=15&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22hidden_fields%22%3A%5B%22affinity.combined_affinity%22%5D%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_ignored_fields%22%3A%5B%5D%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%7D&filter_config=%7B%22affinity.product_b_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22product_a.brand%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Calvin+Klein%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22affinity.avg_order_affinity%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 344310,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 291,
+      "result_maker": {
+        "id": 291,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "affinity",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Brand Name",
+                "field": "product_a.brand"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "affinity.combined_affinity desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 344310,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "hidden_fields": [
+            "affinity.combined_affinity"
+          ],
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "conditional_formatting_ignored_fields": [
+
+          ],
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": 8,
+      "dashboard_id": 8,
+      "type": "drag",
+      "active": false,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 61,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 61,
+          "row": 0,
+          "column": 0,
+          "width": null,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 63,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 62,
+          "row": 0,
+          "column": 1,
+          "width": null,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 65,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 63,
+          "row": 0,
+          "column": 2,
+          "width": null,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 67,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 64,
+          "row": 1,
+          "column": 0,
+          "width": null,
+          "height": 374,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 71,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 66,
+          "row": 3,
+          "column": 0,
+          "width": null,
+          "height": 504,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 73,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 67,
+          "row": 3,
+          "column": 1,
+          "width": null,
+          "height": 504,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 75,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 68,
+          "row": 2,
+          "column": 0,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 77,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 69,
+          "row": 4,
+          "column": 0,
+          "width": null,
+          "height": 514,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 79,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 70,
+          "row": 4,
+          "column": 1,
+          "width": null,
+          "height": 514,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 82,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 71,
+          "row": 1,
+          "column": 1,
+          "width": null,
+          "height": 374,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 497,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 245,
+          "row": 5,
+          "column": 0,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 500,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 246,
+          "row": 5,
+          "column": 1,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 548,
+          "dashboard_layout_id": 8,
+          "dashboard_element_id": 269,
+          "row": 6,
+          "column": 0,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 9,
+      "dashboard_id": 8,
+      "type": "tile",
+      "active": false,
+      "column_width": 50,
+      "width": 1200,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 62,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 61,
+          "row": null,
+          "column": null,
+          "width": 400,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 64,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 62,
+          "row": null,
+          "column": null,
+          "width": 400,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 66,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 63,
+          "row": null,
+          "column": null,
+          "width": 400,
+          "height": 150,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 68,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 64,
+          "row": null,
+          "column": null,
+          "width": 600,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 72,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 66,
+          "row": null,
+          "column": null,
+          "width": 600,
+          "height": 600,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 74,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 67,
+          "row": null,
+          "column": null,
+          "width": 600,
+          "height": 600,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 76,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 68,
+          "row": null,
+          "column": null,
+          "width": 1200,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 78,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 69,
+          "row": null,
+          "column": null,
+          "width": 600,
+          "height": 400,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 80,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 70,
+          "row": null,
+          "column": null,
+          "width": 600,
+          "height": 400,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 81,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 71,
+          "row": null,
+          "column": null,
+          "width": 1200,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 498,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 245,
+          "row": null,
+          "column": null,
+          "width": 1200,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 501,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 246,
+          "row": null,
+          "column": null,
+          "width": 1200,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 549,
+          "dashboard_layout_id": 9,
+          "dashboard_element_id": 269,
+          "row": null,
+          "column": null,
+          "width": 1200,
+          "height": 300,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 20,
+      "dashboard_id": 8,
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 189,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 61,
+          "row": 0,
+          "column": 16,
+          "width": 8,
+          "height": 3,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 190,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 62,
+          "row": 0,
+          "column": 0,
+          "width": 8,
+          "height": 3,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 191,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 63,
+          "row": 0,
+          "column": 8,
+          "width": 8,
+          "height": 3,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 192,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 68,
+          "row": 27,
+          "column": 12,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 193,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 64,
+          "row": 3,
+          "column": 0,
+          "width": 11,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 194,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 71,
+          "row": 3,
+          "column": 11,
+          "width": 13,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 195,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 66,
+          "row": 19,
+          "column": 0,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 196,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 67,
+          "row": 37,
+          "column": 0,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 197,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 69,
+          "row": 37,
+          "column": 12,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 199,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 70,
+          "row": 19,
+          "column": 12,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 499,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 245,
+          "row": 11,
+          "column": 0,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 502,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 246,
+          "row": 27,
+          "column": 0,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 550,
+          "dashboard_layout_id": 20,
+          "dashboard_element_id": 269,
+          "row": 11,
+          "column": 12,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": 2112,
+      "dashboard_id": 8,
+      "name": "Brand Name",
+      "title": "Brand Name",
+      "type": "field_filter",
+      "default_value": "Calvin Klein",
+      "explore": "order_items",
+      "dimension": "products.brand",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": null,
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Products Brand",
+        "label_from_parameter": null,
+        "label_short": "Brand",
+        "lookml_link": "/projects/thelook_event/files/04_products.view.lkml?line=19",
+        "map_layer": null,
+        "name": "products.brand",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "products",
+        "view_label": "Products",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Brand",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "thelook_event",
+        "scope": "products",
+        "source_file": "04_products.view.lkml",
+        "source_file_path": "thelook_event/04_products.view.lkml",
+        "suggest_dimension": "products.brand",
+        "suggest_explore": "order_items",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 2113,
+      "dashboard_id": 8,
+      "name": "Date",
+      "title": "Date",
+      "type": "date_filter",
+      "default_value": "90 days",
+      "explore": null,
+      "dimension": null,
+      "row": 1,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": null,
+      "listens_to_filters": [
+
+      ],
+      "field": null,
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "load_configuration": "cache_run",
+  "background_color": "#f6f8fa",
+  "show_title": true,
+  "title_color": "#3a4245",
+  "show_filters_bar": true,
+  "tile_background_color": "white",
+  "tile_text_color": "#3a4245",
+  "text_tile_text_color": "#556d7a",
+  "last_accessed_at": "2018-11-21 18:35:34 +0000",
+  "created_at": "2015-10-09 07:17:19 +0000",
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "lookml_link_id": null,
+  "model": null,
+  "content_favorite_id": null,
+  "deleted": false,
+  "last_viewed_at": null,
+  "can": {
+    "download": true,
+    "index": true,
+    "show": true,
+    "copy": true,
+    "run": true,
+    "create": true,
+    "move": true,
+    "update": true,
+    "destroy": true,
+    "recover": true,
+    "see_lookml": true,
+    "schedule": true,
+    "render": true
+  }
+}

@@ -37,11 +37,15 @@ end
 
   print g.add
   print g.commit("my message")
-  print g.push
+  system("g.push")
 
 
-       g = Git.init
-       Git.init('/Users/haarthisadasivam/gazer_demo')
+    # system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
+
+
+
+       # g = Git.init
+       # Git.init('/Users/haarthisadasivam/gazer_demo')
        # Git.init('/Users/haarthisadasivam/gazer_demo',
         # { :repository => 'git@github.com:haarthi/backups.git'
           # ,

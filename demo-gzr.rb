@@ -38,7 +38,7 @@ end
   print g.add
   print g.commit("my message")
   g.push
-  system("g.push")
+  # system("g.push")
 
 
     # system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")

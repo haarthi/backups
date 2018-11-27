@@ -31,7 +31,7 @@ end
 
   g = Git.open('/Users/haarthisadasivam/gazer_demo')
 
-  print g.index
+  # print g.index
 
   print g.config
 

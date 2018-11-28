@@ -30,7 +30,7 @@ end
 
   end
 
-  g = Git.open('/Users/haarthisadasivam/gazer_demo')
+  # g = Git.open('/Users/haarthisadasivam/gazer_demo')
 
 
   g = Git.init
@@ -41,11 +41,13 @@ end
 
   # print g.index
 
-  print g.config
-
   print g.add
+
+  # print g.config
+
+  # print g.add
   print g.commit("my message3")
-  g.push
+  # g.push
   # system("g.push")
 
 

@@ -46,7 +46,7 @@ end
   # print g.config
 
   # print g.add
-  print g.commit("my message3")
+  print g.commit("my message4")
   print g.push
   # system("g.push")
 

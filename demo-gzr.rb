@@ -4,17 +4,17 @@ require 'git'
 
 
 
-dashboards = [159, 8]
+dashboards = [159]
 
 looks = []
 
 dashboards.each do |dashboard|
 	print dashboard
 
-  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp")
+ #  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp")
 
 	# system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
-  system("rm temp")
+  # system("rm temp")
 end
 
 
@@ -41,11 +41,19 @@ end
 
   # print g.index
 
-  print g.add
+  # print g.add
 
-  print g.diff
+  if (!g.status.nil?)
+    print g.status.changed
+    print "there is a diff"
+    g.add(:all=>true)    
+    print g.commit("my message7")
+
+    system("g.push")
+
+  else 
+    print "no diff"
+  end
 
 
-  # print g.commit("my message6")
   # print g.push
-  # system("g.push")

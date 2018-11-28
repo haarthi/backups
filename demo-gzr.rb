@@ -25,7 +25,7 @@ end
     # config.binary_path = '/.git/index'
 
     # If you need to use a custom SSH script
-    config.git_ssh = '/Users/haarthisadasivam/.ssh/id_rsa'
+    config.git_ssh = '/Users/haarthisadasivam/.ssh/id_rsa.pub'
     # config.git_ssh = '/'
 
   end
@@ -46,7 +46,7 @@ end
   # print g.config
 
   # print g.add
-  print g.commit("my message4")
+  print g.commit("my message5")
   print g.push
   # system("g.push")
 

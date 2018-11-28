@@ -1,0 +1,1652 @@
+{
+  "id": 161,
+  "user_id": 21,
+  "title": "Shipping Logistics & Operations",
+  "description": null,
+  "readonly": false,
+  "hidden": false,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "content_metadata_id": 404,
+  "query_timezone": null,
+  "space": {
+    "id": 16,
+    "creator_id": 2,
+    "name": "E-Commerce",
+    "parent_id": 1,
+    "content_metadata_id": 2,
+    "is_personal": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "is_personal_descendant": false,
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "external_id": null,
+    "child_count": 0,
+    "is_user_root": false,
+    "is_root": false,
+    "can": {
+      "index": true,
+      "show": true,
+      "create": true,
+      "see_admin_spaces": true,
+      "update": true,
+      "destroy": true,
+      "move_content": true,
+      "edit_content": true
+    }
+  },
+  "space_id": 16,
+  "view_count": 2402,
+  "favorite_count": 17,
+  "slug": "Zwyfd7sHVEoQ4NFpdbzYzK",
+  "dashboard_elements": [
+    {
+      "id": 943,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Order Shipment Status",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581215,
+        "view": "order_items",
+        "fields": [
+          "order_items.created_date",
+          "order_items.status",
+          "order_items.order_count"
+        ],
+        "pivots": [
+          "order_items.status"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "Chicago IL",
+          "order_items.created_date": "60 days",
+          "order_items.status": "Complete,Shipped,Processing"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date desc",
+          "order_items.status"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.037156,
+        "vis_config": {
+          "type": "looker_column",
+          "show_view_names": false,
+          "color_palette": "Custom",
+          "limit_displayed_rows": false,
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "green",
+            "red",
+            "orange"
+          ],
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Chicago IL",
+                  "tmp": "Chicago IL"
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ],
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "60",
+                  "unit": "day",
+                  "tmp": "60"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "order_items.status": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Complete,Shipped,Processing",
+                  "tmp": "Complete,Shipped,Processing"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "H7QJQjc",
+        "dynamic_fields": "[]",
+        "client_id": "N2RVXpEU6aX5ArNObFuAmk",
+        "share_url": "https://demo.looker.com/x/N2RVXpEU6aX5ArNObFuAmk",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.created_date,order_items.status,order_items.order_count&pivots=order_items.status&f[distribution_centers.name]=Chicago+IL&f[order_items.created_date]=60+days&f[order_items.status]=Complete%2CShipped%2CProcessing&sorts=order_items.created_date+desc,order_items.status&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22show_view_names%22%3Afalse%2C%22color_palette%22%3A%22Custom%22%2C%22limit_displayed_rows%22%3Afalse%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22green%22%2C%22red%22%2C%22orange%22%5D%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago+IL%22%2C%22tmp%22%3A%22Chicago+IL%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2260%22%2C%22unit%22%3A%22day%22%2C%22tmp%22%3A%2260%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Complete%2CShipped%2CProcessing%22%2C%22tmp%22%3A%22Complete%2CShipped%2CProcessing%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.created_date,order_items.status,order_items.order_count&pivots=order_items.status&f[distribution_centers.name]=Chicago+IL&f[order_items.created_date]=60+days&f[order_items.status]=Complete%2CShipped%2CProcessing&sorts=order_items.created_date+desc,order_items.status&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22show_view_names%22%3Afalse%2C%22color_palette%22%3A%22Custom%22%2C%22limit_displayed_rows%22%3Afalse%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22green%22%2C%22red%22%2C%22orange%22%5D%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago+IL%22%2C%22tmp%22%3A%22Chicago+IL%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2260%22%2C%22unit%22%3A%22day%22%2C%22tmp%22%3A%2260%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Complete%2CShipped%2CProcessing%22%2C%22tmp%22%3A%22Complete%2CShipped%2CProcessing%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581215,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7742,
+      "result_maker": {
+        "id": 7742,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.created_date desc",
+          "order_items.status"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581215,
+        "query": null,
+        "vis_config": {
+          "type": "looker_column",
+          "show_view_names": false,
+          "color_palette": "Custom",
+          "limit_displayed_rows": false,
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "green",
+            "red",
+            "orange"
+          ],
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 944,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Open Orders >3 Days Old - Immediate Action Required",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581216,
+        "view": "order_items",
+        "fields": [
+          "order_items.order_id",
+          "users.name",
+          "users.email",
+          "order_items.created_date",
+          "order_items.status",
+          "products.item_name"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "\"Houston\"",
+          "order_items.created_date": "before 3 days ago",
+          "order_items.status": "\"Processing\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.24712300300598145,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "transparent",
+          "limit_displayed_rows": false,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Houston"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "order_items.created_date": [
+            {
+              "type": "before",
+              "values": [
+                {
+                  "constant": "3",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "variant": "relative",
+              "id": 1
+            }
+          ],
+          "order_items.status": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Processing"
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "YfgNcRq",
+        "dynamic_fields": "[]",
+        "client_id": "fcuq6yaP6V93zTJtfG2nEE",
+        "share_url": "https://demo.looker.com/x/fcuq6yaP6V93zTJtfG2nEE",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.order_id,users.name,users.email,order_items.created_date,order_items.status,products.item_name&f[distribution_centers.name]=%22Houston%22&f[order_items.created_date]=before+3+days+ago&f[order_items.status]=%22Processing%22&sorts=order_items.created_date&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Houston%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22before%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22variant%22%3A%22relative%22%2C%22id%22%3A1%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Processing%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.order_id,users.name,users.email,order_items.created_date,order_items.status,products.item_name&f[distribution_centers.name]=%22Houston%22&f[order_items.created_date]=before+3+days+ago&f[order_items.status]=%22Processing%22&sorts=order_items.created_date&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Houston%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22before%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22variant%22%3A%22relative%22%2C%22id%22%3A1%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Processing%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581216,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7743,
+      "result_maker": {
+        "id": 7743,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.created_date"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581216,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "transparent",
+          "limit_displayed_rows": false,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 945,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Open Orders - Where do we need to ship?",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581110,
+        "view": "order_items",
+        "fields": [
+          "distribution_centers.location",
+          "users.approx_location",
+          "order_items.average_days_to_process"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "\"Charleston^, SC\"",
+          "order_items.status": "\"Processing\"",
+          "order_items.order_count": ">0"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.average_days_to_process desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "lines",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 36.31512514748051,
+          "map_longitude": -92.10937499999999,
+          "map_zoom": 3,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Charleston\\, SC"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "order_items.status": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Processing"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ],
+          "order_items.order_count": [
+            {
+              "type": ">",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ]
+        },
+        "visible_ui_sections": "vis",
+        "slug": "jF9NPGS",
+        "dynamic_fields": "[]",
+        "client_id": "2Lm8nAFYzcN5RVetIeld7u",
+        "share_url": "https://demo.looker.com/x/2Lm8nAFYzcN5RVetIeld7u",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=distribution_centers.location,users.approx_location,order_items.average_days_to_process&f[distribution_centers.name]=%22Charleston%5E%2C+SC%22&f[order_items.status]=%22Processing%22&f[order_items.order_count]=%3E0&sorts=order_items.average_days_to_process+desc&limit=500&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22lines%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A36.31512514748051%2C%22map_longitude%22%3A-92.10937499999999%2C%22map_zoom%22%3A3%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Charleston%5C%5C%2C+SC%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Processing%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%2C%22order_items.order_count%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=distribution_centers.location,users.approx_location,order_items.average_days_to_process&f[distribution_centers.name]=%22Charleston%5E%2C+SC%22&f[order_items.status]=%22Processing%22&f[order_items.order_count]=%3E0&sorts=order_items.average_days_to_process+desc&limit=500&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22lines%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A36.31512514748051%2C%22map_longitude%22%3A-92.10937499999999%2C%22map_zoom%22%3A3%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Charleston%5C%5C%2C+SC%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.status%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Processing%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%2C%22order_items.order_count%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581110,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7668,
+      "result_maker": {
+        "id": 7668,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.average_days_to_process desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581110,
+        "query": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "lines",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 36.31512514748051,
+          "map_longitude": -92.10937499999999,
+          "map_zoom": 3,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 946,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Average Shipping Time to Users",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581217,
+        "view": "order_items",
+        "fields": [
+          "users.approx_location",
+          "order_items.average_shipping_time"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "Chicago",
+          "users.approx_location_bin_level": "7"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.average_shipping_time desc"
+        ],
+        "limit": "5000",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "automagic_heatmap",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 36.527294814546245,
+          "map_longitude": -92.19726562500001,
+          "map_zoom": 3,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Chicago"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "users.approx_location_bin_level": [
+            {
+              "type": "advanced",
+              "values": [
+                {
+                  "constant": "7"
+                },
+                {
+                }
+              ],
+              "id": 3,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "W8yQhd8",
+        "dynamic_fields": "[]",
+        "client_id": "SFtl1exrSgoD7iktSNXRef",
+        "share_url": "https://demo.looker.com/x/SFtl1exrSgoD7iktSNXRef",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.approx_location,order_items.average_shipping_time&f[distribution_centers.name]=Chicago&f[users.approx_location_bin_level]=7&sorts=order_items.average_shipping_time+desc&limit=5000&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22automagic_heatmap%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A36.527294814546245%2C%22map_longitude%22%3A-92.19726562500001%2C%22map_zoom%22%3A3%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22users.approx_location_bin_level%22%3A%5B%7B%22type%22%3A%22advanced%22%2C%22values%22%3A%5B%7B%22constant%22%3A%227%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.approx_location,order_items.average_shipping_time&f[distribution_centers.name]=Chicago&f[users.approx_location_bin_level]=7&sorts=order_items.average_shipping_time+desc&limit=5000&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22automagic_heatmap%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A36.527294814546245%2C%22map_longitude%22%3A-92.19726562500001%2C%22map_zoom%22%3A3%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22users.approx_location_bin_level%22%3A%5B%7B%22type%22%3A%22advanced%22%2C%22values%22%3A%5B%7B%22constant%22%3A%227%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581217,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7744,
+      "result_maker": {
+        "id": 7744,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.average_shipping_time desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581217,
+        "query": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "automagic_heatmap",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 36.527294814546245,
+          "map_longitude": -92.19726562500001,
+          "map_zoom": 3,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 947,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Most Common Shipping Locations",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581179,
+        "view": "order_items",
+        "fields": [
+          "distribution_centers.location",
+          "users.approx_location",
+          "order_items.order_count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "\"Chicago\"",
+          "order_items.order_count": ">30"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date",
+          "order_items.order_id",
+          "order_items.order_count desc"
+        ],
+        "limit": "1000",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "lines",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 43.58039085560786,
+          "map_longitude": -61.52343749999999,
+          "map_zoom": 3,
+          "map_value_scale_clamp_max": 300,
+          "map_value_scale_clamp_min": 30,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Chicago"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "order_items.order_count": [
+            {
+              "type": ">",
+              "values": [
+                {
+                  "constant": "30"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis",
+        "slug": "ZycM2st",
+        "dynamic_fields": "[]",
+        "client_id": "OzD4q5SBxOFycf1PTgbJPh",
+        "share_url": "https://demo.looker.com/x/OzD4q5SBxOFycf1PTgbJPh",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=distribution_centers.location,users.approx_location,order_items.order_count&f[distribution_centers.name]=%22Chicago%22&f[order_items.order_count]=%3E30&sorts=order_items.created_date,order_items.order_id,order_items.order_count+desc&limit=1000&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22lines%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A43.58039085560786%2C%22map_longitude%22%3A-61.52343749999999%2C%22map_zoom%22%3A3%2C%22map_value_scale_clamp_max%22%3A300%2C%22map_value_scale_clamp_min%22%3A30%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.order_count%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2230%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=distribution_centers.location,users.approx_location,order_items.order_count&f[distribution_centers.name]=%22Chicago%22&f[order_items.order_count]=%3E30&sorts=order_items.created_date,order_items.order_id,order_items.order_count+desc&limit=1000&vis=%7B%22type%22%3A%22looker_map%22%2C%22map_plot_mode%22%3A%22lines%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22circle%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_view_names%22%3Atrue%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A43.58039085560786%2C%22map_longitude%22%3A-61.52343749999999%2C%22map_zoom%22%3A3%2C%22map_value_scale_clamp_max%22%3A300%2C%22map_value_scale_clamp_min%22%3A30%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22order_items.order_count%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2230%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581179,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7710,
+      "result_maker": {
+        "id": 7710,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.created_date",
+          "order_items.order_id",
+          "order_items.order_count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581179,
+        "query": null,
+        "vis_config": {
+          "type": "looker_map",
+          "map_plot_mode": "lines",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "circle",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_view_names": true,
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 43.58039085560786,
+          "map_longitude": -61.52343749999999,
+          "map_zoom": 3,
+          "map_value_scale_clamp_max": 300,
+          "map_value_scale_clamp_min": 30,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 948,
+      "dashboard_id": 161,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "Unsold inventory only",
+      "note_text_as_html": "Unsold inventory only",
+      "note_display": "below",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Inventory Aging Report",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581218,
+        "view": "order_items",
+        "fields": [
+          "inventory_items.days_in_inventory_tier",
+          "inventory_items.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "distribution_centers.name": "Chicago IL",
+          "inventory_items.is_sold": "No"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "inventory_items.days_in_inventory_tier"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.035238000000000005,
+        "vis_config": {
+          "type": "looker_column",
+          "stacking": "normal",
+          "show_value_labels": true,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "grey"
+          ],
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "distribution_centers.name": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Chicago IL"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "inventory_items.is_sold": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "No"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "48bS8Hb",
+        "dynamic_fields": "[]",
+        "client_id": "qgNWkoVWEr2vWzAn1wA6sL",
+        "share_url": "https://demo.looker.com/x/qgNWkoVWEr2vWzAn1wA6sL",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=inventory_items.days_in_inventory_tier,inventory_items.count&f[distribution_centers.name]=Chicago+IL&f[inventory_items.is_sold]=No&sorts=inventory_items.days_in_inventory_tier&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22grey%22%5D%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago+IL%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22inventory_items.is_sold%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22No%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=inventory_items.days_in_inventory_tier,inventory_items.count&f[distribution_centers.name]=Chicago+IL&f[inventory_items.is_sold]=No&sorts=inventory_items.days_in_inventory_tier&limit=500&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_column%22%2C%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22colors%22%3A%5B%22grey%22%5D%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22distribution_centers.name%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Chicago+IL%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22inventory_items.is_sold%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22No%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581218,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7745,
+      "result_maker": {
+        "id": 7745,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Distribution Center",
+                "field": "distribution_centers.name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "inventory_items.days_in_inventory_tier"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581218,
+        "query": null,
+        "vis_config": {
+          "type": "looker_column",
+          "stacking": "normal",
+          "show_value_labels": true,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "ordering": "none",
+          "show_null_labels": false,
+          "colors": [
+            "grey"
+          ],
+          "limit_displayed_rows": false,
+          "y_axis_scale_mode": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": 327,
+      "dashboard_id": 161,
+      "type": "drag",
+      "active": false,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 1935,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 943,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1936,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 944,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1937,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 945,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1938,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 946,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1939,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 947,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1940,
+          "dashboard_layout_id": 327,
+          "dashboard_element_id": 948,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 328,
+      "dashboard_id": 161,
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 1941,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 943,
+          "row": 0,
+          "column": 0,
+          "width": 8,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1942,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 944,
+          "row": 0,
+          "column": 8,
+          "width": 16,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1943,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 945,
+          "row": 7,
+          "column": 12,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1944,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 946,
+          "row": 7,
+          "column": 0,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1945,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 947,
+          "row": 15,
+          "column": 12,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1946,
+          "dashboard_layout_id": 328,
+          "dashboard_element_id": 948,
+          "row": 15,
+          "column": 0,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": 1663,
+      "dashboard_id": 161,
+      "name": "Distribution Center",
+      "title": "Distribution Center",
+      "type": "field_filter",
+      "default_value": "Chicago IL",
+      "explore": "order_items",
+      "dimension": "distribution_centers.name",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": null,
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Distribution Centers Name",
+        "label_from_parameter": null,
+        "label_short": "Name",
+        "lookml_link": "/projects/thelook_event/files/05_distribution_centers.view.lkml?line=25",
+        "map_layer": null,
+        "name": "distribution_centers.name",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "distribution_centers",
+        "view_label": "Distribution Centers",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Name",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "thelook_event",
+        "scope": "distribution_centers",
+        "source_file": "05_distribution_centers.view.lkml",
+        "source_file_path": "thelook_event/05_distribution_centers.view.lkml",
+        "suggest_dimension": "distribution_centers.name",
+        "suggest_explore": "order_items",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "load_configuration": "cache_run",
+  "background_color": "#9d5858",
+  "show_title": true,
+  "title_color": "#3a4245",
+  "show_filters_bar": true,
+  "tile_background_color": "#9d9b9b",
+  "tile_text_color": "#3a4245",
+  "text_tile_text_color": "#94b0ba",
+  "last_accessed_at": "2018-11-28 14:13:11 +0000",
+  "created_at": "2016-02-05 18:59:19 +0000",
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "lookml_link_id": null,
+  "model": null,
+  "content_favorite_id": null,
+  "deleted": false,
+  "last_viewed_at": null,
+  "can": {
+    "download": true,
+    "index": true,
+    "show": true,
+    "copy": true,
+    "run": true,
+    "create": true,
+    "move": true,
+    "update": true,
+    "destroy": true,
+    "recover": true,
+    "see_lookml": true,
+    "schedule": true,
+    "render": true
+  }
+}

@@ -1,0 +1,1843 @@
+{
+  "id": 160,
+  "user_id": 21,
+  "title": "Customer Lookup",
+  "description": null,
+  "readonly": false,
+  "hidden": true,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "content_metadata_id": 403,
+  "query_timezone": null,
+  "space": {
+    "id": 16,
+    "creator_id": 2,
+    "name": "E-Commerce",
+    "parent_id": 1,
+    "content_metadata_id": 2,
+    "is_personal": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "is_personal_descendant": false,
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "external_id": null,
+    "child_count": 0,
+    "is_user_root": false,
+    "is_root": false,
+    "can": {
+      "index": true,
+      "show": true,
+      "create": true,
+      "see_admin_spaces": true,
+      "update": true,
+      "destroy": true,
+      "move_content": true,
+      "edit_content": true
+    }
+  },
+  "space_id": 16,
+  "view_count": 4273,
+  "favorite_count": 10,
+  "slug": "kqkinSBWgy3DbsJEjAMq6Y",
+  "dashboard_elements": [
+    {
+      "id": 935,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "User Info",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581213,
+        "view": "order_items",
+        "fields": [
+          "users.id",
+          "users.email",
+          "users.name",
+          "users.traffic_source",
+          "users.created_month",
+          "users.age",
+          "users.gender",
+          "users.city",
+          "users.state",
+          "users.zip",
+          "users.history"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "99 years",
+          "users.email": "jgraham@gmail.com"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "users.zip"
+        ],
+        "limit": "1",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.321976900100708,
+        "vis_config": {
+          "type": "looker_single_record",
+          "show_null_labels": false,
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "99",
+                  "unit": "yr"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "jgraham@gmail.com"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "2V3tXJQ",
+        "dynamic_fields": "[]",
+        "client_id": "e3Ab5eLJw6IZlHFSza2wLQ",
+        "share_url": "https://demo.looker.com/x/e3Ab5eLJw6IZlHFSza2wLQ",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.id,users.email,users.name,users.traffic_source,users.created_month,users.age,users.gender,users.city,users.state,users.zip,users.history&f[order_items.created_date]=99+years&f[users.email]=jgraham%40gmail.com&sorts=users.zip&limit=1&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_single_record%22%2C%22show_null_labels%22%3Afalse%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jgraham%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.id,users.email,users.name,users.traffic_source,users.created_month,users.age,users.gender,users.city,users.state,users.zip,users.history&f[order_items.created_date]=99+years&f[users.email]=jgraham%40gmail.com&sorts=users.zip&limit=1&column_limit=50&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_single_record%22%2C%22show_null_labels%22%3Afalse%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jgraham%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581213,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7740,
+      "result_maker": {
+        "id": 7740,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "users.zip"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581213,
+        "query": null,
+        "vis_config": {
+          "type": "looker_single_record",
+          "show_null_labels": false,
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 936,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Lifetime Orders",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581101,
+        "view": "order_items",
+        "fields": [
+          "order_items.order_count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "99 years"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.order_count desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "user_access_filters": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": "data,vis",
+        "slug": "TRm9yKx",
+        "dynamic_fields": "[]",
+        "client_id": "XmkQVX6yQxgqgBcpF49K9A",
+        "share_url": "https://demo.looker.com/x/XmkQVX6yQxgqgBcpF49K9A",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.order_count&f[order_items.created_date]=99+years&sorts=order_items.order_count+desc&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22user_access_filters%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&show=data%2Cvis&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.order_count&f[order_items.created_date]=99+years&sorts=order_items.order_count+desc&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22user_access_filters%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&show=data%2Cvis",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581101,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7659,
+      "result_maker": {
+        "id": 7659,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.order_count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581101,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "user_access_filters": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 937,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Items Returned",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581102,
+        "view": "order_items",
+        "fields": [
+          "order_items.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.returned_date": "NOT NULL",
+          "users.email": "\"NANCYROBISONgmail.com\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "font_size": "medium",
+          "text_color": "black",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items.returned_date": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "date": "2015-12-15T23:47:38.186Z",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ],
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "NANCYROBISONgmail.com"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "FfnJGfd",
+        "dynamic_fields": "[]",
+        "client_id": "1oBzB80o25cXSsAMBdapfH",
+        "share_url": "https://demo.looker.com/x/1oBzB80o25cXSsAMBdapfH",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.count&f[order_items.returned_date]=NOT+NULL&f[users.email]=%22NANCYROBISONgmail.com%22&sorts=order_items.count+desc&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.returned_date%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22date%22%3A%222015-12-15T23%3A47%3A38.186Z%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22NANCYROBISONgmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.count&f[order_items.returned_date]=NOT+NULL&f[users.email]=%22NANCYROBISONgmail.com%22&sorts=order_items.count+desc&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.returned_date%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22date%22%3A%222015-12-15T23%3A47%3A38.186Z%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22NANCYROBISONgmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581102,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7660,
+      "result_maker": {
+        "id": 7660,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581102,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "font_size": "medium",
+          "text_color": "black",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 938,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Lifetime Spend",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581214,
+        "view": "order_items",
+        "fields": [
+          "order_items.total_sale_price"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "99 years",
+          "users.email": "jjohnson@gmail.com"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.total_sale_price desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "font_size": "medium",
+          "text_color": "black",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "colors": [
+            "#5245ed",
+            "#a2dcf3",
+            "#776fdf",
+            "#1ea8df",
+            "#49cec1",
+            "#776fdf",
+            "#49cec1",
+            "#1ea8df",
+            "#a2dcf3",
+            "#776fdf",
+            "#776fdf",
+            "#635189"
+          ],
+          "color_palette": "Default",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "99",
+                  "unit": "yr"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "jjohnson@gmail.com"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "rdwgGKn",
+        "dynamic_fields": "[]",
+        "client_id": "k4UMJPK5eq2Tn44HKyFMTD",
+        "share_url": "https://demo.looker.com/x/k4UMJPK5eq2Tn44HKyFMTD",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.total_sale_price&f[order_items.created_date]=99+years&f[users.email]=jjohnson%40gmail.com&sorts=order_items.total_sale_price+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22colors%22%3A%5B%22%235245ed%22%2C%22%23a2dcf3%22%2C%22%23776fdf%22%2C%22%231ea8df%22%2C%22%2349cec1%22%2C%22%23776fdf%22%2C%22%2349cec1%22%2C%22%231ea8df%22%2C%22%23a2dcf3%22%2C%22%23776fdf%22%2C%22%23776fdf%22%2C%22%23635189%22%5D%2C%22color_palette%22%3A%22Default%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.total_sale_price&f[order_items.created_date]=99+years&f[users.email]=jjohnson%40gmail.com&sorts=order_items.total_sale_price+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22single_value%22%2C%22show_null_labels%22%3Afalse%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22black%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22colors%22%3A%5B%22%235245ed%22%2C%22%23a2dcf3%22%2C%22%23776fdf%22%2C%22%231ea8df%22%2C%22%2349cec1%22%2C%22%23776fdf%22%2C%22%2349cec1%22%2C%22%231ea8df%22%2C%22%23a2dcf3%22%2C%22%23776fdf%22%2C%22%23776fdf%22%2C%22%23635189%22%5D%2C%22color_palette%22%3A%22Default%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581214,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7741,
+      "result_maker": {
+        "id": 7741,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.total_sale_price desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581214,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "show_null_labels": false,
+          "font_size": "medium",
+          "text_color": "black",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "colors": [
+            "#5245ed",
+            "#a2dcf3",
+            "#776fdf",
+            "#1ea8df",
+            "#49cec1",
+            "#776fdf",
+            "#49cec1",
+            "#1ea8df",
+            "#a2dcf3",
+            "#776fdf",
+            "#776fdf",
+            "#635189"
+          ],
+          "color_palette": "Default",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 939,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "data",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Items Order History",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581104,
+        "view": "order_items",
+        "fields": [
+          "order_items.id",
+          "products.item_name",
+          "order_items.status",
+          "order_items.created_date",
+          "order_items.shipped_date",
+          "order_items.delivered_date",
+          "order_items.returned_date",
+          "distribution_centers.name"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "99 years",
+          "users.email": "\"NANCYROBISONgmail.com\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "99",
+                  "unit": "yr"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "NANCYROBISONgmail.com"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "DRxNpDq",
+        "dynamic_fields": "[]",
+        "client_id": "2m7smjvHuSaZvvkLNYpCi8",
+        "share_url": "https://demo.looker.com/x/2m7smjvHuSaZvvkLNYpCi8",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=order_items.id,products.item_name,order_items.status,order_items.created_date,order_items.shipped_date,order_items.delivered_date,order_items.returned_date,distribution_centers.name&f[order_items.created_date]=99+years&f[users.email]=%22NANCYROBISONgmail.com%22&sorts=order_items.created_date+desc&limit=500&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22NANCYROBISONgmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=order_items.id,products.item_name,order_items.status,order_items.created_date,order_items.shipped_date,order_items.delivered_date,order_items.returned_date,distribution_centers.name&f[order_items.created_date]=99+years&f[users.email]=%22NANCYROBISONgmail.com%22&sorts=order_items.created_date+desc&limit=500&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Atrue%2C%22show_row_numbers%22%3Atrue%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22NANCYROBISONgmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581104,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7662,
+      "result_maker": {
+        "id": 7662,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581104,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": true,
+          "show_row_numbers": true,
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 940,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Favorite Categories",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581174,
+        "view": "order_items",
+        "fields": [
+          "products.category",
+          "order_items.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "99 years",
+          "users.email": "\"jjohnson@gmail.com\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "looker_pie",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "show_view_names": true,
+          "colors": [
+            "#64518A",
+            "#8D7FB9",
+            "#EA8A2F",
+            "#F2B431",
+            "#2DA5DE",
+            "#57BEBE",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "99",
+                  "unit": "yr"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ],
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "jjohnson@gmail.com"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "bSNrHgc",
+        "dynamic_fields": "[]",
+        "client_id": "W2bbEBXVApW4a7x32OKNDZ",
+        "share_url": "https://demo.looker.com/x/W2bbEBXVApW4a7x32OKNDZ",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=products.category,order_items.count&f[order_items.created_date]=99+years&f[users.email]=%22jjohnson%40gmail.com%22&sorts=order_items.count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_pie%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22show_view_names%22%3Atrue%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=products.category,order_items.count&f[order_items.created_date]=99+years&f[users.email]=%22jjohnson%40gmail.com%22&sorts=order_items.count+desc&limit=500&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_pie%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22show_view_names%22%3Atrue%2C%22colors%22%3A%5B%22%2364518A%22%2C%22%238D7FB9%22%2C%22%23EA8A2F%22%2C%22%23F2B431%22%2C%22%232DA5DE%22%2C%22%2357BEBE%22%2C%22%237F7977%22%2C%22%23B2A898%22%2C%22%23494C52%22%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2299%22%2C%22unit%22%3A%22yr%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%2C%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581174,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7705,
+      "result_maker": {
+        "id": 7705,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "order_items.count desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581174,
+        "query": null,
+        "vis_config": {
+          "type": "looker_pie",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "show_view_names": true,
+          "colors": [
+            "#64518A",
+            "#8D7FB9",
+            "#EA8A2F",
+            "#F2B431",
+            "#2DA5DE",
+            "#57BEBE",
+            "#7F7977",
+            "#B2A898",
+            "#494C52"
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 941,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "below",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "User Avatar",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581106,
+        "view": "order_items",
+        "fields": [
+          "users.user_image"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "users.email": "\"aaron.adair@gmail.com\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "users.created_month desc",
+          "users.user_image"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "aaron.adair@gmail.com"
+                },
+                {
+                }
+              ],
+              "id": 2
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "RwJ8F6z",
+        "dynamic_fields": "[]",
+        "client_id": "5Tc6teuzbdGAkCz16KIqTF",
+        "share_url": "https://demo.looker.com/x/5Tc6teuzbdGAkCz16KIqTF",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.user_image&f[users.email]=%22aaron.adair%40gmail.com%22&sorts=users.created_month+desc,users.user_image&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22aaron.adair%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.user_image&f[users.email]=%22aaron.adair%40gmail.com%22&sorts=users.created_month+desc,users.user_image&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22font_size%22%3A%22medium%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22aaron.adair%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581106,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7664,
+      "result_maker": {
+        "id": 7664,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "users.created_month desc",
+          "users.user_image"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581106,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "font_size": "medium",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 942,
+      "dashboard_id": 160,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "User Location",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 581175,
+        "view": "order_items",
+        "fields": [
+          "users.zip",
+          "users.count"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "users.email": "\"jjohnson@gmail.com\""
+        },
+        "filter_expression": null,
+        "sorts": [
+          "users.created_month desc",
+          "users.zip"
+        ],
+        "limit": "1",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "type": "looker_geo_coordinates",
+          "show_view_names": true,
+          "font_size": "medium",
+          "text_color": "#49719a",
+          "map": "usa",
+          "map_projection": "",
+          "map_plot_mode": "points",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "icon",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 42.35930500076174,
+          "map_longitude": -71.02283477783203,
+          "map_zoom": 11,
+          "point_radius": 10,
+          "loading": false,
+          "point_color": "#64518A",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "users.email": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "jjohnson@gmail.com"
+                },
+                {
+                }
+              ],
+              "id": 0
+            }
+          ]
+        },
+        "visible_ui_sections": "vis,data",
+        "slug": "hKtvRXJ",
+        "dynamic_fields": "[]",
+        "client_id": "EYjxRs3lT6HZG9DEgdhYOw",
+        "share_url": "https://demo.looker.com/x/EYjxRs3lT6HZG9DEgdhYOw",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook/order_items?fields=users.zip,users.count&f[users.email]=%22jjohnson%40gmail.com%22&sorts=users.created_month+desc,users.zip&limit=1&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_geo_coordinates%22%2C%22show_view_names%22%3Atrue%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22%2349719a%22%2C%22map%22%3A%22usa%22%2C%22map_projection%22%3A%22%22%2C%22map_plot_mode%22%3A%22points%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22icon%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A42.35930500076174%2C%22map_longitude%22%3A-71.02283477783203%2C%22map_zoom%22%3A11%2C%22point_radius%22%3A10%2C%22loading%22%3Afalse%2C%22point_color%22%3A%22%2364518A%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata&origin=share-expanded",
+        "url": "/explore/thelook/order_items?fields=users.zip,users.count&f[users.email]=%22jjohnson%40gmail.com%22&sorts=users.created_month+desc,users.zip&limit=1&query_timezone=America%2FLos_Angeles&vis=%7B%22type%22%3A%22looker_geo_coordinates%22%2C%22show_view_names%22%3Atrue%2C%22font_size%22%3A%22medium%22%2C%22text_color%22%3A%22%2349719a%22%2C%22map%22%3A%22usa%22%2C%22map_projection%22%3A%22%22%2C%22map_plot_mode%22%3A%22points%22%2C%22heatmap_gridlines%22%3Atrue%2C%22map_tile_provider%22%3A%22positron%22%2C%22map_position%22%3A%22custom%22%2C%22map_scale_indicator%22%3A%22off%22%2C%22map_pannable%22%3Atrue%2C%22map_zoomable%22%3Atrue%2C%22map_marker_type%22%3A%22icon%22%2C%22map_marker_icon_name%22%3A%22default%22%2C%22map_marker_radius_mode%22%3A%22proportional_value%22%2C%22map_marker_units%22%3A%22meters%22%2C%22map_marker_proportional_scale_type%22%3A%22linear%22%2C%22map_marker_color_mode%22%3A%22fixed%22%2C%22show_legend%22%3Atrue%2C%22quantize_map_value_colors%22%3Afalse%2C%22map_latitude%22%3A42.35930500076174%2C%22map_longitude%22%3A-71.02283477783203%2C%22map_zoom%22%3A11%2C%22point_radius%22%3A10%2C%22loading%22%3Afalse%2C%22point_color%22%3A%22%2364518A%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22users.email%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22jjohnson%40gmail.com%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%7D%5D%7D&dynamic_fields=%5B%5D&show=vis%2Cdata",
+        "query_timezone": "America/Los_Angeles",
+        "has_table_calculations": false,
+        "model": "thelook",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 581175,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7706,
+      "result_maker": {
+        "id": 7706,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook",
+            "view": "order_items",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Email",
+                "field": "users.email"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "users.created_month desc",
+          "users.zip"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 581175,
+        "query": null,
+        "vis_config": {
+          "type": "looker_geo_coordinates",
+          "show_view_names": true,
+          "font_size": "medium",
+          "text_color": "#49719a",
+          "map": "usa",
+          "map_projection": "",
+          "map_plot_mode": "points",
+          "heatmap_gridlines": true,
+          "map_tile_provider": "positron",
+          "map_position": "custom",
+          "map_scale_indicator": "off",
+          "map_pannable": true,
+          "map_zoomable": true,
+          "map_marker_type": "icon",
+          "map_marker_icon_name": "default",
+          "map_marker_radius_mode": "proportional_value",
+          "map_marker_units": "meters",
+          "map_marker_proportional_scale_type": "linear",
+          "map_marker_color_mode": "fixed",
+          "show_legend": true,
+          "quantize_map_value_colors": false,
+          "map_latitude": 42.35930500076174,
+          "map_longitude": -71.02283477783203,
+          "map_zoom": 11,
+          "point_radius": 10,
+          "loading": false,
+          "point_color": "#64518A",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": 325,
+      "dashboard_id": 160,
+      "type": "drag",
+      "active": false,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 1919,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 935,
+          "row": 1,
+          "column": 0,
+          "width": null,
+          "height": 400,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1920,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 936,
+          "row": 0,
+          "column": 0,
+          "width": null,
+          "height": 180,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1921,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 937,
+          "row": 0,
+          "column": 1,
+          "width": null,
+          "height": 180,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1922,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 938,
+          "row": 0,
+          "column": 2,
+          "width": null,
+          "height": 180,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1923,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 939,
+          "row": 1,
+          "column": 1,
+          "width": null,
+          "height": 400,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1924,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 940,
+          "row": 1,
+          "column": 2,
+          "width": null,
+          "height": 400,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1925,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 941,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1926,
+          "dashboard_layout_id": 325,
+          "dashboard_element_id": 942,
+          "row": null,
+          "column": null,
+          "width": null,
+          "height": null,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 326,
+      "dashboard_id": 160,
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 1927,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 936,
+          "row": 6,
+          "column": 0,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1928,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 937,
+          "row": 6,
+          "column": 4,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1929,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 938,
+          "row": 6,
+          "column": 8,
+          "width": 8,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1930,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 935,
+          "row": 0,
+          "column": 0,
+          "width": 8,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1931,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 939,
+          "row": 10,
+          "column": 0,
+          "width": 16,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1932,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 940,
+          "row": 6,
+          "column": 16,
+          "width": 8,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1933,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 941,
+          "row": 0,
+          "column": 8,
+          "width": 6,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 1934,
+          "dashboard_layout_id": 326,
+          "dashboard_element_id": 942,
+          "row": 0,
+          "column": 14,
+          "width": 10,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": 288,
+      "dashboard_id": 160,
+      "name": "Email",
+      "title": "Email",
+      "type": "field_filter",
+      "default_value": "jgraham@gmail.com",
+      "explore": "order_items",
+      "dimension": "users.email",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": null,
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Users Email",
+        "label_from_parameter": null,
+        "label_short": "Email",
+        "lookml_link": "/projects/thelook_event/files/02_users.view.lkml?line=51",
+        "map_layer": null,
+        "name": "users.email",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+          "email"
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "users",
+        "view_label": "Users",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Email",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "thelook_event",
+        "scope": "users",
+        "source_file": "02_users.view.lkml",
+        "source_file_path": "thelook_event/02_users.view.lkml",
+        "suggest_dimension": "users.email",
+        "suggest_explore": "order_items",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "load_configuration": "cache_run",
+  "background_color": "#f6f8fa",
+  "show_title": true,
+  "title_color": "#3a4245",
+  "show_filters_bar": true,
+  "tile_background_color": "white",
+  "tile_text_color": "#3a4245",
+  "text_tile_text_color": "",
+  "last_accessed_at": "2018-11-28 13:27:30 +0000",
+  "created_at": "2016-02-05 18:59:19 +0000",
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "lookml_link_id": null,
+  "model": null,
+  "content_favorite_id": null,
+  "deleted": false,
+  "last_viewed_at": null,
+  "can": {
+    "download": true,
+    "index": true,
+    "show": true,
+    "copy": true,
+    "run": true,
+    "create": true,
+    "move": true,
+    "update": true,
+    "destroy": true,
+    "recover": true,
+    "see_lookml": true,
+    "schedule": true,
+    "render": true
+  }
+}

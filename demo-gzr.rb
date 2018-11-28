@@ -1,7 +1,15 @@
 
 require 'rubygems'
 require 'git'
+   require 'json'
 
+
+
+# sdk = LookerSDK::Client.new(
+#   :client_id => "4CN7jzm7yrkcy2MC4CCG",
+#   :client_secret => "Js3rZZ7vHfbc2hBynSj7zqKh",
+#   :api_endpoint => "https://demo.looker.com:19999/api/3.0"
+# )
 
 
 dashboards = [159]
@@ -11,9 +19,13 @@ looks = []
 dashboards.each do |dashboard|
 	print dashboard
 
-  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp")
+  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
 
-	system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
+
+  file = File.read('temp.json')
+  data_hash = JSON.parse(file)
+
+	# system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
   # system("rm temp")
 end
 

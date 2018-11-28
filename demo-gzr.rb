@@ -32,6 +32,13 @@ end
 
   g = Git.open('/Users/haarthisadasivam/gazer_demo')
 
+
+  g = Git.init
+   Git.init('/Users/haarthisadasivam/gazer_demo')
+   # Git.init('/home/schacon/proj',
+   #  { :repository => '/opt/git/proj.git',
+   #     :index => '/tmp/index'} )
+
   # print g.index
 
   print g.config

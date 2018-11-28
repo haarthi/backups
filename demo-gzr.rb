@@ -42,10 +42,9 @@ def push_change_to_git
    Git.init('/Users/haarthisadasivam/gazer_demo')
 
   if (!g.status.nil?)
-    print g.status.changed
     print "there is a diff"
     g.add(:all=>true)    
-    g.commit("my message8")
+    g.commit("Changes, " + Time.now.getutc.to_s)
     system("git push")
   end
 end

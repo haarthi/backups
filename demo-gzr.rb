@@ -47,9 +47,9 @@ end
     print g.status.changed
     print "there is a diff"
     g.add(:all=>true)    
-    print g.commit("my message8")
+    g.commit("my message8")
 
-    system("g.push")
+    system("git push")
 
   else 
     print "no diff"

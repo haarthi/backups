@@ -2,15 +2,7 @@
 require 'rubygems'
 require 'git'
 require 'json'
-# require "active_support/core_ext/hash"
 
-
-
-# sdk = LookerSDK::Client.new(
-#   :client_id => "4CN7jzm7yrkcy2MC4CCG",
-#   :client_secret => "Js3rZZ7vHfbc2hBynSj7zqKh",
-#   :api_endpoint => "https://demo.looker.com:19999/api/3.0"
-# )
 
 
 # dashboards = [159, 160, 161, 1116]
@@ -30,27 +22,23 @@ require 'json'
 
 
 
+
 def push_change_to_git
   Git.configure do |config|
     config.git_ssh = '/Users/haarthisadasivam/.ssh/haarthi_github.pub'
   end
 
-  # g = Git.open('/Users/haarthisadasivam/gazer_demo')
-
-
-  g = Git.init
-   Git.init('/Users/haarthisadasivam/gazer_demo')
+  g = Git.init('/Users/haarthisadasivam/gazer_demo')
 
   if (!g.status.nil?)
-    print "there is a diff"
     g.add(:all=>true)    
     g.commit("Changes, " + Time.now.getutc.to_s)
     system("git push")
   end
 end
 
-push_change_to_git()
 
+push_change_to_git()
 
 
 

@@ -11,9 +11,9 @@ looks = []
 dashboards.each do |dashboard|
 	print dashboard
 
- #  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp")
+  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp")
 
-	# system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
+	system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")
   # system("rm temp")
 end
 

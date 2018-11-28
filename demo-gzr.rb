@@ -22,10 +22,11 @@ end
 
   Git.configure do |config|
     # If you want to use a custom git binary
-    # config.binary_path = '/opt/git/proj.git'
+    # config.binary_path = '/.git/index'
 
     # If you need to use a custom SSH script
     config.git_ssh = '/Users/haarthisadasivam/.ssh/haarthi_github.pub'
+    # config.git_ssh = '/'
 
   end
 

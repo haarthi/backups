@@ -25,7 +25,7 @@ end
     # config.binary_path = '/.git/index'
 
     # If you need to use a custom SSH script
-    config.git_ssh = '/Users/haarthisadasivam/.ssh/id_rsa.pub'
+    config.git_ssh = '/Users/haarthisadasivam/.ssh/haarthi_github.pub'
     # config.git_ssh = '/'
 
   end
@@ -43,12 +43,10 @@ end
 
   print g.add
 
-  # print g.config
 
-  # print g.add
   print g.commit("my message6")
   print g.push
-  # system("g.push")
+  system("g.push")
 
 
     # system("cmp --silent temp dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp dashboards/#{dashboard}")

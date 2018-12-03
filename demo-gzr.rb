@@ -3,6 +3,9 @@ require 'rubygems'
 require 'git'
 require 'json'
 
+require_relative 'git.rb'
+
+
 
 
 # dashboards = [159, 160, 161, 1116]
@@ -20,7 +23,24 @@ require 'json'
 #   # system("rm temp")
 # end
 
+GitHelper.push_change_to_git
 
+def check_for_updates
+  file = File.read('temp1.json')
+
+  dashboard_metadata = JSON.parse(file, object_class: OpenStruct).to_h
+
+  # person = JSON.parse(json_string, object_class: OpenStruct)
+
+  puts dashboard_metadata.class
+
+  print "My ID" + json_object[:space][:id].to_s
+
+  # json_object = json_object.except!(:id)
+  # json_object = json_object.reject { |k, v| [:title, :space].include? k }
+  puts json_object
+
+end
 
 
 def push_change_to_git
@@ -37,8 +57,46 @@ def push_change_to_git
   end
 end
 
+def read_file_as_json(file_path)
+  file = File.read(file_path)
+  return JSON.parse(file, object_class: OpenStruct).to_h
+end
 
-push_change_to_git()
+def revert_dashboard(commit_id, dashboard_id)
+  file_path = "dashboards/#{dashboard_id}"
+  dashboard = read_file_as_json(file_path)
+  space_id = dashboard[:space_id]
+  
+  # system("gzr dashboard import #{file_path} #{space_id} --host demodev.looker.com")
+end
+
+def revert_look(commit_id, look_id)
+end
+
+
+# revert_dashboard("clear", 111)
+
+
+# g = Git.init('/Users/haarthisadasivam/gazer_demo')
+
+ # g.show('HEAD')
+
+
+# print Git.ls_remote('/dashboards/dashboard_id')
+
+
+# print g.show("2379423b658409202d167ca5ec1f9f2f1ca8fd50:dashboards/1116")
+
+# method commit_history 
+
+
+# check_content_difference
+# reconfig_all_space
+# revert_dashboard
+# revert_look 
+
+
+# push_change_to_git()
 
 
 

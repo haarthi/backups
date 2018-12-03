@@ -15,13 +15,11 @@ module GitHelper
 
 
 	def self.push_change_to_git
-
 		g = self.initialize
 		if (!g.status.nil?)
 			g.add(:all=>true)    
 			g.commit("Changes, " + Time.now.getutc.to_s)
 			system("git push")
-			print ("hey")
 		end
 	end
 

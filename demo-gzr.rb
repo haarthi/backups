@@ -7,42 +7,56 @@ require_relative 'git.rb'
 require_relative 'looker_helper'
 
 
+module ContentManagement
 
 
-dashboards = [159, 160, 161, 1116]
+  @dashboards = [159, 160, 161, 1116]
 
-looks = []
+  looks = []
 
-dashboards.each do |dashboard|
-	print dashboard
+  def self.store_content_metadata
 
-  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
+    @dashboards.each do |dashboard|
+    	print dashboard
 
-  system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}")
+      result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
 
-	system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}")
+      system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}")
 
-end
+    	system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}")
 
-GitHelper.push_change_to_git
+    end
+
+    GitHelper.push_change_to_git
+
+  end
+
+  # revert_dashboard("test", 111)
 
 
 
+  def self.revert_dashboard(commit_id, dashboard_id)
 
-def revert_dashboard(commit_id, dashboard_id)
+    LookerHelper.get_dashboard_space_id(dashboard_id)
 
-  LookerHelper.get_dashboard_space_id(111)
+    dashboard = read_file_as_json(file_path)
+    space_id = dashboard[:space_id]
 
-  dashboard = read_file_as_json(file_path)
-  space_id = dashboard[:space_id]
+    new_dashboard = g.show("#{commit_id}:dashboards/#{dashboard_id}")
+    print new_dashboard
+    
+    # system("gzr dashboard import #{file_path} #{space_id} --host demodev.looker.com")
+  end
 
-  new_dashboard = g.show("#{commit_id}:dashboards/#{dashboard_id}")
-  print new_dashboard
-  
-  # system("gzr dashboard import #{file_path} #{space_id} --host demodev.looker.com")
-end
+  def self.revert_look(commit_id, look_id)
 
-def revert_look(commit_id, look_id)
+  end
+
+
+  def self.revert_all(commit_id)
+
+  end
+
 end
 
 

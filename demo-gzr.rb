@@ -7,7 +7,7 @@ require_relative 'git.rb'
 require_relative 'looker_helper'
 
 
-module ContentManagement
+class ContentManagement
 
 
   @dashboards = [159, 160, 161, 1116]
@@ -31,21 +31,20 @@ module ContentManagement
 
   end
 
-  # revert_dashboard("test", 111)
-
-
-
   def self.revert_dashboard(commit_id, dashboard_id)
+    file_path = "dashboard/#{dashboard_id}"
 
-    LookerHelper.get_dashboard_space_id(dashboard_id)
+    new_dashboard = g.show("#{commit_id}:#{file_path}")
 
-    dashboard = read_file_as_json(file_path)
-    space_id = dashboard[:space_id]
-
-    new_dashboard = g.show("#{commit_id}:dashboards/#{dashboard_id}")
     print new_dashboard
+
+    # dashboard = read_file_as_json(file_path)
+
+    # LookerHelper.get_dashboard_space_id(new_dashboard)
+
+    print space_id = new_dashboard[:space_id]
     
-    # system("gzr dashboard import #{file_path} #{space_id} --host demodev.looker.com")
+    # system("gzr dashboard import #{new_dashboard} #{space_id} --host demodev.looker.com")
   end
 
   def self.revert_look(commit_id, look_id)

@@ -38,7 +38,7 @@
     }
   },
   "space_id": 16,
-  "view_count": 4273,
+  "view_count": 4296,
   "favorite_count": 10,
   "slug": "kqkinSBWgy3DbsJEjAMq6Y",
   "dashboard_elements": [
@@ -91,7 +91,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.321976900100708,
+        "runtime": 0.3905930519104004,
         "vis_config": {
           "type": "looker_single_record",
           "show_null_labels": false,
@@ -1815,7 +1815,7 @@
   "tile_background_color": "white",
   "tile_text_color": "#3a4245",
   "text_tile_text_color": "",
-  "last_accessed_at": "2018-11-28 13:27:30 +0000",
+  "last_accessed_at": "2018-11-30 22:49:25 +0000",
   "created_at": "2016-02-05 18:59:19 +0000",
   "deleted_at": null,
   "deleter_id": null,

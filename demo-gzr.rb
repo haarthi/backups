@@ -4,68 +4,40 @@ require 'git'
 require 'json'
 
 require_relative 'git.rb'
+require_relative 'looker_helper'
 
 
 
 
-# dashboards = [159, 160, 161, 1116]
+dashboards = [159, 160, 161, 1116]
 
-# looks = []
+looks = []
 
-# dashboards.each do |dashboard|
-# 	print dashboard
+dashboards.each do |dashboard|
+	print dashboard
 
-#   result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
+  result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
 
-#   system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}")
+  system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}")
 
-# 	system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}")
-#   # system("rm temp")
-# end
+	system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}")
+
+end
 
 GitHelper.push_change_to_git
 
-def check_for_updates
-  file = File.read('temp1.json')
-
-  dashboard_metadata = JSON.parse(file, object_class: OpenStruct).to_h
-
-  # person = JSON.parse(json_string, object_class: OpenStruct)
-
-  puts dashboard_metadata.class
-
-  print "My ID" + json_object[:space][:id].to_s
-
-  # json_object = json_object.except!(:id)
-  # json_object = json_object.reject { |k, v| [:title, :space].include? k }
-  puts json_object
-
-end
 
 
-def push_change_to_git
-  Git.configure do |config|
-    config.git_ssh = '/Users/haarthisadasivam/.ssh/haarthi_github.pub'
-  end
-
-  g = Git.init('/Users/haarthisadasivam/gazer_demo')
-
-  if (!g.status.nil?)
-    g.add(:all=>true)    
-    g.commit("Changes, " + Time.now.getutc.to_s)
-    system("git push")
-  end
-end
-
-def read_file_as_json(file_path)
-  file = File.read(file_path)
-  return JSON.parse(file, object_class: OpenStruct).to_h
-end
 
 def revert_dashboard(commit_id, dashboard_id)
-  file_path = "dashboards/#{dashboard_id}"
+
+  LookerHelper.get_dashboard_space_id(111)
+
   dashboard = read_file_as_json(file_path)
   space_id = dashboard[:space_id]
+
+  new_dashboard = g.show("#{commit_id}:dashboards/#{dashboard_id}")
+  print new_dashboard
   
   # system("gzr dashboard import #{file_path} #{space_id} --host demodev.looker.com")
 end

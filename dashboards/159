@@ -38,7 +38,7 @@
     }
   },
   "space_id": 16,
-  "view_count": 32589,
+  "view_count": 32649,
   "favorite_count": 58,
   "slug": "dAxAtJTiUUhPM2CmITpTXN",
   "dashboard_elements": [
@@ -1201,7 +1201,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.629180908203125,
+        "runtime": 0.6070051193237305,
         "vis_config": {
           "type": "looker_line",
           "stacking": "",
@@ -1465,7 +1465,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.6893489360809326,
+        "runtime": 1.094331979751587,
         "vis_config": {
           "type": "looker_line",
           "stacking": "",
@@ -1819,7 +1819,7 @@
       "note_text_as_html": "",
       "note_display": "above",
       "note_state": "collapsed",
-      "title_hidden": true,
+      "title_hidden": false,
       "title_text": null,
       "title": "Total Sales, Year over Year",
       "subtitle_text": null,
@@ -1852,7 +1852,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.631904125213623,
+        "runtime": 0.6980431079864502,
         "vis_config": {
           "stacking": "",
           "show_value_labels": false,
@@ -4356,7 +4356,7 @@
   "tile_background_color": null,
   "tile_text_color": null,
   "text_tile_text_color": null,
-  "last_accessed_at": "2018-12-03 20:47:19 +0000",
+  "last_accessed_at": "2018-12-04 16:26:12 +0000",
   "created_at": "2016-02-05 18:59:19 +0000",
   "deleted_at": null,
   "deleter_id": null,

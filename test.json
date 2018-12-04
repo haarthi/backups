@@ -38,8 +38,8 @@
     }
   },
   "space_id": 16,
-  "view_count": 2431,
-  "favorite_count": 18,
+  "view_count": 2402,
+  "favorite_count": 17,
   "slug": "Zwyfd7sHVEoQ4NFpdbzYzK",
   "dashboard_elements": [
     {
@@ -87,7 +87,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.40235304832458496,
+        "runtime": 0.037156,
         "vis_config": {
           "type": "looker_column",
           "show_view_names": false,
@@ -546,7 +546,7 @@
               "type": "=",
               "values": [
                 {
-                  "constant": "Charleston\\, SC"
+                  "constant": "Charleston\, SC"
                 },
                 {
                 }
@@ -1120,7 +1120,7 @@
         "total": null,
         "row_total": null,
         "subtotals": null,
-        "runtime": 0.45459914207458496,
+        "runtime": 0.035238000000000005,
         "vis_config": {
           "type": "looker_column",
           "stacking": "normal",
@@ -1624,7 +1624,7 @@
   "tile_background_color": "#9d9b9b",
   "tile_text_color": "#3a4245",
   "text_tile_text_color": "#94b0ba",
-  "last_accessed_at": "2018-12-04 16:24:39 +0000",
+  "last_accessed_at": "2018-11-28 14:13:11 +0000",
   "created_at": "2016-02-05 18:59:19 +0000",
   "deleted_at": null,
   "deleter_id": null,

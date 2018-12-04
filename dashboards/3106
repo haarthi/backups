@@ -1,0 +1,3843 @@
+{
+  "id": 3106,
+  "user_id": 856,
+  "title": "Campaign Performance",
+  "description": null,
+  "readonly": false,
+  "hidden": false,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "content_metadata_id": 17874,
+  "query_timezone": null,
+  "space": {
+    "id": 1097,
+    "creator_id": 21,
+    "name": "Marketing",
+    "parent_id": 1,
+    "content_metadata_id": 17574,
+    "is_personal": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "is_personal_descendant": false,
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "external_id": null,
+    "child_count": 0,
+    "is_user_root": false,
+    "is_root": false,
+    "can": {
+      "index": true,
+      "show": true,
+      "create": true,
+      "see_admin_spaces": true,
+      "update": true,
+      "destroy": true,
+      "move_content": true,
+      "edit_content": true
+    }
+  },
+  "space_id": 1097,
+  "view_count": 1172,
+  "favorite_count": 9,
+  "slug": "pwSkck3zvGd1fnhCO7Fc12",
+  "dashboard_elements": [
+    {
+      "id": 15574,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Clicks",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585307,
+        "view": "events",
+        "fields": [
+          "adevents.total_clicks",
+          "adevents.click_rate"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": null,
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 2.865877151489258,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Clicks",
+          "comparison_label": "(CTR)",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "6RfTsq5",
+        "dynamic_fields": "[]",
+        "client_id": "Merj2uNPDo1CoIr2ACg1eQ",
+        "share_url": "https://demo.looker.com/x/Merj2uNPDo1CoIr2ACg1eQ",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=adevents.total_clicks,adevents.click_rate&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Clicks%22%2C%22comparison_label%22%3A%22%28CTR%29%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=adevents.total_clicks,adevents.click_rate&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Clicks%22%2C%22comparison_label%22%3A%22%28CTR%29%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585307,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10035,
+      "result_maker": {
+        "id": 10035,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": null,
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585307,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Clicks",
+          "comparison_label": "(CTR)",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15575,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Impressions",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585308,
+        "view": "events",
+        "fields": [
+          "adevents.total_impressions"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": null,
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 2.8845529556274414,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Impressions",
+          "comparison_label": "Weekly Change",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "FMr99sM",
+        "dynamic_fields": "[]",
+        "client_id": "9VLPWMhGizv6jEpaaLhwKb",
+        "share_url": "https://demo.looker.com/x/9VLPWMhGizv6jEpaaLhwKb",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=adevents.total_impressions&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Impressions%22%2C%22comparison_label%22%3A%22Weekly+Change%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=adevents.total_impressions&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Impressions%22%2C%22comparison_label%22%3A%22Weekly+Change%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585308,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10036,
+      "result_maker": {
+        "id": 10036,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": null,
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585308,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Impressions",
+          "comparison_label": "Weekly Change",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15576,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Cost",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585309,
+        "view": "events",
+        "fields": [
+          "adevents.total_cost"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": null,
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.08580399999999999,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Total Cost",
+          "comparison_label": "Associated Revenue",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "dS9cqKT",
+        "dynamic_fields": "[]",
+        "client_id": "kPTZvW6mqnI72uNOrhf7Yb",
+        "share_url": "https://demo.looker.com/x/kPTZvW6mqnI72uNOrhf7Yb",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=adevents.total_cost&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Total+Cost%22%2C%22comparison_label%22%3A%22Associated+Revenue%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=adevents.total_cost&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22value%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Total+Cost%22%2C%22comparison_label%22%3A%22Associated+Revenue%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585309,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10037,
+      "result_maker": {
+        "id": 10037,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": null,
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585309,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "value",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Total Cost",
+          "comparison_label": "Associated Revenue",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15577,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Associated Revenue",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585310,
+        "view": "events",
+        "fields": [
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": null,
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 4.015856981277466,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Associated Revenue",
+          "comparison_label": "Campaign End Date",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "hQVVYyJ",
+        "dynamic_fields": "[]",
+        "client_id": "GI6O4dbDdTsAHgMoZ2EkGH",
+        "share_url": "https://demo.looker.com/x/GI6O4dbDdTsAHgMoZ2EkGH",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=session_purchase_facts.revenue&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Associated+Revenue%22%2C%22comparison_label%22%3A%22Campaign+End+Date%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=session_purchase_facts.revenue&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Associated+Revenue%22%2C%22comparison_label%22%3A%22Campaign+End+Date%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585310,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10038,
+      "result_maker": {
+        "id": 10038,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": null,
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585310,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Associated Revenue",
+          "comparison_label": "Campaign End Date",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15578,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Clicks by Date",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 549227,
+        "view": "events",
+        "fields": [
+          "adevents.created_date",
+          "adevents.click_rate",
+          "adevents.total_clicks"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "adevents.created_date"
+        ],
+        "filters": {
+          "campaigns.advertising_channel": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "adevents.created_date"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.222722,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "none",
+          "interpolation": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "type": "looker_area",
+          "query_timezone": "America/Los_Angeles",
+          "ordering": "none",
+          "show_null_labels": false,
+          "hidden_fields": [
+
+          ],
+          "series_types": {
+            "adevents.total_clicks": "column"
+          },
+          "y_axes": [
+            {
+              "label": null,
+              "maxValue": 0.5,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "adevents.click_rate",
+                  "name": "Click Through Rate (CTR)",
+                  "axisId": "adevents.click_rate",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 267
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 255
+            },
+            {
+              "label": null,
+              "orientation": "right",
+              "series": [
+                {
+                  "id": "adevents.total_clicks",
+                  "name": "Total Clicks",
+                  "axisId": "adevents.total_clicks"
+                }
+              ],
+              "showLabels": true,
+              "showValues": false,
+              "maxValue": null,
+              "minValue": null,
+              "valueFormat": null,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "colors": [
+            "#87d79b",
+            "#294988",
+            "#476d70",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          }
+        },
+        "filter_config": {
+          "campaigns.advertising_channel": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 4,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "HfjqbyS",
+        "dynamic_fields": "[]",
+        "client_id": "PJpqVjWaq7rSbvO4LDT6xZ",
+        "share_url": "https://demo.looker.com/x/PJpqVjWaq7rSbvO4LDT6xZ",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=adevents.created_date,adevents.click_rate,adevents.total_clicks&fill_fields=adevents.created_date&f[campaigns.advertising_channel]=-NULL&sorts=adevents.created_date&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22type%22%3A%22looker_area%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22hidden_fields%22%3A%5B%5D%2C%22series_types%22%3A%7B%22adevents.total_clicks%22%3A%22column%22%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3Anull%2C%22maxValue%22%3A0.5%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.click_rate%22%2C%22name%22%3A%22Click+Through+Rate+%28CTR%29%22%2C%22axisId%22%3A%22adevents.click_rate%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A267%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A255%7D%2C%7B%22label%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_clicks%22%2C%22name%22%3A%22Total+Clicks%22%2C%22axisId%22%3A%22adevents.total_clicks%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22valueFormat%22%3Anull%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%2C%22%23476d70%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22campaigns.advertising_channel%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=adevents.created_date,adevents.click_rate,adevents.total_clicks&fill_fields=adevents.created_date&f[campaigns.advertising_channel]=-NULL&sorts=adevents.created_date&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22type%22%3A%22looker_area%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22hidden_fields%22%3A%5B%5D%2C%22series_types%22%3A%7B%22adevents.total_clicks%22%3A%22column%22%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3Anull%2C%22maxValue%22%3A0.5%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.click_rate%22%2C%22name%22%3A%22Click+Through+Rate+%28CTR%29%22%2C%22axisId%22%3A%22adevents.click_rate%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A267%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A255%7D%2C%7B%22label%22%3Anull%2C%22orientation%22%3A%22right%22%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_clicks%22%2C%22name%22%3A%22Total+Clicks%22%2C%22axisId%22%3A%22adevents.total_clicks%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22valueFormat%22%3Anull%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%2C%22%23476d70%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22campaigns.advertising_channel%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 549227,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6716,
+      "result_maker": {
+        "id": 6716,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "adevents.created_date"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 549227,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "none",
+          "interpolation": "linear",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "type": "looker_area",
+          "query_timezone": "America/Los_Angeles",
+          "ordering": "none",
+          "show_null_labels": false,
+          "hidden_fields": [
+
+          ],
+          "series_types": {
+            "adevents.total_clicks": "column"
+          },
+          "y_axes": [
+            {
+              "label": null,
+              "maxValue": 0.5,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "adevents.click_rate",
+                  "name": "Click Through Rate (CTR)",
+                  "axisId": "adevents.click_rate",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 267
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 255
+            },
+            {
+              "label": null,
+              "orientation": "right",
+              "series": [
+                {
+                  "id": "adevents.total_clicks",
+                  "name": "Total Clicks",
+                  "axisId": "adevents.total_clicks"
+                }
+              ],
+              "showLabels": true,
+              "showValues": false,
+              "maxValue": null,
+              "minValue": null,
+              "valueFormat": null,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "colors": [
+            "#87d79b",
+            "#294988",
+            "#476d70",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          }
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15579,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Top Performing Keywords",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585311,
+        "view": "events",
+        "fields": [
+          "keywords.criterion_name",
+          "adevents.total_clicks",
+          "adevents.total_impressions",
+          "adevents.click_rate",
+          "adevents.total_cost",
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "keywords.criterion_name": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "session_purchase_facts.revenue desc"
+        ],
+        "limit": "100",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 2.4846630096435547,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": true,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "conditional_formatting": [
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 356
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.total_cost"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 351
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 370
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "session_purchase_facts.revenue"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 365
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ]
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "profit"
+              ]
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#FFFFFF",
+                  "#87d79b"
+                ]
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.click_rate"
+              ]
+            }
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "keywords.criterion_name": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 19,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "s3bSK9F",
+        "dynamic_fields": "[{\"table_calculation\":\"profit\",\"label\":\"Profit\",\"expression\":\"${session_purchase_facts.revenue}-${adevents.total_cost}\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "Lt0sN11AxxaSL5FVuJA5XW",
+        "share_url": "https://demo.looker.com/x/Lt0sN11AxxaSL5FVuJA5XW",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=keywords.criterion_name,adevents.total_clicks,adevents.total_impressions,adevents.click_rate,adevents.total_cost,session_purchase_facts.revenue&f[keywords.criterion_name]=-NULL&sorts=session_purchase_facts.revenue+desc&limit=100&column_limit=50&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Atrue%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22conditional_formatting%22%3A%5B%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A356%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.total_cost%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A351%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A370%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22session_purchase_facts.revenue%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A365%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22profit%22%5D%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%23FFFFFF%22%2C%22%2387d79b%22%5D%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.click_rate%22%5D%7D%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22keywords.criterion_name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A19%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22profit%22%2C%22label%22%3A%22Profit%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D-%24%7Badevents.total_cost%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=keywords.criterion_name,adevents.total_clicks,adevents.total_impressions,adevents.click_rate,adevents.total_cost,session_purchase_facts.revenue&f[keywords.criterion_name]=-NULL&sorts=session_purchase_facts.revenue+desc&limit=100&column_limit=50&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Atrue%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22conditional_formatting%22%3A%5B%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A356%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.total_cost%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A351%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A370%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22session_purchase_facts.revenue%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A365%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%2387d79b%22%5D%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22profit%22%5D%7D%2C%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23ffffff%22%2C%22%23FFFFFF%22%2C%22%2387d79b%22%5D%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.click_rate%22%5D%7D%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22keywords.criterion_name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A19%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22profit%22%2C%22label%22%3A%22Profit%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D-%24%7Badevents.total_cost%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585311,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10039,
+      "result_maker": {
+        "id": 10039,
+        "dynamic_fields": "[{\"table_calculation\":\"profit\",\"label\":\"Profit\",\"expression\":\"${session_purchase_facts.revenue}-${adevents.total_cost}\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "session_purchase_facts.revenue desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585311,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": true,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "conditional_formatting": [
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 356
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.total_cost"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 351
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 370
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "session_purchase_facts.revenue"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 365
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#87d79b"
+                ]
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "profit"
+              ]
+            },
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#ffffff",
+                  "#FFFFFF",
+                  "#87d79b"
+                ]
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.click_rate"
+              ]
+            }
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15580,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Keyword Spend vs Revenue",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 549362,
+        "view": "events",
+        "fields": [
+          "keywords.keyword_id",
+          "session_purchase_facts.revenue",
+          "adevents.total_cost"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "campaigns.campaign_id": "NOT NULL",
+          "events.traffic_source": "Adwords"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "adevents.total_cost desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.156628,
+        "vis_config": {
+          "type": "looker_scatter",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": true,
+          "point_style": "circle",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "interpolation": "linear",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "keywords.keyword_id"
+          ],
+          "y_axes": [
+            {
+              "label": "Attribution (USD)",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "custom",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "session_purchase_facts.total_attribution",
+                  "name": "Sessions Total Attribution",
+                  "axisId": "session_purchase_facts.total_attribution",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 452
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 440
+            }
+          ],
+          "x_axis_label": "Keyword Spend ($)",
+          "swap_axes": false,
+          "limit_displayed_rows_values": {
+            "show_hide": "hide",
+            "first_last": "first",
+            "num_rows": 0
+          },
+          "colors": [
+            "#673AB7",
+            "#3F51B5",
+            "#2196F3",
+            "#03A9F4",
+            "#00BCD4",
+            "#009688",
+            "#4CAF50",
+            "#8BC34A",
+            "#d1e03a",
+            "#FFEB3B",
+            "#9E9E9E",
+            "#607D8B"
+          ],
+          "series_colors": {
+            "session_purchase_facts.revenue": "#294988"
+          },
+          "reference_lines": [
+
+          ],
+          "trend_lines": [
+            {
+              "color": "#999292",
+              "label_position": "right",
+              "period": 7,
+              "regression_type": "linear",
+              "series_index": 1,
+              "show_label": true,
+              "label_type": "string",
+              "label": "Trend"
+            }
+          ]
+        },
+        "filter_config": {
+          "campaigns.campaign_id": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 12,
+              "error": false
+            }
+          ],
+          "events.traffic_source": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Adwords"
+                },
+                {
+                }
+              ],
+              "id": 13,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "F6m72C9",
+        "dynamic_fields": "[]",
+        "client_id": "6EcKHw1mwKcRfaXZMANJX3",
+        "share_url": "https://demo.looker.com/x/6EcKHw1mwKcRfaXZMANJX3",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=keywords.keyword_id,session_purchase_facts.revenue,adevents.total_cost&f[campaigns.campaign_id]=NOT+NULL&f[events.traffic_source]=Adwords&sorts=adevents.total_cost+desc&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_scatter%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22interpolation%22%3A%22linear%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22keywords.keyword_id%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Attribution+%28USD%29%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22custom%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22session_purchase_facts.total_attribution%22%2C%22name%22%3A%22Sessions+Total+Attribution%22%2C%22axisId%22%3A%22session_purchase_facts.total_attribution%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A452%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A440%7D%5D%2C%22x_axis_label%22%3A%22Keyword+Spend+%28%24%29%22%2C%22swap_axes%22%3Afalse%2C%22limit_displayed_rows_values%22%3A%7B%22show_hide%22%3A%22hide%22%2C%22first_last%22%3A%22first%22%2C%22num_rows%22%3A0%7D%2C%22colors%22%3A%5B%22%23673AB7%22%2C%22%233F51B5%22%2C%22%232196F3%22%2C%22%2303A9F4%22%2C%22%2300BCD4%22%2C%22%23009688%22%2C%22%234CAF50%22%2C%22%238BC34A%22%2C%22%23d1e03a%22%2C%22%23FFEB3B%22%2C%22%239E9E9E%22%2C%22%23607D8B%22%5D%2C%22series_colors%22%3A%7B%22session_purchase_facts.revenue%22%3A%22%23294988%22%7D%2C%22reference_lines%22%3A%5B%5D%2C%22trend_lines%22%3A%5B%7B%22color%22%3A%22%23999292%22%2C%22label_position%22%3A%22right%22%2C%22period%22%3A7%2C%22regression_type%22%3A%22linear%22%2C%22series_index%22%3A1%2C%22show_label%22%3Atrue%2C%22label_type%22%3A%22string%22%2C%22label%22%3A%22Trend%22%7D%5D%7D&filter_config=%7B%22campaigns.campaign_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A12%2C%22error%22%3Afalse%7D%5D%2C%22events.traffic_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A13%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=keywords.keyword_id,session_purchase_facts.revenue,adevents.total_cost&f[campaigns.campaign_id]=NOT+NULL&f[events.traffic_source]=Adwords&sorts=adevents.total_cost+desc&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_scatter%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22circle%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22interpolation%22%3A%22linear%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22keywords.keyword_id%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Attribution+%28USD%29%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22custom%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22session_purchase_facts.total_attribution%22%2C%22name%22%3A%22Sessions+Total+Attribution%22%2C%22axisId%22%3A%22session_purchase_facts.total_attribution%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A452%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A440%7D%5D%2C%22x_axis_label%22%3A%22Keyword+Spend+%28%24%29%22%2C%22swap_axes%22%3Afalse%2C%22limit_displayed_rows_values%22%3A%7B%22show_hide%22%3A%22hide%22%2C%22first_last%22%3A%22first%22%2C%22num_rows%22%3A0%7D%2C%22colors%22%3A%5B%22%23673AB7%22%2C%22%233F51B5%22%2C%22%232196F3%22%2C%22%2303A9F4%22%2C%22%2300BCD4%22%2C%22%23009688%22%2C%22%234CAF50%22%2C%22%238BC34A%22%2C%22%23d1e03a%22%2C%22%23FFEB3B%22%2C%22%239E9E9E%22%2C%22%23607D8B%22%5D%2C%22series_colors%22%3A%7B%22session_purchase_facts.revenue%22%3A%22%23294988%22%7D%2C%22reference_lines%22%3A%5B%5D%2C%22trend_lines%22%3A%5B%7B%22color%22%3A%22%23999292%22%2C%22label_position%22%3A%22right%22%2C%22period%22%3A7%2C%22regression_type%22%3A%22linear%22%2C%22series_index%22%3A1%2C%22show_label%22%3Atrue%2C%22label_type%22%3A%22string%22%2C%22label%22%3A%22Trend%22%7D%5D%7D&filter_config=%7B%22campaigns.campaign_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A12%2C%22error%22%3Afalse%7D%5D%2C%22events.traffic_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A13%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 549362,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6735,
+      "result_maker": {
+        "id": 6735,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "adevents.total_cost desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 549362,
+        "query": null,
+        "vis_config": {
+          "type": "looker_scatter",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": true,
+          "point_style": "circle",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "interpolation": "linear",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "keywords.keyword_id"
+          ],
+          "y_axes": [
+            {
+              "label": "Attribution (USD)",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "custom",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "session_purchase_facts.total_attribution",
+                  "name": "Sessions Total Attribution",
+                  "axisId": "session_purchase_facts.total_attribution",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 452
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 440
+            }
+          ],
+          "x_axis_label": "Keyword Spend ($)",
+          "swap_axes": false,
+          "limit_displayed_rows_values": {
+            "show_hide": "hide",
+            "first_last": "first",
+            "num_rows": 0
+          },
+          "colors": [
+            "#673AB7",
+            "#3F51B5",
+            "#2196F3",
+            "#03A9F4",
+            "#00BCD4",
+            "#009688",
+            "#4CAF50",
+            "#8BC34A",
+            "#d1e03a",
+            "#FFEB3B",
+            "#9E9E9E",
+            "#607D8B"
+          ],
+          "series_colors": {
+            "session_purchase_facts.revenue": "#294988"
+          },
+          "reference_lines": [
+
+          ],
+          "trend_lines": [
+            {
+              "color": "#999292",
+              "label_position": "right",
+              "period": 7,
+              "regression_type": "linear",
+              "series_index": 1,
+              "show_label": true,
+              "label_type": "string",
+              "label": "Trend"
+            }
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15581,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Keyword Profitability",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 577787,
+        "view": "events",
+        "fields": [
+          "keywords.criterion_name",
+          "adevents.total_cost",
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "keywords.criterion_name": "-NULL",
+          "adevents.total_cost": ">0"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "adevents.total_cost desc"
+        ],
+        "limit": "100",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.125184,
+        "vis_config": {
+          "type": "looker_column",
+          "stacking": "percent",
+          "show_value_labels": true,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#949393",
+          "colors": [
+            "#87d79b",
+            "#294988",
+            "#476d70",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "x_axis_label": "Keyword Name",
+          "y_axes": [
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "adevents.total_cost_clicks",
+                  "name": "Cost",
+                  "axisId": "adevents.total_cost_clicks",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 539
+                },
+                {
+                  "id": "session_purchase_facts.total_attribution",
+                  "name": "Attribution",
+                  "axisId": "session_purchase_facts.total_attribution",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 542
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 527
+            }
+          ],
+          "series_types": {
+            "adevents.total_cost_clicks": "line",
+            "session_purchase_facts.total_attribution": "line"
+          },
+          "series_labels": {
+            "adevents.total_cost_clicks": "Cost",
+            "session_purchase_facts.total_attribution": "Attribution",
+            "adevents.total_cost": "Total Spend"
+          },
+          "hidden_series": [
+
+          ],
+          "hidden_fields": [
+            "profit"
+          ]
+        },
+        "filter_config": {
+          "keywords.criterion_name": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 8,
+              "error": false
+            }
+          ],
+          "adevents.total_cost": [
+            {
+              "type": ">",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                }
+              ],
+              "id": 9,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "z8tXWWb",
+        "dynamic_fields": "[{\"table_calculation\":\"profit\",\"label\":\"Profit\",\"expression\":\"${session_purchase_facts.revenue}-${adevents.total_cost}\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "KELWuQBUkFt7Ts6Pag4jqA",
+        "share_url": "https://demo.looker.com/x/KELWuQBUkFt7Ts6Pag4jqA",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=keywords.criterion_name,adevents.total_cost,session_purchase_facts.revenue&f[keywords.criterion_name]=-NULL&f[adevents.total_cost]=%3E0&sorts=adevents.total_cost+desc&limit=100&column_limit=50&vis=%7B%22type%22%3A%22looker_column%22%2C%22stacking%22%3A%22percent%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23949393%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%2C%22%23476d70%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22x_axis_label%22%3A%22Keyword+Name%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_cost_clicks%22%2C%22name%22%3A%22Cost%22%2C%22axisId%22%3A%22adevents.total_cost_clicks%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A539%7D%2C%7B%22id%22%3A%22session_purchase_facts.total_attribution%22%2C%22name%22%3A%22Attribution%22%2C%22axisId%22%3A%22session_purchase_facts.total_attribution%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A542%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A527%7D%5D%2C%22series_types%22%3A%7B%22adevents.total_cost_clicks%22%3A%22line%22%2C%22session_purchase_facts.total_attribution%22%3A%22line%22%7D%2C%22series_labels%22%3A%7B%22adevents.total_cost_clicks%22%3A%22Cost%22%2C%22session_purchase_facts.total_attribution%22%3A%22Attribution%22%2C%22adevents.total_cost%22%3A%22Total+Spend%22%7D%2C%22hidden_series%22%3A%5B%5D%2C%22hidden_fields%22%3A%5B%22profit%22%5D%7D&filter_config=%7B%22keywords.criterion_name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22adevents.total_cost%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22profit%22%2C%22label%22%3A%22Profit%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D-%24%7Badevents.total_cost%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=keywords.criterion_name,adevents.total_cost,session_purchase_facts.revenue&f[keywords.criterion_name]=-NULL&f[adevents.total_cost]=%3E0&sorts=adevents.total_cost+desc&limit=100&column_limit=50&vis=%7B%22type%22%3A%22looker_column%22%2C%22stacking%22%3A%22percent%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23949393%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%2C%22%23476d70%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22x_axis_label%22%3A%22Keyword+Name%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_cost_clicks%22%2C%22name%22%3A%22Cost%22%2C%22axisId%22%3A%22adevents.total_cost_clicks%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A539%7D%2C%7B%22id%22%3A%22session_purchase_facts.total_attribution%22%2C%22name%22%3A%22Attribution%22%2C%22axisId%22%3A%22session_purchase_facts.total_attribution%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A542%7D%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A527%7D%5D%2C%22series_types%22%3A%7B%22adevents.total_cost_clicks%22%3A%22line%22%2C%22session_purchase_facts.total_attribution%22%3A%22line%22%7D%2C%22series_labels%22%3A%7B%22adevents.total_cost_clicks%22%3A%22Cost%22%2C%22session_purchase_facts.total_attribution%22%3A%22Attribution%22%2C%22adevents.total_cost%22%3A%22Total+Spend%22%7D%2C%22hidden_series%22%3A%5B%5D%2C%22hidden_fields%22%3A%5B%22profit%22%5D%7D&filter_config=%7B%22keywords.criterion_name%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22adevents.total_cost%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22profit%22%2C%22label%22%3A%22Profit%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D-%24%7Badevents.total_cost%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 577787,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 7440,
+      "result_maker": {
+        "id": 7440,
+        "dynamic_fields": "[{\"table_calculation\":\"profit\",\"label\":\"Profit\",\"expression\":\"${session_purchase_facts.revenue}-${adevents.total_cost}\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "adevents.total_cost desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 577787,
+        "query": null,
+        "vis_config": {
+          "type": "looker_column",
+          "stacking": "percent",
+          "show_value_labels": true,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#949393",
+          "colors": [
+            "#87d79b",
+            "#294988",
+            "#476d70",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "x_axis_label": "Keyword Name",
+          "y_axes": [
+            {
+              "label": "",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "adevents.total_cost_clicks",
+                  "name": "Cost",
+                  "axisId": "adevents.total_cost_clicks",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 539
+                },
+                {
+                  "id": "session_purchase_facts.total_attribution",
+                  "name": "Attribution",
+                  "axisId": "session_purchase_facts.total_attribution",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 542
+                }
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 527
+            }
+          ],
+          "series_types": {
+            "adevents.total_cost_clicks": "line",
+            "session_purchase_facts.total_attribution": "line"
+          },
+          "series_labels": {
+            "adevents.total_cost_clicks": "Cost",
+            "session_purchase_facts.total_attribution": "Attribution",
+            "adevents.total_cost": "Total Spend"
+          },
+          "hidden_series": [
+
+          ],
+          "hidden_fields": [
+            "profit"
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15582,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "CTR By Time of Day",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585312,
+        "view": "events",
+        "fields": [
+          "adevents.click_rate",
+          "adevents.created_hour_of_day",
+          "adevents.created_day_of_week"
+        ],
+        "pivots": [
+          "adevents.created_day_of_week"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "adevents.created_day_of_week": "",
+          "adevents.created_hour_of_day": "NOT NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "adevents.created_day_of_week 0",
+          "adevents.created_hour_of_day"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 4.125720977783203,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": true,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "conditional_formatting": [
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#FFFFFF",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 595
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.click_rate"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 590
+            }
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "adevents.created_day_of_week": [
+            {
+              "type": "any",
+              "values": [
+                {
+                  "constant": ""
+                },
+                {
+                }
+              ],
+              "id": 24,
+              "error": false
+            }
+          ],
+          "adevents.created_hour_of_day": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                },
+                {
+                }
+              ],
+              "id": 25,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "gFDXnyG",
+        "dynamic_fields": "[]",
+        "client_id": "uozTYMoMsUQcfJxtAuJLJV",
+        "share_url": "https://demo.looker.com/x/uozTYMoMsUQcfJxtAuJLJV",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=adevents.click_rate,adevents.created_hour_of_day,adevents.created_day_of_week&pivots=adevents.created_day_of_week&f[adevents.created_day_of_week]=&f[adevents.created_hour_of_day]=NOT+NULL&sorts=adevents.created_day_of_week+0,adevents.created_hour_of_day&limit=500&column_limit=50&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Atrue%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22conditional_formatting%22%3A%5B%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23FFFFFF%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A595%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.click_rate%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A590%7D%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22adevents.created_day_of_week%22%3A%5B%7B%22type%22%3A%22any%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A24%2C%22error%22%3Afalse%7D%5D%2C%22adevents.created_hour_of_day%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A25%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=adevents.click_rate,adevents.created_hour_of_day,adevents.created_day_of_week&pivots=adevents.created_day_of_week&f[adevents.created_day_of_week]=&f[adevents.created_hour_of_day]=NOT+NULL&sorts=adevents.created_day_of_week+0,adevents.created_hour_of_day&limit=500&column_limit=50&vis=%7B%22type%22%3A%22table%22%2C%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22gray%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Atrue%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22conditional_formatting%22%3A%5B%7B%22type%22%3A%22low+to+high%22%2C%22value%22%3Anull%2C%22background_color%22%3Anull%2C%22font_color%22%3Anull%2C%22palette%22%3A%7B%22name%22%3A%22Custom%22%2C%22colors%22%3A%5B%22%23FFFFFF%22%2C%22%2387d79b%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A595%7D%2C%22bold%22%3Afalse%2C%22italic%22%3Afalse%2C%22strikethrough%22%3Afalse%2C%22fields%22%3A%5B%22adevents.click_rate%22%5D%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A590%7D%5D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22adevents.created_day_of_week%22%3A%5B%7B%22type%22%3A%22any%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A24%2C%22error%22%3Afalse%7D%5D%2C%22adevents.created_hour_of_day%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%7D%2C%7B%7D%5D%2C%22id%22%3A25%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585312,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10040,
+      "result_maker": {
+        "id": 10040,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "adevents.created_day_of_week 0",
+          "adevents.created_hour_of_day"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585312,
+        "query": null,
+        "vis_config": {
+          "type": "table",
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "gray",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": true,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "conditional_formatting": [
+            {
+              "type": "low to high",
+              "value": null,
+              "background_color": null,
+              "font_color": null,
+              "palette": {
+                "name": "Custom",
+                "colors": [
+                  "#FFFFFF",
+                  "#87d79b"
+                ],
+                "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                "__LINE_NUM": 595
+              },
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "fields": [
+                "adevents.click_rate"
+              ],
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 590
+            }
+          ],
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15583,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "text",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": "<font color=\"#294988\" size=\"6\" weight=\"bold\">Campaign Performance</font>",
+      "title": "Campaign performance",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": null,
+      "query_id": null,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": null,
+      "result_maker": null,
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": false,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15584,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Campaign Benchmark",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 549244,
+        "view": "events",
+        "fields": [
+          "sessions.weeks_since_campaing_start",
+          "campaigns.count",
+          "campaigns.campaign_benchmark",
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": [
+          "campaigns.campaign_benchmark"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "sessions.weeks_since_campaing_start": "[0, 12]",
+          "campaigns.campaign_selector": "651 - NA - Search - Competition"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "campaigns.campaign_benchmark 0",
+          "sessions.weeks_since_campaing_start"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 1.5948622226715088,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "linear",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "681 - NA - Search - Competition",
+                  "name": "681 - NA - Search - Competition",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 815
+                },
+                {
+                  "id": "Benchmark",
+                  "name": "Benchmark",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 818
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": true,
+              "tickDensity": "default",
+              "type": "linear",
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 812
+            }
+          ],
+          "hidden_fields": [
+            "session_purchase_facts.total_attribution",
+            "campaigns.count",
+            "calculation_1",
+            "campaign_revenue",
+            "session_purchase_facts.revenue"
+          ],
+          "x_axis_label": "Weeks Since Start",
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ],
+          "series_colors": {
+          }
+        },
+        "filter_config": {
+          "sessions.weeks_since_campaing_start": [
+            {
+              "type": "between",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                  "constant": "12"
+                }
+              ],
+              "id": 0,
+              "error": false,
+              "variant": "[]"
+            }
+          ],
+          "campaigns.campaign_selector": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "651 - NA - Search - Competition"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "66VkbhD",
+        "dynamic_fields": "[{\"table_calculation\":\"campaign_revenue\",\"label\":\"Campaign Revenue\",\"expression\":\"${session_purchase_facts.revenue}/${campaigns.count}\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"rolling_attribution\",\"label\":\"Rolling Attribution\",\"expression\":\"if(is_null(${session_purchase_facts.revenue}),null,running_total(${session_purchase_facts.revenue}/${campaigns.count}))\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "fX5rFCj9ysJ6QqyHZxtAgp",
+        "share_url": "https://demo.looker.com/x/fX5rFCj9ysJ6QqyHZxtAgp",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=sessions.weeks_since_campaing_start,campaigns.count,campaigns.campaign_benchmark,session_purchase_facts.revenue&pivots=campaigns.campaign_benchmark&f[sessions.weeks_since_campaing_start]=%5B0%2C+12%5D&f[campaigns.campaign_selector]=651+-+NA+-+Search+-+Competition&sorts=campaigns.campaign_benchmark+0,sessions.weeks_since_campaing_start&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22linear%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22name%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A815%7D%2C%7B%22id%22%3A%22Benchmark%22%2C%22name%22%3A%22Benchmark%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A818%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22type%22%3A%22linear%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A812%7D%5D%2C%22hidden_fields%22%3A%5B%22session_purchase_facts.total_attribution%22%2C%22campaigns.count%22%2C%22calculation_1%22%2C%22campaign_revenue%22%2C%22session_purchase_facts.revenue%22%5D%2C%22x_axis_label%22%3A%22Weeks+Since+Start%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22sessions.weeks_since_campaing_start%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2212%22%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%2C%22variant%22%3A%22%5B%5D%22%7D%5D%2C%22campaigns.campaign_selector%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22651+-+NA+-+Search+-+Competition%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22campaign_revenue%22%2C%22label%22%3A%22Campaign+Revenue%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D%2F%24%7Bcampaigns.count%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22rolling_attribution%22%2C%22label%22%3A%22Rolling+Attribution%22%2C%22expression%22%3A%22if%28is_null%28%24%7Bsession_purchase_facts.revenue%7D%29%2Cnull%2Crunning_total%28%24%7Bsession_purchase_facts.revenue%7D%2F%24%7Bcampaigns.count%7D%29%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=sessions.weeks_since_campaing_start,campaigns.count,campaigns.campaign_benchmark,session_purchase_facts.revenue&pivots=campaigns.campaign_benchmark&f[sessions.weeks_since_campaing_start]=%5B0%2C+12%5D&f[campaigns.campaign_selector]=651+-+NA+-+Search+-+Competition&sorts=campaigns.campaign_benchmark+0,sessions.weeks_since_campaing_start&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22linear%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22name%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A815%7D%2C%7B%22id%22%3A%22Benchmark%22%2C%22name%22%3A%22Benchmark%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A818%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22type%22%3A%22linear%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A812%7D%5D%2C%22hidden_fields%22%3A%5B%22session_purchase_facts.total_attribution%22%2C%22campaigns.count%22%2C%22calculation_1%22%2C%22campaign_revenue%22%2C%22session_purchase_facts.revenue%22%5D%2C%22x_axis_label%22%3A%22Weeks+Since+Start%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22sessions.weeks_since_campaing_start%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2212%22%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%2C%22variant%22%3A%22%5B%5D%22%7D%5D%2C%22campaigns.campaign_selector%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22651+-+NA+-+Search+-+Competition%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22campaign_revenue%22%2C%22label%22%3A%22Campaign+Revenue%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D%2F%24%7Bcampaigns.count%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22rolling_attribution%22%2C%22label%22%3A%22Rolling+Attribution%22%2C%22expression%22%3A%22if%28is_null%28%24%7Bsession_purchase_facts.revenue%7D%29%2Cnull%2Crunning_total%28%24%7Bsession_purchase_facts.revenue%7D%2F%24%7Bcampaigns.count%7D%29%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 549244,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6722,
+      "result_maker": {
+        "id": 6722,
+        "dynamic_fields": "[{\"table_calculation\":\"campaign_revenue\",\"label\":\"Campaign Revenue\",\"expression\":\"${session_purchase_facts.revenue}/${campaigns.count}\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"rolling_attribution\",\"label\":\"Rolling Attribution\",\"expression\":\"if(is_null(${session_purchase_facts.revenue}),null,running_total(${session_purchase_facts.revenue}/${campaigns.count}))\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_selector"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "campaigns.campaign_benchmark 0",
+          "sessions.weeks_since_campaing_start"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 549244,
+        "query": null,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "linear",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "681 - NA - Search - Competition",
+                  "name": "681 - NA - Search - Competition",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 815
+                },
+                {
+                  "id": "Benchmark",
+                  "name": "Benchmark",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 818
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": true,
+              "tickDensity": "default",
+              "type": "linear",
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 812
+            }
+          ],
+          "hidden_fields": [
+            "session_purchase_facts.total_attribution",
+            "campaigns.count",
+            "calculation_1",
+            "campaign_revenue",
+            "session_purchase_facts.revenue"
+          ],
+          "x_axis_label": "Weeks Since Start",
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ],
+          "series_colors": {
+          }
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15585,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "ROI",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585313,
+        "view": "events",
+        "fields": [
+          "session_purchase_facts.ROI"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": null,
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.108445,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "ROI",
+          "comparison_label": "Campaign End Date",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "J8YxW5N",
+        "dynamic_fields": "[]",
+        "client_id": "clSfctdMHFyDklU7Va4HsI",
+        "share_url": "https://demo.looker.com/x/clSfctdMHFyDklU7Va4HsI",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=session_purchase_facts.ROI&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22ROI%22%2C%22comparison_label%22%3A%22Campaign+End+Date%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=session_purchase_facts.ROI&limit=500&vis=%7B%22type%22%3A%22single_value%22%2C%22query_timezone%22%3A%22America%2FLos_Angeles%22%2C%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Afalse%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22ROI%22%2C%22comparison_label%22%3A%22Campaign+End+Date%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585313,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10041,
+      "result_maker": {
+        "id": 10041,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": null,
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585313,
+        "query": null,
+        "vis_config": {
+          "type": "single_value",
+          "query_timezone": "America/Los_Angeles",
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": false,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "ROI",
+          "comparison_label": "Campaign End Date",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15586,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "End Date",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585314,
+        "view": "events",
+        "fields": [
+          "campaigns.end_date",
+          "campaigns.is_active_now"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "campaigns.end_date": "NOT NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "campaigns.end_date desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.156923,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": false,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "comparison_label": "",
+          "hidden_fields": [
+            "campaigns.is_active_now"
+          ],
+          "single_value_title": "End Date",
+          "value_format": "",
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "campaigns.end_date": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "constant": "7",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "TqJjjMS",
+        "dynamic_fields": "[{\"table_calculation\":\"is_active\",\"label\":\"Is Active\",\"expression\":\"if(${campaigns.is_active_now}, \\\"Is Active\\\", \\\"Not Active\\\")\",\"value_format\":null,\"value_format_name\":null,\"_kind_hint\":\"dimension\",\"_type_hint\":\"string\"}]",
+        "client_id": "zYtvMw48eV39a4ImYBwEpo",
+        "share_url": "https://demo.looker.com/x/zYtvMw48eV39a4ImYBwEpo",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=campaigns.end_date,campaigns.is_active_now&f[campaigns.end_date]=NOT+NULL&sorts=campaigns.end_date+desc&limit=500&column_limit=50&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Afalse%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22comparison_label%22%3A%22%22%2C%22hidden_fields%22%3A%5B%22campaigns.is_active_now%22%5D%2C%22single_value_title%22%3A%22End+Date%22%2C%22value_format%22%3A%22%22%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22campaigns.end_date%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%227%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22is_active%22%2C%22label%22%3A%22Is+Active%22%2C%22expression%22%3A%22if%28%24%7Bcampaigns.is_active_now%7D%2C+%5C%22Is+Active%5C%22%2C+%5C%22Not+Active%5C%22%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3Anull%2C%22_kind_hint%22%3A%22dimension%22%2C%22_type_hint%22%3A%22string%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=campaigns.end_date,campaigns.is_active_now&f[campaigns.end_date]=NOT+NULL&sorts=campaigns.end_date+desc&limit=500&column_limit=50&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Afalse%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22comparison_label%22%3A%22%22%2C%22hidden_fields%22%3A%5B%22campaigns.is_active_now%22%5D%2C%22single_value_title%22%3A%22End+Date%22%2C%22value_format%22%3A%22%22%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22campaigns.end_date%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%227%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22is_active%22%2C%22label%22%3A%22Is+Active%22%2C%22expression%22%3A%22if%28%24%7Bcampaigns.is_active_now%7D%2C+%5C%22Is+Active%5C%22%2C+%5C%22Not+Active%5C%22%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3Anull%2C%22_kind_hint%22%3A%22dimension%22%2C%22_type_hint%22%3A%22string%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585314,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10042,
+      "result_maker": {
+        "id": 10042,
+        "dynamic_fields": "[{\"table_calculation\":\"is_active\",\"label\":\"Is Active\",\"expression\":\"if(${campaigns.is_active_now}, \\\"Is Active\\\", \\\"Not Active\\\")\",\"value_format\":null,\"value_format_name\":null,\"_kind_hint\":\"dimension\",\"_type_hint\":\"string\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_name"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "campaigns.end_date desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585314,
+        "query": null,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": false,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "comparison_label": "",
+          "hidden_fields": [
+            "campaigns.is_active_now"
+          ],
+          "single_value_title": "End Date",
+          "value_format": "",
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15587,
+      "dashboard_id": 3106,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Spend Benchmark",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 549247,
+        "view": "events",
+        "fields": [
+          "sessions.weeks_since_campaing_start",
+          "campaigns.count",
+          "adevents.total_cost",
+          "campaigns.campaign_benchmark"
+        ],
+        "pivots": [
+          "campaigns.campaign_benchmark"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "sessions.weeks_since_campaing_start": "[0, 12]",
+          "campaigns.campaign_selector": "308 - NA - Search - Other"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "campaigns.campaign_benchmark 0",
+          "sessions.weeks_since_campaing_start"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 2.575762987136841,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "linear",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "681 - NA - Search - Competition",
+                  "name": "681 - NA - Search - Competition",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 815
+                },
+                {
+                  "id": "Benchmark",
+                  "name": "Benchmark",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 818
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": true,
+              "tickDensity": "default",
+              "type": "linear",
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 812
+            }
+          ],
+          "hidden_fields": [
+            "campaigns.count",
+            "calculation_1",
+            "campaign_revenue",
+            "campaign_spend",
+            "adevents.total_cost"
+          ],
+          "x_axis_label": "Weeks Since Start",
+          "series_colors": {
+          },
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ]
+        },
+        "filter_config": {
+          "sessions.weeks_since_campaing_start": [
+            {
+              "type": "between",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                  "constant": "12"
+                }
+              ],
+              "id": 0,
+              "variant": "[]",
+              "error": false
+            }
+          ],
+          "campaigns.campaign_selector": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "308 - NA - Search - Other"
+                },
+                {
+                }
+              ],
+              "id": 2,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "B9fmMcy",
+        "dynamic_fields": "[{\"table_calculation\":\"campaign_spend\",\"label\":\"Campaign Spend\",\"expression\":\"${adevents.total_cost}/${campaigns.count}\",\"value_format\":null,\"value_format_name\":null,\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"rolling_spend\",\"label\":\"Rolling Spend\",\"expression\":\"if(is_null(${adevents.total_cost}),null,running_total(${adevents.total_cost}/${campaigns.count}))\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "OKyrhfOFFBMZye9tl5rIm1",
+        "share_url": "https://demo.looker.com/x/OKyrhfOFFBMZye9tl5rIm1",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=sessions.weeks_since_campaing_start,campaigns.count,adevents.total_cost,campaigns.campaign_benchmark&pivots=campaigns.campaign_benchmark&f[sessions.weeks_since_campaing_start]=%5B0%2C+12%5D&f[campaigns.campaign_selector]=308+-+NA+-+Search+-+Other&sorts=campaigns.campaign_benchmark+0,sessions.weeks_since_campaing_start&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22linear%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22name%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A815%7D%2C%7B%22id%22%3A%22Benchmark%22%2C%22name%22%3A%22Benchmark%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A818%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22type%22%3A%22linear%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A812%7D%5D%2C%22hidden_fields%22%3A%5B%22campaigns.count%22%2C%22calculation_1%22%2C%22campaign_revenue%22%2C%22campaign_spend%22%2C%22adevents.total_cost%22%5D%2C%22x_axis_label%22%3A%22Weeks+Since+Start%22%2C%22series_colors%22%3A%7B%7D%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%7D&filter_config=%7B%22sessions.weeks_since_campaing_start%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2212%22%7D%5D%2C%22id%22%3A0%2C%22variant%22%3A%22%5B%5D%22%2C%22error%22%3Afalse%7D%5D%2C%22campaigns.campaign_selector%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22308+-+NA+-+Search+-+Other%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22campaign_spend%22%2C%22label%22%3A%22Campaign+Spend%22%2C%22expression%22%3A%22%24%7Badevents.total_cost%7D%2F%24%7Bcampaigns.count%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3Anull%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22rolling_spend%22%2C%22label%22%3A%22Rolling+Spend%22%2C%22expression%22%3A%22if%28is_null%28%24%7Badevents.total_cost%7D%29%2Cnull%2Crunning_total%28%24%7Badevents.total_cost%7D%2F%24%7Bcampaigns.count%7D%29%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=sessions.weeks_since_campaing_start,campaigns.count,adevents.total_cost,campaigns.campaign_benchmark&pivots=campaigns.campaign_benchmark&f[sessions.weeks_since_campaing_start]=%5B0%2C+12%5D&f[campaigns.campaign_selector]=308+-+NA+-+Search+-+Other&sorts=campaigns.campaign_benchmark+0,sessions.weeks_since_campaing_start&limit=500&column_limit=50&vis=%7B%22type%22%3A%22looker_line%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22linear%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22point_style%22%3A%22circle_outline%22%2C%22interpolation%22%3A%22linear%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22name%22%3A%22681+-+NA+-+Search+-+Competition%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A815%7D%2C%7B%22id%22%3A%22Benchmark%22%2C%22name%22%3A%22Benchmark%22%2C%22axisId%22%3A%22session_purchase_facts.return_on_investment%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A818%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22type%22%3A%22linear%22%2C%22__FILE%22%3A%22marketing%2Fcampaign_performance.dashboard.lookml%22%2C%22__LINE_NUM%22%3A812%7D%5D%2C%22hidden_fields%22%3A%5B%22campaigns.count%22%2C%22calculation_1%22%2C%22campaign_revenue%22%2C%22campaign_spend%22%2C%22adevents.total_cost%22%5D%2C%22x_axis_label%22%3A%22Weeks+Since+Start%22%2C%22series_colors%22%3A%7B%7D%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%7D&filter_config=%7B%22sessions.weeks_since_campaing_start%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2212%22%7D%5D%2C%22id%22%3A0%2C%22variant%22%3A%22%5B%5D%22%2C%22error%22%3Afalse%7D%5D%2C%22campaigns.campaign_selector%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22308+-+NA+-+Search+-+Other%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22campaign_spend%22%2C%22label%22%3A%22Campaign+Spend%22%2C%22expression%22%3A%22%24%7Badevents.total_cost%7D%2F%24%7Bcampaigns.count%7D%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3Anull%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22rolling_spend%22%2C%22label%22%3A%22Rolling+Spend%22%2C%22expression%22%3A%22if%28is_null%28%24%7Badevents.total_cost%7D%29%2Cnull%2Crunning_total%28%24%7Badevents.total_cost%7D%2F%24%7Bcampaigns.count%7D%29%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 549247,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6723,
+      "result_maker": {
+        "id": 6723,
+        "dynamic_fields": "[{\"table_calculation\":\"campaign_spend\",\"label\":\"Campaign Spend\",\"expression\":\"${adevents.total_cost}/${campaigns.count}\",\"value_format\":null,\"value_format_name\":null,\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"rolling_spend\",\"label\":\"Rolling Spend\",\"expression\":\"if(is_null(${adevents.total_cost}),null,running_total(${adevents.total_cost}/${campaigns.count}))\",\"value_format\":null,\"value_format_name\":\"usd_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Campaign Name",
+                "field": "campaigns.campaign_selector"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "campaigns.campaign_benchmark 0",
+          "sessions.weeks_since_campaing_start"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 549247,
+        "query": null,
+        "vis_config": {
+          "type": "looker_line",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "linear",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": false,
+          "point_style": "circle_outline",
+          "interpolation": "linear",
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "681 - NA - Search - Competition",
+                  "name": "681 - NA - Search - Competition",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 815
+                },
+                {
+                  "id": "Benchmark",
+                  "name": "Benchmark",
+                  "axisId": "session_purchase_facts.return_on_investment",
+                  "__FILE": "marketing/campaign_performance.dashboard.lookml",
+                  "__LINE_NUM": 818
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": true,
+              "tickDensity": "default",
+              "type": "linear",
+              "__FILE": "marketing/campaign_performance.dashboard.lookml",
+              "__LINE_NUM": 812
+            }
+          ],
+          "hidden_fields": [
+            "campaigns.count",
+            "calculation_1",
+            "campaign_revenue",
+            "campaign_spend",
+            "adevents.total_cost"
+          ],
+          "x_axis_label": "Weeks Since Start",
+          "series_colors": {
+          },
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": 4595,
+      "dashboard_id": 3106,
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 26320,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15574,
+          "row": 2,
+          "column": 4,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26321,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15575,
+          "row": 2,
+          "column": 0,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26322,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15576,
+          "row": 2,
+          "column": 8,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26323,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15577,
+          "row": 2,
+          "column": 12,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26324,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15578,
+          "row": 6,
+          "column": 15,
+          "width": 9,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26325,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15579,
+          "row": 13,
+          "column": 12,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26326,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15580,
+          "row": 23,
+          "column": 0,
+          "width": 12,
+          "height": 11,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26327,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15581,
+          "row": 13,
+          "column": 0,
+          "width": 12,
+          "height": 10,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26328,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15582,
+          "row": 23,
+          "column": 12,
+          "width": 12,
+          "height": 11,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26329,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15583,
+          "row": 0,
+          "column": 0,
+          "width": 24,
+          "height": 2,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26330,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15584,
+          "row": 6,
+          "column": 0,
+          "width": 8,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26331,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15585,
+          "row": 2,
+          "column": 16,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26332,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15586,
+          "row": 2,
+          "column": 20,
+          "width": 4,
+          "height": 4,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26333,
+          "dashboard_layout_id": 4595,
+          "dashboard_element_id": 15587,
+          "row": 6,
+          "column": 8,
+          "width": 7,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": 3479,
+      "dashboard_id": 3106,
+      "name": "Campaign Name",
+      "title": "Campaign Name",
+      "type": "field_filter",
+      "default_value": "12 - NA - Search - Promo",
+      "explore": "events",
+      "dimension": "campaigns.campaign_name",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook_adwords",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": null,
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Campaigns Campaign Name",
+        "label_from_parameter": null,
+        "label_short": "Campaign Name",
+        "lookml_link": "/projects/digital_marketing/files/campaigns.view.lkml?line=50",
+        "map_layer": null,
+        "name": "campaigns.campaign_name",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "campaigns",
+        "view_label": "Campaigns",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Campaign Name",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "digital_marketing",
+        "scope": "campaigns",
+        "source_file": "campaigns.view.lkml",
+        "source_file_path": "digital_marketing/campaigns.view.lkml",
+        "suggest_dimension": "campaigns.campaign_name",
+        "suggest_explore": "events",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "load_configuration": "cache_run",
+  "background_color": "#ffffff",
+  "show_title": true,
+  "title_color": "#f94000",
+  "show_filters_bar": false,
+  "tile_background_color": "white",
+  "tile_text_color": "#0b91e6",
+  "text_tile_text_color": "#0b91e6",
+  "last_accessed_at": "2018-12-04 16:20:28 +0000",
+  "created_at": "2018-06-07 13:52:41 +0000",
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "lookml_link_id": "thelook_adwords::campaign_performance",
+  "model": null,
+  "content_favorite_id": null,
+  "deleted": false,
+  "last_viewed_at": null,
+  "can": {
+    "download": true,
+    "index": true,
+    "show": true,
+    "copy": true,
+    "run": true,
+    "create": true,
+    "move": true,
+    "update": true,
+    "destroy": true,
+    "recover": true,
+    "see_lookml": true,
+    "schedule": true,
+    "render": true
+  }
+}

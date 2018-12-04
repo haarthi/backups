@@ -1,0 +1,3986 @@
+{
+  "id": 3109,
+  "user_id": 856,
+  "title": "360 Marketing Dashboard",
+  "description": null,
+  "readonly": false,
+  "hidden": false,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "content_metadata_id": 17886,
+  "query_timezone": null,
+  "space": {
+    "id": 1097,
+    "creator_id": 21,
+    "name": "Marketing",
+    "parent_id": 1,
+    "content_metadata_id": 17574,
+    "is_personal": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "is_personal_descendant": false,
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "external_id": null,
+    "child_count": 0,
+    "is_user_root": false,
+    "is_root": false,
+    "can": {
+      "index": true,
+      "show": true,
+      "create": true,
+      "see_admin_spaces": true,
+      "update": true,
+      "destroy": true,
+      "move_content": true,
+      "edit_content": true
+    }
+  },
+  "space_id": 1097,
+  "view_count": 1877,
+  "favorite_count": 27,
+  "slug": "aeDNqslKpudFH0mCzdnpbH",
+  "dashboard_elements": [
+    {
+      "id": 15609,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Customer Trends",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 683305,
+        "view": "events",
+        "fields": [
+          "sessions.session_start_month",
+          "adevents.total_cost",
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "adevents.total_cost": ">0",
+          "sessions.traffic_source": "Adwords",
+          "adevents.adevent_id": "NOT NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.session_start_month"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 1.839637041091919,
+        "vis_config": {
+          "stacking": "",
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ],
+          "show_value_labels": false,
+          "label_density": 25,
+          "label_color": [
+
+          ],
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "point_style": "none",
+          "series_colors": {
+          },
+          "series_types": {
+          },
+          "limit_displayed_rows": false,
+          "hidden_series": [
+            "user_session_fact.average_engagement",
+            "user_session_fact.average_loyalty"
+          ],
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "adevents.total_cost",
+                  "name": "Total Spend",
+                  "axisId": "adevents.total_cost"
+                },
+                {
+                  "id": "session_purchase_facts.revenue",
+                  "name": "Revenue",
+                  "axisId": "session_purchase_facts.revenue"
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "maxValue": null,
+              "minValue": null,
+              "valueFormat": "$#,##0",
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 11,
+              "type": "linear"
+            }
+          ],
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "show_null_points": false,
+          "interpolation": "monotone",
+          "show_totals_labels": true,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "ordering": "none",
+          "show_null_labels": false,
+          "type": "looker_area",
+          "hidden_fields": [
+
+          ]
+        },
+        "filter_config": {
+          "adevents.total_cost": [
+            {
+              "type": ">",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                }
+              ],
+              "id": 4,
+              "error": false
+            }
+          ],
+          "sessions.traffic_source": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Adwords"
+                },
+                {
+                }
+              ],
+              "id": 5,
+              "error": false
+            }
+          ],
+          "adevents.adevent_id": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "constant": ""
+                },
+                {
+                }
+              ],
+              "id": 8,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "5bMJkKh",
+        "dynamic_fields": "[]",
+        "client_id": "V48861mLWEEgkVIOUHHqqP",
+        "share_url": "https://demo.looker.com/x/V48861mLWEEgkVIOUHHqqP",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=sessions.session_start_month,adevents.total_cost,session_purchase_facts.revenue&f[adevents.total_cost]=%3E0&f[sessions.traffic_source]=Adwords&f[adevents.adevent_id]=NOT+NULL&sorts=sessions.session_start_month&limit=500&vis=%7B%22stacking%22%3A%22%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22label_color%22%3A%5B%5D%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22series_colors%22%3A%7B%7D%2C%22series_types%22%3A%7B%7D%2C%22limit_displayed_rows%22%3Afalse%2C%22hidden_series%22%3A%5B%22user_session_fact.average_engagement%22%2C%22user_session_fact.average_loyalty%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_cost%22%2C%22name%22%3A%22Total+Spend%22%2C%22axisId%22%3A%22adevents.total_cost%22%7D%2C%7B%22id%22%3A%22session_purchase_facts.revenue%22%2C%22name%22%3A%22Revenue%22%2C%22axisId%22%3A%22session_purchase_facts.revenue%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22valueFormat%22%3A%22%24%23%2C%23%230%22%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A11%2C%22type%22%3A%22linear%22%7D%5D%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22interpolation%22%3A%22monotone%22%2C%22show_totals_labels%22%3Atrue%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22type%22%3A%22looker_area%22%2C%22hidden_fields%22%3A%5B%5D%7D&filter_config=%7B%22adevents.total_cost%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%2C%22sessions.traffic_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%2C%22error%22%3Afalse%7D%5D%2C%22adevents.adevent_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=sessions.session_start_month,adevents.total_cost,session_purchase_facts.revenue&f[adevents.total_cost]=%3E0&f[sessions.traffic_source]=Adwords&f[adevents.adevent_id]=NOT+NULL&sorts=sessions.session_start_month&limit=500&vis=%7B%22stacking%22%3A%22%22%2C%22colors%22%3A%5B%22%2387d79b%22%2C%22%23294988%22%5D%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22label_color%22%3A%5B%5D%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22series_colors%22%3A%7B%7D%2C%22series_types%22%3A%7B%7D%2C%22limit_displayed_rows%22%3Afalse%2C%22hidden_series%22%3A%5B%22user_session_fact.average_engagement%22%2C%22user_session_fact.average_loyalty%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22id%22%3A%22adevents.total_cost%22%2C%22name%22%3A%22Total+Spend%22%2C%22axisId%22%3A%22adevents.total_cost%22%7D%2C%7B%22id%22%3A%22session_purchase_facts.revenue%22%2C%22name%22%3A%22Revenue%22%2C%22axisId%22%3A%22session_purchase_facts.revenue%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22valueFormat%22%3A%22%24%23%2C%23%230%22%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A11%2C%22type%22%3A%22linear%22%7D%5D%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22ordinal%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22show_null_points%22%3Afalse%2C%22interpolation%22%3A%22monotone%22%2C%22show_totals_labels%22%3Atrue%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22type%22%3A%22looker_area%22%2C%22hidden_fields%22%3A%5B%5D%7D&filter_config=%7B%22adevents.total_cost%22%3A%5B%7B%22type%22%3A%22%5Cu003e%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%2C%22sessions.traffic_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%2C%22error%22%3Afalse%7D%5D%2C%22adevents.adevent_id%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 683305,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 12576,
+      "result_maker": {
+        "id": 12576,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "User Gender",
+                "field": "users.gender"
+              },
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "sessions.session_start_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.session_start_month"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 683305,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "colors": [
+            "#87d79b",
+            "#294988"
+          ],
+          "show_value_labels": false,
+          "label_density": 25,
+          "label_color": [
+
+          ],
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "point_style": "none",
+          "series_colors": {
+          },
+          "series_types": {
+          },
+          "limit_displayed_rows": false,
+          "hidden_series": [
+            "user_session_fact.average_engagement",
+            "user_session_fact.average_loyalty"
+          ],
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "id": "adevents.total_cost",
+                  "name": "Total Spend",
+                  "axisId": "adevents.total_cost"
+                },
+                {
+                  "id": "session_purchase_facts.revenue",
+                  "name": "Revenue",
+                  "axisId": "session_purchase_facts.revenue"
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "maxValue": null,
+              "minValue": null,
+              "valueFormat": "$#,##0",
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 11,
+              "type": "linear"
+            }
+          ],
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "ordinal",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "show_null_points": false,
+          "interpolation": "monotone",
+          "show_totals_labels": true,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "ordering": "none",
+          "show_null_labels": false,
+          "type": "looker_area",
+          "hidden_fields": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15610,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "First Touch -  Acquisition Referrer",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585318,
+        "view": "events",
+        "fields": [
+          "user_session_fact.count",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": [
+          "user_session_fact.site_acquisition_source"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": null,
+        "vis_config": {
+          "value_labels": "labels",
+          "label_type": "labPer",
+          "type": "looker_pie",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": null,
+        "visible_ui_sections": null,
+        "slug": "QQ7KF8f",
+        "dynamic_fields": "[]",
+        "client_id": "cmGTNevnkW5rJgTkJehRRD",
+        "share_url": "https://demo.looker.com/x/cmGTNevnkW5rJgTkJehRRD",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=user_session_fact.count,user_session_fact.site_acquisition_source&sorts=user_session_fact.site_acquisition_source&limit=500&vis=%7B%22value_labels%22%3A%22labels%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_pie%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=user_session_fact.count,user_session_fact.site_acquisition_source&sorts=user_session_fact.site_acquisition_source&limit=500&vis=%7B%22value_labels%22%3A%22labels%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_pie%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585318,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10047,
+      "result_maker": {
+        "id": 10047,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "user_session_fact.first_visit_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "user_session_fact.site_acquisition_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585318,
+        "query": null,
+        "vis_config": {
+          "value_labels": "labels",
+          "label_type": "labPer",
+          "type": "looker_pie",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15611,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Conversion by Acquisition Referrer",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 662126,
+        "view": "events",
+        "fields": [
+          "user_session_fact.site_acquisition_source",
+          "sessions.all_sessions",
+          "sessions.count_cart_or_later",
+          "sessions.count_purchase"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": null,
+        "filter_expression": null,
+        "sorts": [
+          "sessions.all_sessions desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 4.38544225692749,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "point_style": "none",
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_bar",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "show_dropoff": true,
+          "hidden_series": [
+            "sessions.count_product_or_later"
+          ],
+          "series_labels": {
+            "sessions.all_sessions": "Visits",
+            "sessions.count_browse_or_later": "Browse Visits",
+            "sessions.count_cart_or_later": "Add to Cart Visits",
+            "sessions.count_purchase": "Purchases"
+          },
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+        },
+        "visible_ui_sections": null,
+        "slug": "s4vpkMZ",
+        "dynamic_fields": "[]",
+        "client_id": "R68OBvZpsGJC2I7lqc3DaD",
+        "share_url": "https://demo.looker.com/x/R68OBvZpsGJC2I7lqc3DaD",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=user_session_fact.site_acquisition_source,sessions.all_sessions,sessions.count_cart_or_later,sessions.count_purchase&sorts=sessions.all_sessions+desc&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_bar%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22show_dropoff%22%3Atrue%2C%22hidden_series%22%3A%5B%22sessions.count_product_or_later%22%5D%2C%22series_labels%22%3A%7B%22sessions.all_sessions%22%3A%22Visits%22%2C%22sessions.count_browse_or_later%22%3A%22Browse+Visits%22%2C%22sessions.count_cart_or_later%22%3A%22Add+to+Cart+Visits%22%2C%22sessions.count_purchase%22%3A%22Purchases%22%7D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=user_session_fact.site_acquisition_source,sessions.all_sessions,sessions.count_cart_or_later,sessions.count_purchase&sorts=sessions.all_sessions+desc&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22point_style%22%3A%22none%22%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_bar%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22show_dropoff%22%3Atrue%2C%22hidden_series%22%3A%5B%22sessions.count_product_or_later%22%5D%2C%22series_labels%22%3A%7B%22sessions.all_sessions%22%3A%22Visits%22%2C%22sessions.count_browse_or_later%22%3A%22Browse+Visits%22%2C%22sessions.count_cart_or_later%22%3A%22Add+to+Cart+Visits%22%2C%22sessions.count_purchase%22%3A%22Purchases%22%7D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 662126,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 11981,
+      "result_maker": {
+        "id": 11981,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "user_session_fact.first_visit_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.all_sessions desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 662126,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "point_style": "none",
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_bar",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "show_dropoff": true,
+          "hidden_series": [
+            "sessions.count_product_or_later"
+          ],
+          "series_labels": {
+            "sessions.all_sessions": "Visits",
+            "sessions.count_browse_or_later": "Browse Visits",
+            "sessions.count_cart_or_later": "Add to Cart Visits",
+            "sessions.count_purchase": "Purchases"
+          },
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15612,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "User Acquisition Trends",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585320,
+        "view": "events",
+        "fields": [
+          "user_session_fact.first_visit_month",
+          "user_session_fact.count",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "pivots": [
+          "user_session_fact.site_acquisition_source"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "user_session_fact.first_visit_month": "12 months ago for 12 months"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "user_session_fact.first_visit_month desc",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.548274040222168,
+        "vis_config": {
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "monotone",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_area",
+          "ordering": "none",
+          "show_null_labels": false,
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "user_session_fact.first_visit_month": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "12",
+                  "unit": "c_mo"
+                },
+                {
+                }
+              ],
+              "id": 9,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "cTtqWdP",
+        "dynamic_fields": "[]",
+        "client_id": "dSDz1HlhnjJUrqQsFl2cjO",
+        "share_url": "https://demo.looker.com/x/dSDz1HlhnjJUrqQsFl2cjO",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=user_session_fact.first_visit_month,user_session_fact.count,user_session_fact.site_acquisition_source&pivots=user_session_fact.site_acquisition_source&f[user_session_fact.first_visit_month]=12+months+ago+for+12+months&sorts=user_session_fact.first_visit_month+desc,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22monotone%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_area%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22user_session_fact.first_visit_month%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2212%22%2C%22unit%22%3A%22c_mo%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=user_session_fact.first_visit_month,user_session_fact.count,user_session_fact.site_acquisition_source&pivots=user_session_fact.site_acquisition_source&f[user_session_fact.first_visit_month]=12+months+ago+for+12+months&sorts=user_session_fact.first_visit_month+desc,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22monotone%22%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_area%22%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22user_session_fact.first_visit_month%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2212%22%2C%22unit%22%3A%22c_mo%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585320,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10049,
+      "result_maker": {
+        "id": 10049,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "user_session_fact.first_visit_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "user_session_fact.first_visit_month desc",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585320,
+        "query": null,
+        "vis_config": {
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "monotone",
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "looker_area",
+          "ordering": "none",
+          "show_null_labels": false,
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15613,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Repeat Visits",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 550196,
+        "view": "events",
+        "fields": [
+          "sessions.session_rank",
+          "user_session_fact.count",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "pivots": [
+          "user_session_fact.site_acquisition_source"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "sessions.session_rank": "<11",
+          "user_session_fact.first_visit_date": "12 months ago for 12 months"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.session_rank",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.04675,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "type": "looker_line",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "user_acquisition.count",
+            "user_session_fact.count"
+          ],
+          "x_axis_label": "Visit Number",
+          "y_axes": [
+            {
+              "label": "Retention",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "return_rate"
+                }
+              ]
+            }
+          ],
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "x_axis_reversed": false,
+          "y_axis_reversed": false
+        },
+        "filter_config": {
+          "sessions.session_rank": [
+            {
+              "type": "<",
+              "values": [
+                {
+                  "constant": "11"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "user_session_fact.first_visit_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "12",
+                  "unit": "c_mo"
+                },
+                {
+                }
+              ],
+              "id": 2,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "tbFmGSf",
+        "dynamic_fields": "[{\"table_calculation\":\"return_rate\",\"label\":\"Return rate\",\"expression\":\"${user_session_fact.count}/index(${user_session_fact.count},1)\",\"value_format\":null,\"value_format_name\":\"percent_1\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "SzEugj38a1PsemvgjFybLO",
+        "share_url": "https://demo.looker.com/x/SzEugj38a1PsemvgjFybLO",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=sessions.session_rank,user_session_fact.count,user_session_fact.site_acquisition_source&pivots=user_session_fact.site_acquisition_source&f[sessions.session_rank]=%3C11&f[user_session_fact.first_visit_date]=12+months+ago+for+12+months&sorts=sessions.session_rank,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22user_acquisition.count%22%2C%22user_session_fact.count%22%5D%2C%22x_axis_label%22%3A%22Visit+Number%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Retention%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22return_rate%22%7D%5D%7D%5D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%7D&filter_config=%7B%22sessions.session_rank%22%3A%5B%7B%22type%22%3A%22%5Cu003c%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2211%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22user_session_fact.first_visit_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2212%22%2C%22unit%22%3A%22c_mo%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22return_rate%22%2C%22label%22%3A%22Return+rate%22%2C%22expression%22%3A%22%24%7Buser_session_fact.count%7D%2Findex%28%24%7Buser_session_fact.count%7D%2C1%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_1%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=sessions.session_rank,user_session_fact.count,user_session_fact.site_acquisition_source&pivots=user_session_fact.site_acquisition_source&f[sessions.session_rank]=%3C11&f[user_session_fact.first_visit_date]=12+months+ago+for+12+months&sorts=sessions.session_rank,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22user_acquisition.count%22%2C%22user_session_fact.count%22%5D%2C%22x_axis_label%22%3A%22Visit+Number%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Retention%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22return_rate%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22return_rate%22%7D%5D%7D%5D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%7D&filter_config=%7B%22sessions.session_rank%22%3A%5B%7B%22type%22%3A%22%5Cu003c%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2211%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22user_session_fact.first_visit_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%2212%22%2C%22unit%22%3A%22c_mo%22%7D%2C%7B%7D%5D%2C%22id%22%3A2%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22return_rate%22%2C%22label%22%3A%22Return+rate%22%2C%22expression%22%3A%22%24%7Buser_session_fact.count%7D%2Findex%28%24%7Buser_session_fact.count%7D%2C1%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_1%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 550196,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6775,
+      "result_maker": {
+        "id": 6775,
+        "dynamic_fields": "[{\"table_calculation\":\"return_rate\",\"label\":\"Return rate\",\"expression\":\"${user_session_fact.count}/index(${user_session_fact.count},1)\",\"value_format\":null,\"value_format_name\":\"percent_1\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "user_session_fact.first_visit_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.session_rank",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 550196,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "type": "looker_line",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "user_acquisition.count",
+            "user_session_fact.count"
+          ],
+          "x_axis_label": "Visit Number",
+          "y_axes": [
+            {
+              "label": "Retention",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "return_rate"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "return_rate"
+                }
+              ]
+            }
+          ],
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "x_axis_reversed": false,
+          "y_axis_reversed": false
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15614,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Customer LTV",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 550188,
+        "view": "events",
+        "fields": [
+          "sessions.months_since_first_session",
+          "session_purchase_facts.revenue",
+          "user_session_fact.site_acquisition_source",
+          "user_session_fact.count"
+        ],
+        "pivots": [
+          "user_session_fact.site_acquisition_source"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "sessions.months_since_first_session": "[0, 18]"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.months_since_first_session",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 9.692353248596191,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "type": "looker_line",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "session_purchase_facts.total_sale_price",
+            "user_acquisition.count",
+            "salesuser",
+            "session_purchase_facts.revenue",
+            "user_session_fact.count"
+          ],
+          "y_axes": [
+            {
+              "label": "Lifetime Sales/User",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "cumulative_salesuser"
+                }
+              ]
+            }
+          ],
+          "x_axis_label": "Months since acquisition",
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          }
+        },
+        "filter_config": {
+          "sessions.months_since_first_session": [
+            {
+              "type": "between",
+              "values": [
+                {
+                  "constant": "0"
+                },
+                {
+                  "constant": "18"
+                }
+              ],
+              "id": 0,
+              "variant": "[]",
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "kR9SKMZ",
+        "dynamic_fields": "[{\"table_calculation\":\"salesuser\",\"label\":\"Sales/User\",\"expression\":\"${session_purchase_facts.revenue}/index(${user_session_fact.count}, 1)\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"cumulative_salesuser\",\"label\":\"Cumulative Sales/User\",\"expression\":\"running_total(${salesuser})\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "DWfpRlEpD2i43YVLOtbxLa",
+        "share_url": "https://demo.looker.com/x/DWfpRlEpD2i43YVLOtbxLa",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=sessions.months_since_first_session,session_purchase_facts.revenue,user_session_fact.site_acquisition_source,user_session_fact.count&pivots=user_session_fact.site_acquisition_source&f[sessions.months_since_first_session]=%5B0%2C+18%5D&sorts=sessions.months_since_first_session,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22session_purchase_facts.total_sale_price%22%2C%22user_acquisition.count%22%2C%22salesuser%22%2C%22session_purchase_facts.revenue%22%2C%22user_session_fact.count%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Lifetime+Sales%2FUser%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%5D%7D%5D%2C%22x_axis_label%22%3A%22Months+since+acquisition%22%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22sessions.months_since_first_session%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2218%22%7D%5D%2C%22id%22%3A0%2C%22variant%22%3A%22%5B%5D%22%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22salesuser%22%2C%22label%22%3A%22Sales%2FUser%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D%2Findex%28%24%7Buser_session_fact.count%7D%2C+1%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22cumulative_salesuser%22%2C%22label%22%3A%22Cumulative+Sales%2FUser%22%2C%22expression%22%3A%22running_total%28%24%7Bsalesuser%7D%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=sessions.months_since_first_session,session_purchase_facts.revenue,user_session_fact.site_acquisition_source,user_session_fact.count&pivots=user_session_fact.site_acquisition_source&f[sessions.months_since_first_session]=%5B0%2C+18%5D&sorts=sessions.months_since_first_session,user_session_fact.site_acquisition_source&limit=500&column_limit=50&vis=%7B%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22show_null_points%22%3Atrue%2C%22point_style%22%3A%22none%22%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22show_row_numbers%22%3Atrue%2C%22truncate_column_names%22%3Afalse%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22table_theme%22%3A%22editable%22%2C%22enable_conditional_formatting%22%3Afalse%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%22session_purchase_facts.total_sale_price%22%2C%22user_acquisition.count%22%2C%22salesuser%22%2C%22session_purchase_facts.revenue%22%2C%22user_session_fact.count%22%5D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Lifetime+Sales%2FUser%22%2C%22maxValue%22%3Anull%2C%22minValue%22%3Anull%2C%22orientation%22%3A%22left%22%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%2C%22unpinAxis%22%3Afalse%2C%22valueFormat%22%3Anull%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22cumulative_salesuser%22%7D%5D%7D%5D%2C%22x_axis_label%22%3A%22Months+since+acquisition%22%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%7D&filter_config=%7B%22sessions.months_since_first_session%22%3A%5B%7B%22type%22%3A%22between%22%2C%22values%22%3A%5B%7B%22constant%22%3A%220%22%7D%2C%7B%22constant%22%3A%2218%22%7D%5D%2C%22id%22%3A0%2C%22variant%22%3A%22%5B%5D%22%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22salesuser%22%2C%22label%22%3A%22Sales%2FUser%22%2C%22expression%22%3A%22%24%7Bsession_purchase_facts.revenue%7D%2Findex%28%24%7Buser_session_fact.count%7D%2C+1%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%2C%7B%22table_calculation%22%3A%22cumulative_salesuser%22%2C%22label%22%3A%22Cumulative+Sales%2FUser%22%2C%22expression%22%3A%22running_total%28%24%7Bsalesuser%7D%29%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22usd%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 550188,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 6772,
+      "result_maker": {
+        "id": 6772,
+        "dynamic_fields": "[{\"table_calculation\":\"salesuser\",\"label\":\"Sales/User\",\"expression\":\"${session_purchase_facts.revenue}/index(${user_session_fact.count}, 1)\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"},{\"table_calculation\":\"cumulative_salesuser\",\"label\":\"Cumulative Sales/User\",\"expression\":\"running_total(${salesuser})\",\"value_format\":null,\"value_format_name\":\"usd\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Acquisition Date",
+                "field": "user_session_fact.first_visit_date"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.months_since_first_session",
+          "user_session_fact.site_acquisition_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 550188,
+        "query": null,
+        "vis_config": {
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "show_null_points": true,
+          "point_style": "none",
+          "interpolation": "linear",
+          "type": "looker_line",
+          "show_row_numbers": true,
+          "truncate_column_names": false,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "table_theme": "editable",
+          "enable_conditional_formatting": false,
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "series_types": {
+          },
+          "hidden_fields": [
+            "session_purchase_facts.total_sale_price",
+            "user_acquisition.count",
+            "salesuser",
+            "session_purchase_facts.revenue",
+            "user_session_fact.count"
+          ],
+          "y_axes": [
+            {
+              "label": "Lifetime Sales/User",
+              "maxValue": null,
+              "minValue": null,
+              "orientation": "left",
+              "showLabels": true,
+              "showValues": true,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear",
+              "unpinAxis": false,
+              "valueFormat": null,
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "cumulative_salesuser"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "cumulative_salesuser"
+                }
+              ]
+            }
+          ],
+          "x_axis_label": "Months since acquisition",
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          }
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15615,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Total Spend",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585321,
+        "view": "sessions",
+        "fields": [
+          "adevents.total_cost",
+          "adevents.created_quarter"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "adevents.created_quarter"
+        ],
+        "filters": {
+          "adevents.created_quarter": "3 quarters ago for 3 quarters"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "adevents.created_quarter desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.025187,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "hidden_fields": [
+
+          ],
+          "comparison_label": "Prior Quarter",
+          "single_value_title": "Total Spend",
+          "value_format": "$#,##0",
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "adevents.created_quarter": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "3",
+                  "unit": "c_qu"
+                },
+                {
+                }
+              ],
+              "id": 36,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "tB7SY96",
+        "dynamic_fields": "[{\"table_calculation\":\"prior_month\",\"label\":\"Prior Month\",\"expression\":\"${adevents.total_cost}/offset(${adevents.total_cost}, 1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "K1CEZdhGQ5qFnBFOWyJ2Ft",
+        "share_url": "https://demo.looker.com/x/K1CEZdhGQ5qFnBFOWyJ2Ft",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=adevents.total_cost,adevents.created_quarter&fill_fields=adevents.created_quarter&f[adevents.created_quarter]=3+quarters+ago+for+3+quarters&sorts=adevents.created_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22single_value_title%22%3A%22Total+Spend%22%2C%22value_format%22%3A%22%24%23%2C%23%230%22%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22adevents.created_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A36%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_month%22%2C%22label%22%3A%22Prior+Month%22%2C%22expression%22%3A%22%24%7Badevents.total_cost%7D%2Foffset%28%24%7Badevents.total_cost%7D%2C+1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=adevents.total_cost,adevents.created_quarter&fill_fields=adevents.created_quarter&f[adevents.created_quarter]=3+quarters+ago+for+3+quarters&sorts=adevents.created_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22single_value_title%22%3A%22Total+Spend%22%2C%22value_format%22%3A%22%24%23%2C%23%230%22%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22adevents.created_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A36%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_month%22%2C%22label%22%3A%22Prior+Month%22%2C%22expression%22%3A%22%24%7Badevents.total_cost%7D%2Foffset%28%24%7Badevents.total_cost%7D%2C+1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585321,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10050,
+      "result_maker": {
+        "id": 10050,
+        "dynamic_fields": "[{\"table_calculation\":\"prior_month\",\"label\":\"Prior Month\",\"expression\":\"${adevents.total_cost}/offset(${adevents.total_cost}, 1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "adevents.created_quarter desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585321,
+        "query": null,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "value_labels": "legend",
+          "label_type": "labPer",
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "hidden_fields": [
+
+          ],
+          "comparison_label": "Prior Quarter",
+          "single_value_title": "Total Spend",
+          "value_format": "$#,##0",
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15616,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": "",
+      "note_text_as_html": "",
+      "note_display": "below",
+      "note_state": "collapsed",
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Revenue",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585322,
+        "view": "sessions",
+        "fields": [
+          "session_attribution.total_attribution",
+          "sessions.session_start_quarter"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "sessions.session_start_quarter"
+        ],
+        "filters": {
+          "session_attribution.attribution_filter": "Acquisition Source",
+          "session_attribution.attribution_source": "Adwords",
+          "sessions.session_start_quarter": "3 quarters ago for 3 quarters"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "sessions.session_start_quarter desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.12868213653564453,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Adwords Revenue",
+          "value_format": "$#,##0",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "session_attribution.attribution_filter": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "Acquisition Source"
+                },
+                {
+                }
+              ],
+              "id": 8,
+              "error": false
+            }
+          ],
+          "session_attribution.attribution_source": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Adwords"
+                },
+                {
+                }
+              ],
+              "id": 9,
+              "error": false
+            }
+          ],
+          "sessions.session_start_quarter": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "3",
+                  "unit": "c_qu"
+                },
+                {
+                }
+              ],
+              "id": 21,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "XjbGbtv",
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${session_attribution.total_attribution}/offset(${session_attribution.total_attribution},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "MIKWxMrS7dina2ve40VKuq",
+        "share_url": "https://demo.looker.com/x/MIKWxMrS7dina2ve40VKuq",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=session_attribution.total_attribution,sessions.session_start_quarter&fill_fields=sessions.session_start_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[sessions.session_start_quarter]=3+quarters+ago+for+3+quarters&sorts=sessions.session_start_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Adwords+Revenue%22%2C%22value_format%22%3A%22%24%23%2C%23%230%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%2C%22sessions.session_start_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A21%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Bsession_attribution.total_attribution%7D%2Foffset%28%24%7Bsession_attribution.total_attribution%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=session_attribution.total_attribution,sessions.session_start_quarter&fill_fields=sessions.session_start_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[sessions.session_start_quarter]=3+quarters+ago+for+3+quarters&sorts=sessions.session_start_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Adwords+Revenue%22%2C%22value_format%22%3A%22%24%23%2C%23%230%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%2C%22sessions.session_start_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%223%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A21%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Bsession_attribution.total_attribution%7D%2Foffset%28%24%7Bsession_attribution.total_attribution%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585322,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10051,
+      "result_maker": {
+        "id": 10051,
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${session_attribution.total_attribution}/offset(${session_attribution.total_attribution},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Attribution Source",
+                "field": "session_attribution.attribution_filter"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "sessions.session_start_quarter desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585322,
+        "query": null,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Adwords Revenue",
+          "value_format": "$#,##0",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15617,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Purchases",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585323,
+        "view": "sessions",
+        "fields": [
+          "sessions.count_with_purchase",
+          "session_attribution.last_session_end_quarter"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "session_attribution.last_session_end_quarter"
+        ],
+        "filters": {
+          "session_attribution.attribution_filter": "Acquisition Source",
+          "session_attribution.attribution_source": "Adwords",
+          "session_attribution.last_session_end_month": "2 quarters ago for 2 quarters"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "session_attribution.last_session_end_quarter desc"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.11124396324157715,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Purchases",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "session_attribution.attribution_filter": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "Acquisition Source"
+                },
+                {
+                }
+              ],
+              "id": 8,
+              "error": false
+            }
+          ],
+          "session_attribution.attribution_source": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Adwords"
+                },
+                {
+                }
+              ],
+              "id": 9,
+              "error": false
+            }
+          ],
+          "session_attribution.last_session_end_month": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "2",
+                  "unit": "c_qu"
+                },
+                {
+                }
+              ],
+              "id": 11,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "NQNNpbB",
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${sessions.count_with_purchase}/offset(${sessions.count_with_purchase},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "i6T0oPXuRrKNP3EYKbFl77",
+        "share_url": "https://demo.looker.com/x/i6T0oPXuRrKNP3EYKbFl77",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=sessions.count_with_purchase,session_attribution.last_session_end_quarter&fill_fields=session_attribution.last_session_end_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[session_attribution.last_session_end_month]=2+quarters+ago+for+2+quarters&sorts=session_attribution.last_session_end_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Purchases%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.last_session_end_month%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%222%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A11%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Bsessions.count_with_purchase%7D%2Foffset%28%24%7Bsessions.count_with_purchase%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=sessions.count_with_purchase,session_attribution.last_session_end_quarter&fill_fields=session_attribution.last_session_end_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[session_attribution.last_session_end_month]=2+quarters+ago+for+2+quarters&sorts=session_attribution.last_session_end_quarter+desc&limit=500&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Purchases%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A8%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A9%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.last_session_end_month%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%222%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A11%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Bsessions.count_with_purchase%7D%2Foffset%28%24%7Bsessions.count_with_purchase%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585323,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10052,
+      "result_maker": {
+        "id": 10052,
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${sessions.count_with_purchase}/offset(${sessions.count_with_purchase},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Attribution Source",
+                "field": "session_attribution.attribution_filter"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "session_attribution.last_session_end_quarter desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585323,
+        "query": null,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Purchases",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15618,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Users Acquired",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585324,
+        "view": "sessions",
+        "fields": [
+          "user_session_fact.count",
+          "user_session_fact.first_visit_quarter"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "user_session_fact.first_visit_quarter"
+        ],
+        "filters": {
+          "session_attribution.attribution_filter": "Acquisition Source",
+          "session_attribution.attribution_source": "Adwords",
+          "user_session_fact.first_visit_quarter": "2 quarters ago for 2 quarters"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "user_session_fact.first_visit_quarter desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.11658716201782227,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Users Acquired",
+          "value_format": "###,###",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "session_attribution.attribution_filter": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "Acquisition Source"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "session_attribution.attribution_source": [
+            {
+              "type": "=",
+              "values": [
+                {
+                  "constant": "Adwords"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ],
+          "user_session_fact.first_visit_quarter": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "2",
+                  "unit": "c_qu"
+                },
+                {
+                }
+              ],
+              "id": 55,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "qjJPqSf",
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${user_session_fact.count}/offset( ${user_session_fact.count},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "client_id": "qxacESUB7XFLvUzldWGqEn",
+        "share_url": "https://demo.looker.com/x/qxacESUB7XFLvUzldWGqEn",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=user_session_fact.count,user_session_fact.first_visit_quarter&fill_fields=user_session_fact.first_visit_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[user_session_fact.first_visit_quarter]=2+quarters+ago+for+2+quarters&sorts=user_session_fact.first_visit_quarter+desc&limit=500&column_limit=50&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Users+Acquired%22%2C%22value_format%22%3A%22%23%23%23%2C%23%23%23%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22user_session_fact.first_visit_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%222%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A55%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Buser_session_fact.count%7D%2Foffset%28+%24%7Buser_session_fact.count%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=user_session_fact.count,user_session_fact.first_visit_quarter&fill_fields=user_session_fact.first_visit_quarter&f[session_attribution.attribution_filter]=Acquisition+Source&f[session_attribution.attribution_source]=Adwords&f[user_session_fact.first_visit_quarter]=2+quarters+ago+for+2+quarters&sorts=user_session_fact.first_visit_quarter+desc&limit=500&column_limit=50&vis=%7B%22custom_color_enabled%22%3Atrue%2C%22custom_color%22%3A%22%2388a7a9%22%2C%22show_single_value_title%22%3Atrue%2C%22show_comparison%22%3Atrue%2C%22comparison_type%22%3A%22change%22%2C%22comparison_reverse_colors%22%3Afalse%2C%22show_comparison_label%22%3Atrue%2C%22type%22%3A%22single_value%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22single_value_title%22%3A%22Users+Acquired%22%2C%22value_format%22%3A%22%23%23%23%2C%23%23%23%22%2C%22comparison_label%22%3A%22Prior+Quarter%22%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Acquisition+Source%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%3D%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Adwords%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%2C%22user_session_fact.first_visit_quarter%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%222%22%2C%22unit%22%3A%22c_qu%22%7D%2C%7B%7D%5D%2C%22id%22%3A55%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%7B%22table_calculation%22%3A%22prior_period%22%2C%22label%22%3A%22Prior+Period%22%2C%22expression%22%3A%22%24%7Buser_session_fact.count%7D%2Foffset%28+%24%7Buser_session_fact.count%7D%2C1%29-1%22%2C%22value_format%22%3Anull%2C%22value_format_name%22%3A%22percent_0%22%2C%22_kind_hint%22%3A%22measure%22%2C%22_type_hint%22%3A%22number%22%7D%5D",
+        "query_timezone": null,
+        "has_table_calculations": true,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585324,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10053,
+      "result_maker": {
+        "id": 10053,
+        "dynamic_fields": "[{\"table_calculation\":\"prior_period\",\"label\":\"Prior Period\",\"expression\":\"${user_session_fact.count}/offset( ${user_session_fact.count},1)-1\",\"value_format\":null,\"value_format_name\":\"percent_0\",\"_kind_hint\":\"measure\",\"_type_hint\":\"number\"}]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Attribution Source",
+                "field": "session_attribution.attribution_filter"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "user_session_fact.first_visit_quarter desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585324,
+        "query": null,
+        "vis_config": {
+          "custom_color_enabled": true,
+          "custom_color": "#88a7a9",
+          "show_single_value_title": true,
+          "show_comparison": true,
+          "comparison_type": "change",
+          "comparison_reverse_colors": false,
+          "show_comparison_label": true,
+          "type": "single_value",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "single_value_title": "Users Acquired",
+          "value_format": "###,###",
+          "comparison_label": "Prior Quarter",
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15619,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Revenue by Channel",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585325,
+        "view": "sessions",
+        "fields": [
+          "session_attribution.attribution_source",
+          "sessions.session_type",
+          "session_attribution.total_attribution"
+        ],
+        "pivots": [
+          "session_attribution.attribution_source"
+        ],
+        "fill_fields": null,
+        "filters": {
+          "session_attribution.attribution_filter": "Last Touch",
+          "session_attribution.attribution_source": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "session_attribution.total_attribution desc 0",
+          "session_attribution.attribution_source"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.024043000000000002,
+        "vis_config": {
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": false,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "type": "looker_bar",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "Revenue",
+              "orientation": "bottom",
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "∅",
+                  "name": "∅",
+                  "axisId": "session_attribution.total_attribution"
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ]
+        },
+        "filter_config": {
+          "session_attribution.attribution_filter": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "Last Touch"
+                },
+                {
+                }
+              ],
+              "id": 4,
+              "error": false
+            }
+          ],
+          "session_attribution.attribution_source": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "constant": ""
+                },
+                {
+                }
+              ],
+              "id": 5,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "QCtSSh7",
+        "dynamic_fields": "[]",
+        "client_id": "76NJ1yDm9FCibkXLswVCKW",
+        "share_url": "https://demo.looker.com/x/76NJ1yDm9FCibkXLswVCKW",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=session_attribution.attribution_source,sessions.session_type,session_attribution.total_attribution&pivots=session_attribution.attribution_source&f[session_attribution.attribution_filter]=Last+Touch&f[session_attribution.attribution_source]=-NULL&sorts=session_attribution.total_attribution+desc+0,session_attribution.attribution_source&limit=500&vis=%7B%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Afalse%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22type%22%3A%22looker_bar%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Revenue%22%2C%22orientation%22%3A%22bottom%22%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22%E2%88%85%22%2C%22name%22%3A%22%E2%88%85%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Last+Touch%22%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=session_attribution.attribution_source,sessions.session_type,session_attribution.total_attribution&pivots=session_attribution.attribution_source&f[session_attribution.attribution_filter]=Last+Touch&f[session_attribution.attribution_source]=-NULL&sorts=session_attribution.total_attribution+desc+0,session_attribution.attribution_source&limit=500&vis=%7B%22stacking%22%3A%22normal%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Afalse%2C%22show_x_axis_ticks%22%3Afalse%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22type%22%3A%22looker_bar%22%2C%22series_types%22%3A%7B%7D%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22Revenue%22%2C%22orientation%22%3A%22bottom%22%2C%22series%22%3A%5B%7B%22id%22%3A%22Adwords%22%2C%22name%22%3A%22Adwords%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Email%22%2C%22name%22%3A%22Email%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Facebook%22%2C%22name%22%3A%22Facebook%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22Organic%22%2C%22name%22%3A%22Organic%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22YouTube%22%2C%22name%22%3A%22YouTube%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%2C%7B%22id%22%3A%22%E2%88%85%22%2C%22name%22%3A%22%E2%88%85%22%2C%22axisId%22%3A%22session_attribution.total_attribution%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Atrue%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Last+Touch%22%7D%2C%7B%7D%5D%2C%22id%22%3A4%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585325,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10054,
+      "result_maker": {
+        "id": 10054,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+              {
+                "dashboard_filter_name": "Attribution Source",
+                "field": "session_attribution.attribution_filter"
+              }
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "session_attribution.total_attribution desc 0",
+          "session_attribution.attribution_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585325,
+        "query": null,
+        "vis_config": {
+          "stacking": "normal",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": false,
+          "show_x_axis_ticks": false,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "type": "looker_bar",
+          "series_types": {
+          },
+          "y_axes": [
+            {
+              "label": "Revenue",
+              "orientation": "bottom",
+              "series": [
+                {
+                  "id": "Adwords",
+                  "name": "Adwords",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Email",
+                  "name": "Email",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Facebook",
+                  "name": "Facebook",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "Organic",
+                  "name": "Organic",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "YouTube",
+                  "name": "YouTube",
+                  "axisId": "session_attribution.total_attribution"
+                },
+                {
+                  "id": "∅",
+                  "name": "∅",
+                  "axisId": "session_attribution.total_attribution"
+                }
+              ],
+              "showLabels": true,
+              "showValues": true,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15620,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "Last Touch Conversion Referrer",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 585326,
+        "view": "sessions",
+        "fields": [
+          "session_attribution.attribution_source",
+          "session_attribution.total_attribution"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "session_attribution.attribution_filter": "Last Touch",
+          "session_attribution.attribution_source": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "session_attribution.attribution_source"
+        ],
+        "limit": "500",
+        "column_limit": null,
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.026868,
+        "vis_config": {
+          "value_labels": "labels",
+          "label_type": "labPer",
+          "type": "looker_pie",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "session_attribution.attribution_filter": [
+            {
+              "type": "is",
+              "values": [
+                {
+                  "constant": "Last Touch"
+                },
+                {
+                }
+              ],
+              "id": 0,
+              "error": false
+            }
+          ],
+          "session_attribution.attribution_source": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "constant": ""
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "pWbMPNt",
+        "dynamic_fields": "[]",
+        "client_id": "JjkxiAPgpI0VpE64WdWIEU",
+        "share_url": "https://demo.looker.com/x/JjkxiAPgpI0VpE64WdWIEU",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/sessions?fields=session_attribution.attribution_source,session_attribution.total_attribution&f[session_attribution.attribution_filter]=Last+Touch&f[session_attribution.attribution_source]=-NULL&sorts=session_attribution.attribution_source&limit=500&vis=%7B%22value_labels%22%3A%22labels%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_pie%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Last+Touch%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/sessions?fields=session_attribution.attribution_source,session_attribution.total_attribution&f[session_attribution.attribution_filter]=Last+Touch&f[session_attribution.attribution_source]=-NULL&sorts=session_attribution.attribution_source&limit=500&vis=%7B%22value_labels%22%3A%22labels%22%2C%22label_type%22%3A%22labPer%22%2C%22type%22%3A%22looker_pie%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22inner_radius%22%3A50%2C%22colors%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22series_colors%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22session_attribution.attribution_filter%22%3A%5B%7B%22type%22%3A%22is%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22Last+Touch%22%7D%2C%7B%7D%5D%2C%22id%22%3A0%2C%22error%22%3Afalse%7D%5D%2C%22session_attribution.attribution_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 585326,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 10055,
+      "result_maker": {
+        "id": 10055,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "sessions",
+            "name": null,
+            "listen": [
+
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "session_attribution.attribution_source"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 585326,
+        "query": null,
+        "vis_config": {
+          "value_labels": "labels",
+          "label_type": "labPer",
+          "type": "looker_pie",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "inner_radius": 50,
+          "colors": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "series_colors": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15621,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "text",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": "<font color=\"#294988\" size=\"6\" weight=\"bold\">Revenue Attribution</font>",
+      "title": null,
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": null,
+      "query_id": null,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": null,
+      "result_maker": null,
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": false,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15622,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "text",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": "<font color=\"#294988\" size=\"6\" weight=\"bold\">Customer Behavior</font>",
+      "title": null,
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": null,
+      "query_id": null,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": null,
+      "result_maker": null,
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": false,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    },
+    {
+      "id": 15623,
+      "dashboard_id": 3109,
+      "look_id": null,
+      "type": "vis",
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "note_display": null,
+      "note_state": null,
+      "title_hidden": false,
+      "title_text": null,
+      "title": "First Touch to Last Touch Analysis",
+      "subtitle_text": null,
+      "body_text": null,
+      "body_text_as_html": null,
+      "look": null,
+      "query": {
+        "id": 673223,
+        "view": "events",
+        "fields": [
+          "user_session_fact.site_acquisition_source",
+          "sessions.traffic_source",
+          "session_purchase_facts.revenue"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "user_session_fact.site_acquisition_source": "-NULL"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "session_purchase_facts.revenue desc"
+        ],
+        "limit": "500",
+        "column_limit": "50",
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "runtime": 0.034239000000000006,
+        "vis_config": {
+          "color_range": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "type": "sankey2",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "filter_config": {
+          "user_session_fact.site_acquisition_source": [
+            {
+              "type": "!null",
+              "values": [
+                {
+                  "constant": ""
+                },
+                {
+                }
+              ],
+              "id": 6,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "vBsjYk2",
+        "dynamic_fields": "[]",
+        "client_id": "M73dasjCFx6w9RZIysEge1",
+        "share_url": "https://demo.looker.com/x/M73dasjCFx6w9RZIysEge1",
+        "expanded_share_url": "https://demo.looker.com/explore/thelook_adwords/events?fields=user_session_fact.site_acquisition_source,sessions.traffic_source,session_purchase_facts.revenue&f[user_session_fact.site_acquisition_source]=-NULL&sorts=session_purchase_facts.revenue+desc&limit=500&column_limit=50&vis=%7B%22color_range%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22type%22%3A%22sankey2%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22user_session_fact.site_acquisition_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A6%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/thelook_adwords/events?fields=user_session_fact.site_acquisition_source,sessions.traffic_source,session_purchase_facts.revenue&f[user_session_fact.site_acquisition_source]=-NULL&sorts=session_purchase_facts.revenue+desc&limit=500&column_limit=50&vis=%7B%22color_range%22%3A%5B%22%23294988%22%2C%22%2387d79b%22%2C%22%23476d70%22%2C%22%23bababa%22%2C%22%23294259%22%2C%22%23747474%22%5D%2C%22type%22%3A%22sankey2%22%2C%22stacking%22%3A%22%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22legend_position%22%3A%22center%22%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Atrue%2C%22limit_displayed_rows%22%3Afalse%2C%22y_axis_combined%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22series_types%22%3A%7B%7D%2C%22hidden_fields%22%3A%5B%5D%2C%22y_axes%22%3A%5B%5D%7D&filter_config=%7B%22user_session_fact.site_acquisition_source%22%3A%5B%7B%22type%22%3A%22%21null%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22%22%7D%2C%7B%7D%5D%2C%22id%22%3A6%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "query_timezone": null,
+        "has_table_calculations": false,
+        "model": "thelook_adwords",
+        "can": {
+          "run": true,
+          "see_results": true,
+          "explore": true,
+          "create": true,
+          "show": true,
+          "cost_estimate": true,
+          "index": true,
+          "see_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_sql": true,
+          "generate_drill_links": true,
+          "download": true,
+          "render": true
+        }
+      },
+      "query_id": 673223,
+      "edit_uri": null,
+      "merge_result_id": null,
+      "result_maker_id": 12338,
+      "result_maker": {
+        "id": 12338,
+        "dynamic_fields": "[]",
+        "filterables": [
+          {
+            "model": "thelook_adwords",
+            "view": "events",
+            "name": null,
+            "listen": [
+
+            ],
+            "can": {
+            }
+          }
+        ],
+        "sorts": [
+          "session_purchase_facts.revenue desc"
+        ],
+        "merge_result_id": null,
+        "total": null,
+        "query_id": 673223,
+        "query": null,
+        "vis_config": {
+          "color_range": [
+            "#294988",
+            "#87d79b",
+            "#476d70",
+            "#bababa",
+            "#294259",
+            "#747474"
+          ],
+          "type": "sankey2",
+          "stacking": "",
+          "show_value_labels": false,
+          "label_density": 25,
+          "legend_position": "center",
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": true,
+          "limit_displayed_rows": false,
+          "y_axis_combined": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "x_axis_scale": "auto",
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "series_types": {
+          },
+          "hidden_fields": [
+
+          ],
+          "y_axes": [
+
+          ]
+        },
+        "can": {
+        }
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true,
+        "explore": true,
+        "run": false,
+        "show_errors": true,
+        "find_and_replace": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": 4598,
+      "dashboard_id": 3109,
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_layout_components": [
+        {
+          "id": 26358,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15609,
+          "row": 7,
+          "column": 10,
+          "width": 14,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26359,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15610,
+          "row": 15,
+          "column": 0,
+          "width": 10,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26360,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15611,
+          "row": 29,
+          "column": 0,
+          "width": 24,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26361,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15612,
+          "row": 15,
+          "column": 10,
+          "width": 14,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26362,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15613,
+          "row": 35,
+          "column": 0,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26363,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15614,
+          "row": 35,
+          "column": 12,
+          "width": 12,
+          "height": 8,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26364,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15615,
+          "row": 2,
+          "column": 0,
+          "width": 5,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26365,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15616,
+          "row": 2,
+          "column": 5,
+          "width": 5,
+          "height": 6,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26366,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15617,
+          "row": 8,
+          "column": 5,
+          "width": 5,
+          "height": 5,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26367,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15618,
+          "row": 8,
+          "column": 0,
+          "width": 5,
+          "height": 5,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26368,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15619,
+          "row": 2,
+          "column": 10,
+          "width": 14,
+          "height": 5,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26369,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15620,
+          "row": 22,
+          "column": 0,
+          "width": 10,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26370,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15621,
+          "row": 0,
+          "column": 0,
+          "width": 24,
+          "height": 2,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26371,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15622,
+          "row": 13,
+          "column": 0,
+          "width": 24,
+          "height": 2,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        },
+        {
+          "id": 26372,
+          "dashboard_layout_id": 4598,
+          "dashboard_element_id": 15623,
+          "row": 22,
+          "column": 10,
+          "width": 14,
+          "height": 7,
+          "deleted": false,
+          "can": {
+            "index": true,
+            "show": true,
+            "create": true,
+            "update": true,
+            "destroy": true
+          }
+        }
+      ],
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": 3481,
+      "dashboard_id": 3109,
+      "name": "Attribution Source",
+      "title": "Attribution Source",
+      "type": "field_filter",
+      "default_value": "Last Touch",
+      "explore": "sessions",
+      "dimension": "session_attribution.attribution_filter",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook_adwords",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "parameter",
+        "default_filter_value": null,
+        "description": "Choose a type of Attribution",
+        "enumerations": [
+          {
+            "label": "First Touch",
+            "value": "First Touch"
+          },
+          {
+            "label": "Last Touch",
+            "value": "Last Touch"
+          },
+          {
+            "label": "Multi-Touch Linear",
+            "value": "Multi-Touch Linear"
+          }
+        ],
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": true,
+        "hidden": false,
+        "is_filter": true,
+        "is_numeric": false,
+        "label": "Cohort Attribution Picker",
+        "label_from_parameter": null,
+        "label_short": "Attribution Picker",
+        "lookml_link": "/projects/digital_marketing/files/session_attribution.view.lkml?line=62",
+        "map_layer": null,
+        "name": "session_attribution.attribution_filter",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "session_attribution",
+        "view_label": "Cohort",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Attribution Picker",
+        "measure": false,
+        "parameter": true,
+        "primary_key": false,
+        "project_name": "digital_marketing",
+        "scope": "session_attribution",
+        "source_file": "session_attribution.view.lkml",
+        "source_file_path": "digital_marketing/session_attribution.view.lkml",
+        "suggest_dimension": "session_attribution.attribution_filter",
+        "suggest_explore": "sessions",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 3482,
+      "dashboard_id": 3109,
+      "name": "User Gender",
+      "title": "User Gender",
+      "type": "field_filter",
+      "default_value": "",
+      "explore": "events",
+      "dimension": "users.gender",
+      "row": 1,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": "thelook_adwords",
+      "listens_to_filters": [
+
+      ],
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": null,
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Users Gender",
+        "label_from_parameter": null,
+        "label_short": "Gender",
+        "lookml_link": "/projects/digital_marketing/files/users.view.lkml?line=38",
+        "map_layer": null,
+        "name": "users.gender",
+        "permanent": null,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "view": "users",
+        "view_label": "Users",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "error": null,
+        "field_group_variant": "Gender",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "digital_marketing",
+        "scope": "users",
+        "source_file": "users.view.lkml",
+        "source_file_path": "digital_marketing/users.view.lkml",
+        "suggest_dimension": "users.gender",
+        "suggest_explore": "events",
+        "suggestable": true,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "sql": null,
+        "sql_case": null
+      },
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": 3483,
+      "dashboard_id": 3109,
+      "name": "Acquisition Date",
+      "title": "Acquisition Date",
+      "type": "date_filter",
+      "default_value": "12 months ago for 12 months",
+      "explore": null,
+      "dimension": null,
+      "row": 2,
+      "allow_multiple_values": true,
+      "required": false,
+      "model": null,
+      "listens_to_filters": [
+
+      ],
+      "field": null,
+      "can": {
+        "create": true,
+        "update": true,
+        "destroy": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "load_configuration": "cache_run",
+  "background_color": "#171717",
+  "show_title": false,
+  "title_color": "#cccccc",
+  "show_filters_bar": false,
+  "tile_background_color": "#000000",
+  "tile_text_color": "#a69f9f",
+  "text_tile_text_color": "",
+  "last_accessed_at": "2018-12-04 15:59:24 +0000",
+  "created_at": "2018-06-07 20:02:28 +0000",
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "lookml_link_id": "thelook_adwords::user_acquisition",
+  "model": null,
+  "content_favorite_id": null,
+  "deleted": false,
+  "last_viewed_at": null,
+  "can": {
+    "download": true,
+    "index": true,
+    "show": true,
+    "copy": true,
+    "run": true,
+    "create": true,
+    "move": true,
+    "update": true,
+    "destroy": true,
+    "recover": true,
+    "see_lookml": true,
+    "schedule": true,
+    "render": true
+  }
+}

@@ -10,7 +10,7 @@ require_relative 'looker_helper'
 class ContentManagement
 
 
-  @dashboards = [159, 160, 161, 1116]
+  @dashboards = [159, 160, 161, 1116, 8, 7, 3109, 3095, 3106]
 
   looks = []
 
@@ -31,20 +31,26 @@ class ContentManagement
 
   end
 
-  def self.revert_dashboard(commit_id, dashboard_id)
-    file_path = "dashboard/#{dashboard_id}"
 
+  # Sample Commit ID: 9e8782275243b235b333cb0414c529c0566be182
+  def self.revert_dashboard(commit_id, dashboard_id)
+    file_path = "dashboards/#{dashboard_id}"
+
+    
+    g = GitHelper.initialize
     new_dashboard = g.show("#{commit_id}:#{file_path}")
 
-    print new_dashboard
+    # file_name = ""
+    system("echo '#{new_dashboard}' > dashboard_#{dashboard_id}")
 
-    # dashboard = read_file_as_json(file_path)
-
-    # LookerHelper.get_dashboard_space_id(new_dashboard)
-
-    print space_id = new_dashboard[:space_id]
+    space_id = LookerHelper.get_dashboard_space_id_from_file(new_dashboard)
     
-    # system("gzr dashboard import #{new_dashboard} #{space_id} --host demodev.looker.com")
+    system("gzr dashboard import dashboard_#{dashboard_id} 1143 --force --host demodev.looker.com")
+
+
+    # gzr dashboard import mytest 1143 --force --host demodev.looker.com
+
+    # gzr dashboard import test.json 1143 --host demodev.looker.com
   end
 
   def self.revert_look(commit_id, look_id)

@@ -17,13 +17,13 @@ class ContentManagement
   def self.store_content_metadata
 
     @dashboards.each do |dashboard|
-    	print dashboard
+    	print "Updated Dashboard: #{dashboard} \n"
 
       result = system("gzr dashboard cat #{dashboard} --host demo.looker.com > temp.json")
 
-      system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}")
+      system("test -f dashboards/#{dashboard} || touch dashboards/#{dashboard}.json")
 
-    	system("cmp --silent temp.json dashboards/#{dashboard} && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}")
+    	system("cmp --silent temp.json dashboards/#{dashboard}.json && echo '#{dashboard}: - No Change' || mv temp.json dashboards/#{dashboard}.json")
 
     end
 
@@ -31,26 +31,24 @@ class ContentManagement
 
   end
 
-
-  # Sample Commit ID: 9e8782275243b235b333cb0414c529c0566be182
+  # ruby -r "./demo-gzr.rb" -e "ContentManagement.revert_dashboard '7184bed9fa84e056c318d5c16fb8a5d724c7d1d9','161'"
+  # Sample Commit ID: 7184bed9fa84e056c318d5c16fb8a5d724c7d1d9
   def self.revert_dashboard(commit_id, dashboard_id)
-    file_path = "dashboards/#{dashboard_id}"
+    file_path = "dashboards/#{dashboard_id}.json"
 
-    
     g = GitHelper.initialize
     new_dashboard = g.show("#{commit_id}:#{file_path}")
 
-    # file_name = ""
-    system("echo '#{new_dashboard}' > dashboard_#{dashboard_id}")
-
     space_id = LookerHelper.get_dashboard_space_id_from_file(new_dashboard)
+
+    begin
+      system("gzr dashboard import dashboards/#{dashboard_id}.json #{space_id} --force --host demodev.looker.com")
+    rescue 
+      print("Error with Dashboard Import")
+    end
     
-    system("gzr dashboard import dashboard_#{dashboard_id} 1143 --force --host demodev.looker.com")
 
 
-    # gzr dashboard import mytest 1143 --force --host demodev.looker.com
-
-    # gzr dashboard import test.json 1143 --host demodev.looker.com
   end
 
   def self.revert_look(commit_id, look_id)
@@ -59,6 +57,11 @@ class ContentManagement
 
 
   def self.revert_all(commit_id)
+    @dashboards.each do |dashboard|
+      revert_dashboard(commit_id, dashboard)
+    end
+
+    GitHelper.push_change_to_git
 
   end
 

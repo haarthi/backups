@@ -12,6 +12,8 @@ This Ruby script runs nightly and takes a backup of "production" deemed dashboar
   Ex: ```ruby -r "./demo-gzr.rb" -e "ContentManagement.revert_dashboard '7184bed9fa84e056c318d5c16fb8a5d724c7d1d9','161'"```
 
 3. Revert look to stable commit
+   ```ruby -r "./demo-gzr.rb" -e "ContentManagement.update_look '<commit_id>','<look_id>'"```
+
 
 4. Revert all demo content to latest stable commit \
   ```ruby -r "./demo-gzr.rb" -e "ContentManagement.revert_all '<commit_id>'" ```

@@ -4,7 +4,7 @@ This Ruby script runs nightly and takes a backup of "production" deemed dashboar
 
 ## Available Actions
 
-1. Pull latest dashboard and look metadata for dashboards & looks outlined in the ruby file below . 
+1. Pull latest dashboard and look metadata for dashboards & looks outlined in the ruby file below \
    ```ruby -r "./demo-gzr.rb" -e "ContentManagement.store_content_metadata" ```
 
 2. Revert dashboard to stable commit . 
